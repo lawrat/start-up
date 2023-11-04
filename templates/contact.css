@@ -1,0 +1,474 @@
+    /* toute la page  */
+    body{
+        padding: 0px;
+        text-align: center;
+    }
+     /* section 1  */
+    #tete{
+        margin-top: 30px;
+        display :flex;
+        flex-wrap: wrap;
+        
+    }
+    .haut{
+        margin-left: 50px;
+       
+        
+    }
+    /* les lien  */
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    /*  button resservation de la section 1 */
+  
+    /* section 2  */
+    #avant{
+    background-color :#2C6DA8;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    height: 200px;
+    margin-bottom: 50px;
+    
+}
+    
+    /*  div 1 de section 2 */
+    #face-1{
+        background-color: #A8D554;
+        width: 50%;
+        height: 500px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       
+    }
+    /*  div 2 de section 2 */
+    #face-2{
+        padding: none;
+        background-color: #2C6DA8;
+        width: 50%;
+        height: 500px;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+    }
+   
+    /*  les texte en taille 6 */
+   
+    /*  les textes en taille 1 */
+    h1{
+        color: white;
+        margin-top: 0;
+    }
+    h2{
+        color: white;
+        margin-top: 0;
+    }
+    h3{
+        color: white;
+        margin-top: 0;
+    }
+    h4{
+        color: white;
+        margin-top: 0;
+    }
+    h5{
+        color: white;
+        margin-top: 0;
+    }
+    h6{
+        color: white;
+        margin-top: 0;
+    }
+    /*  classe pour les textes en taille 1 */
+    .h1-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h2-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h3-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h4-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h5-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /*  classe pour les textes en taille 6 */
+    .h6-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /* button reservation dans la div 1 de la section 2 */
+    #faire-reservation{ 
+        background-color: #2C6DA8;
+        font: optional;color: #fcfbfb;
+        padding: 10px;
+        border-color:  #2C6DA8;
+        align-items: center;
+    }
+     /* carre dans la div 2 de la section 2*/
+    #carre{
+        background-color: transparent;
+        width: 350px;
+        height: 350px;
+        border-color: white;
+        border-width: 10px;
+        border-style:solid;
+        border-left:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+     /*  section 3*/
+    #voir-plus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+     /* classe pour les element de la section 3 */
+    .voir{
+        margin-left: 50px;
+    }
+     /* section 4 */
+    #quatre{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: #2C6DA8;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    }
+     /*  section 1 dans la section 4*/
+    #interieur{
+        display :flex;
+        flex-wrap: wrap;
+    }
+     /* */
+    .car{
+        background-color: white;
+        margin-left: 10px;
+        padding: 30px;
+        
+    }
+     /* */
+    .dansQuatre{
+        padding: 20px;
+        margin-left: 80px
+        
+    }
+     /* */
+    #obtenir-1{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+     /* */
+    #obtenir-2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 350px;
+        margin-top: 80px;
+    }
+     /* */
+    #obtenir-3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+     /* */
+    #p-1{
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+     /* */
+    #p-2{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+     /* */
+    #p-3{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    #nos-services{
+        text-align: center;
+        margin-top: 80px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+.carre-bleu{
+    background-color: #2C6DA8;
+    margin-left: 10px;
+}
+#temoin{ 
+    height: 600px; 
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+        background-color :#A8D554;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+}
+#temoignages{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    
+    }
+    .each{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #kele{
+        margin-bottom: 0;
+         width: 500px;
+         height: 150px;
+background-color: white;
+    }
+    #fila{
+        margin-bottom: 0;
+        width: 500px;
+        height: 150px;
+        background-color: white;
+    }
+    #avantages{
+      
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .rang{
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .espace{
+        margin-left: 150px;
+    }
+    #formu{
+        padding: 20px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+         display: block; 
+         flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+        background-color: #2C6DA8;
+        
+    }
+    #contact{
+        background-color: white; 
+         padding: 5px; 
+        color: black;
+       
+    }
+    #formulaire{
+        /* background-color: white; */
+     
+        background-color: white;
+        margin-left: 20%;
+        margin-right: 20%;   
+          
+    }
+    #form-contact{
+        padding: 15px; 
+    }
+    #prise{
+        color: white;
+       
+    }
+    .input-normal{
+        width: 300px;
+        height: 40px;
+        margin-top: 20px;
+        border-width: 5px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .input-com{
+        width: 300px;
+        height: 80px;
+        margin-top: 20px;
+        border-width: 5px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .env{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #A8D554;
+    }
+    #methode-{
+        margin-left: 20%;
+        margin-right: 20%px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:#2C6DA8;
+      width: 60%;
+    }
+    #only{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 40px;
+        width: 200px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+
+    }
+    .foot{
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #A8D554;
+    }
+    #ligne{
+       align-items: center;
+       width: 50%;
+        background-color: #A8D554;
+        border: 1px solid black;
+        
+    }
+    #noir{
+        background-color: black;
+        height: 50px;
+        width: 100%;
+    }
+    #copyright{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #avant-pied{
+       padding-bottom: 10px;
+        text-align: center;
+    }
+.rangement{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    padding: 10px;
+   
+}
+#donne{
+    margin-left: 10px;
+    
+}
+
+
+.petit-epace{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#all-foot{
+   
+    background-color: #A8D554;
+}
+.no-pad{
+    margin-left: 0;
+    margin-right: 0;
+}
+#aider{
+    position: relative;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#droite{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#bas{
+    display: block;
+    flex-wrap: wrap;
+}
+#icone{
+    display: flex;
+    flex-wrap: wrap;
+}
+#icone-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#info-1{
+    margin-top: 5px;
+    margin-left: 50px;
+   
+}
+.petit-carre{
+background-color: transparent;
+border : 3px solid black;
+width: 50px;
+height: 50px;
+padding-top: 25px;
+}
+.no-padding{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.image {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    margin-left: 150px;
+}
+.align{
+    margin-left: 130px;
+} 
+#deroulant{
+    padding-top: 15px;
+    display: block;
+    background-color: #A8D554;
+    width: 150px;
+    height: 100px;
+    visibility: hidden;
+   
+}
+.deroul{
+    padding : 20px;
+    margin-bottom : 20px;
+
+}

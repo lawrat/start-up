@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNETplus - Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+    /* toute la page  */
+    body{
+        padding: 0px;
+        text-align: center;
+    }
+     /* section 1  */
+    #tete{
+        margin-top: 30px;
+        display :flex;
+        flex-wrap: wrap;
+        
+    }
+    .haut{
+        margin-left: 30px;
+       
+        
+    }
+    /* les lien  */
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    /*  button resservation de la section 1 */
+  
+    /* section 2  */
+    #avant{
+        display: flex;
+        flex-wrap: wrap;;
+    }
+    /*  div 1 de section 2 */
+    #face-1{
+        background-color: #A8D554;
+        width: 50%;
+        height: 300px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       
+    }
+    /*  div 2 de section 2 */
+    #face-2{
+        padding: none;
+        background-color: #2C6DA8;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+    }
+   
+    /*  les texte en taille 6 */
+   
+    /*  les textes en taille 1 */
+    h1{
+        color: white;
+        margin-top: 0;
+    }
+    h2{
+        color: white;
+        margin-top: 0;
+    }
+    h3{
+        color: white;
+        margin-top: 0;
+    }
+    h4{
+        color: white;
+        margin-top: 0;
+    }
+    h5{
+        color: white;
+        margin-top: 0;
+    }
+    h6{
+        color: white;
+        margin-top: 0;
+    }
+    /*  classe pour les textes en taille 1 */
+    .h1-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h2-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h3-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h4-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h5-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /*  classe pour les textes en taille 6 */
+    .h6-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /* button reservation dans la div 1 de la section 2 */
+    #faire-reservation{ 
+        background-color: #2C6DA8;
+        font: optional;color: #fcfbfb;
+        padding: 10px;
+        border-color:  #2C6DA8;
+        align-items: center;
+    }
+     /* carre dans la div 2 de la section 2*/
+    #carre{
+        background-color: transparent;
+        width: 250px;
+        height: 250px;
+        border-color: white;
+        border-width: 10px;
+        border-style:solid;
+        border-left:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+     /*  section 3*/
+    #voir-plus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+     /* classe pour les element de la section 3 */
+    .voir{
+        margin: 0 15px; 
+    text-align: center; 
+    }
+    /* .top{
+        margin-top: 10px;
+    } */
+     /* section 4 */
+    #quatre{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       align-items: center;
+        background-color: #2C6DA8;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+     /*  section 1 dans la section 4*/
+    #interieur{
+        display :flex;
+        flex-wrap: wrap;
+    }
+     /* */
+    .car{
+        background-color: white;
+        margin-left: 10px;
+        padding: 30px;
+        
+    }
+     /* */
+    .dansQuatre{
+        padding: 20px;
+      
+        
+    }
+     /* */
+    #obtenir-1{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+    #p-1{
+        margin-left: 50px;
+margin-bottom: 10px;
+margin-top: 5%;
+    }
+     /* */
+    #img-2{
+        margin-left: 50px;
+        
+        border: 10px double #A8D554;
+    }
+    #img-1{
+        border: 10px double #2C6DA8;
+    }
+    #img-3{
+        border: 10px double #2C6DA8;
+    }
+    #p-2{
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+     /* */
+    #p-3{
+        margin-top: 5%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    #nos-services{
+      justify-content: center;
+      align-items: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+.carre-bleu{
+    background-color: #2C6DA8;
+    margin-left: 10px;
+}
+#temoin{ 
+    height :auto; 
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+        /* background-color :#A8D554; */
+        background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+       #in-temoin{
+        margin-top: 20px;
+       } 
+}
+#temoignages{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    
+    }
+    .each{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #kele{
+        margin-bottom: 0;
+         width: 500px;
+         height: 150px;
+background-color: white;
+    }
+    #fila{
+        margin-bottom: 0;
+        width: 500px;
+        height: 150px;
+        background-color: white;
+    }
+    #avantages{
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%; 
+        justify-content: center;
+        align-items: center;
+    }
+    .ran{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #a-a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+       
+        margin: 0 15px; 
+    }
+
+    #b-b-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #c-c-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+  
+    .espace{
+        margin-left: 150px;
+    }
+    #formu{
+        padding: 20px;
+        margin-top: 30px;
+         display: flex; 
+         flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+        background-color: #2C6DA8;
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    #contact{
+        background-color: white; 
+         padding: 5px; 
+        color: black;
+        margin-bottom: 20px;
+        margin: 0 15px; 
+       
+    }
+    #formulaire{
+        /* background-color: white; */
+         /* margin-left: 50px;  */
+        background-color: white;
+        padding: 15px;
+        margin: 0 15px; 
+        margin-top: 20px;
+        
+    }
+    #prise{
+        text-align: left;
+        color: white;
+       
+    }
+    .input-normal{
+        width: 300px;
+        height: 40px;
+        margin-top: 20px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .input-com{
+        width: 300px;
+        height: 80px;
+        margin-top: 20px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .env{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #A8D554;
+    }
+    #methode{
+      
+        margin-top: 50px;
+    }
+    #methode-{
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:#2C6DA8;
+        font: optional;color: white;
+    }
+    #only{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 40px;
+        width: 200px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+
+    }
+    .foot{
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #A8D554;
+    }
+    #ligne{
+       align-items: center;
+       width: 50%;
+        background-color: #A8D554;
+        
+        
+    }
+    #noir{
+        background-color: black;
+        height: 50px;
+        width: 100%;
+    }
+    #copyright{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #avant-pied{
+       padding-bottom: 10px;
+        text-align: center;
+    }
+.rangement{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    padding: 10px;
+   
+}
+#donne{
+    margin-left: 10px;
+    
+}
+.no-padding{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* #logo-pied{
+    
+    margin-right: 50%;
+} */
+.petit-epace{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#all-foot{
+    background-color: #A8D554;
+}
+.no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+.margin-leger{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.margin-moyens{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ .align{
+    margin-left: 130px;
+} 
+#deroulant{
+    display: block;
+    background-color: #A8D554;
+    width: 100px;
+    height: auto;
+    visibility: hidden;
+   
+}
+.deroul{
+    padding : 20px;
+
+}
+.P-cadre{
+    width: 200px;
+}
+</style>
+<body>
+    <section id="tete">
+        <div id="logo" class="haut">
+<img src="" alt="" width="50" height="30">
+        </div>
+        <div id="numero" class="haut" class="align">
+<div id="us">
+    
+    <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
+</div>
+        </div>
+        <div id="accueil" class="haut" class="align">
+<a href="accueil.html">Accueil</a>
+        </div>
+        <div id="services" class="haut" class="align">
+<a href="services.html">Services</a>
+        </div>
+        <div id="reservatio" class="haut" class="align">
+            <a href="">Reservation</a>
+            <div id="deroulant">
+                <a  href="entreprise.html">Entreprise</a><br>
+                <a  href="">Particulier</a><br>
+                <a href="services.html">Services</a>
+            </div>
+        </div>
+        <div id="a-propros" class="haut" class="align">
+<a href="a-propos.html">A Propos</a>
+        </div>
+        <div id="contacte" class="haut" class="align">
+<a href="contact.html">Contact</a>
+        </div>
+        <div id="facebook" class="haut" class="align">
+            
+            <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
+        </div>
+        <div id="linkedin" class="haut" target="_blank" class="align">
+            
+<a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div id="twitter" class="haut" class="align">
+            
+<a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="reservation" class="haut" class="align"> 
+            
+            <a href="entreprise.html" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+        </div>
+    </section>
+    <section id="avant">
+<div id="face-1">
+    <span id="face-1-1">
+<h6><i class="fas fa-info-circle"></i> BIENVENUE CHEZ G NET + !!!</h6>
+<h1>CLEAN D'UN <br> CLIN D'OEIL</h1>
+<p><h6>GNET+ offre des services de nettoyage professionnel <br> rapides et complets pour les entreprises et les particuliers,<br> avec une équipe dynamique disponible à tout moment.</h6></p>
+<a href="entreprise.html" id="faire-reservation" class="effet">FAIRE UNE RESERVATION</a>
+</span>
+</div>
+<div id="face-2">
+    <div id="carre">
+<img src="https://www.grand-nettoyage.fr/wp-content/uploads/GRAND-NETTOYAGE-deratisation%E2%80%93Desinfection%E2%80%93D%C3%A9sinsectisation2-1024x1024.jpg" alt="" width="200px" height="200px">
+    </div>
+</div>
+
+    </section>
+    <section id="voir-plus">
+        <div id="first" class="voir" >
+<img src="https://www.ins-bretagne.fr/wp-content/uploads/2020/02/desinsectisation-elimination-cafards-ins-bretagne.jpg" alt="desinsectisation" width="300" height="200">
+<h3>Désintestisation</h3>
+<p>Nous proposons des services de <br>désinsectisation, visant à éliminer les insectes <br>  nuisibles dans différents environnements.</p>
+<button class="effet">Voir plus</button>
+        </div>
+        <div id="second" class="voir" >
+            <img src="https://www.deratiseur.com/wp-content/uploads/2022/09/duree-deratisation.jpg" alt="deratisation" width="300" height="200">
+            <h3>Dératisation</h3>
+<p>Nous fournissons des services de <br>dératisation, visant à éliminer les rongeurs<br> nuisibles dans différents environnements.</p>
+            <button class="effet">Voir plus</button>
+        </div>
+        <div id="thirde" class="voir" >
+            <img src="https://st2.depositphotos.com/1049680/46253/i/450/depositphotos_462533556-stock-photo-african-american-woman-with-braided.jpg" alt="nettoyage" width="300" height="200">
+            <h3>Nettoyage</h3>
+            <p>Nous proposons des services de <br>nettoyage, assurant la propreté et<br> l'hygiène dans divers environnements.</p>
+            <button class="effet">Voir plus</button>
+        </div>
+    </section>
+
+    <section id="quatre">
+        <div id="uno" class="dansQuatre">
+            <h6>A PROPOS DE NOUS</h6>
+            <h1>G NET+, Les pros <br>du nettoyage</h1>
+            <p><h6>GNET+ est une entreprise dynamique qui vous offre une<br> multitude de services dans le nettoyage professionel et ce,<br> dans les plus brefs délais. Son équipe est á votre entière<br> disposition que vous soyez professionnel ou particulier..</h6></p>
+            <section id="interieur">
+                <div id="un" class="car">
+                    <i class="fas fa-user" ></i>
+                <h3 class="h3-noir">Expert<br> nettoyage</h3>
+                </div>
+                <div id="deux" class="car">
+                    <i class="fas fa-medal"></i>
+                    <h3 class="h3-noir">Service de<br>qualite</h3> 
+                </div>
+                <div id="trois" class="car">
+                    <i class="fas fa-lock"></i>
+                    <h3 class="h3-noir">100%<br>Authentique</h3>
+                </div>
+            </section>
+        </div>
+        <div id="dos" class="dansQuatre">
+            <img src="https://staingame.fr/wp-content/uploads/2022/08/nettoyage-canape-domicile-02.jpg"alt="" width="90%" height="350px">
+        </div>
+    </section>
+    <section id="nos-services">
+        <h6 class="h6-noir">NOS SERVICES </h6>
+        <h1 class="h1-noir">"Nous sommes experts<br> en nettoyage, pour vous offrir un <br>service de qualité."</h1>
+        <section id="obtenir-1">
+            <div id="img-1">
+            <img src="https://www.nettoyagecanape.com/images/nettoyage-canape/nettoyage-canape-a-domicile-10.jpg" alt="" width="300" height="300">
+        </div>
+        <div id="p-1">
+            <p>Offrez une véritable cure de jouvence à vos fauteuils avec<br> notre service de nettoyage expert. Nos professionnels<br> éliminent méticuleusement les taches, neutralisent les <br>odeurs et éradiquent les allergènes. Après notre <br>intervention, vos fauteuils retrouveront non seulement leur<br> propreté, mais aussi leur fraîcheur et leur accueil chaleureux.
+            </p>
+            <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+        </div>
+        </section>
+
+        <section id="obtenir-2" >
+            <div id="p-2">
+                <p>Transformez votre salle de bain en un havre de propreté et de<br> brillance avec notre service complet de mise en état. Nos <br>experts réalisent un nettoyage approfondi, éliminent les <br>moisissures, polissent chaque surface et laissent votre salle<br> de bain prête à être admirée. Une prestation qui va au-delà <br>du nettoyage pour offrir une expérience luxueuse dans votre <br>espace intime.</p>
+                <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+            </div>
+            <div id="img-2">
+            <img src="https://media.kozikaza.com/landing_media/sall/e-de/salle-de-bain-moderne-blanche-avec-douche-italienne-649d32f61888a.jpg" alt="" width="300" height="300">
+        </div>
+      
+        </section>
+
+        <section id="obtenir-3">
+            <div id="img-3">
+            <img src="https://m.media-amazon.com/images/I/71lek9dIWFL._AC_UF1000,1000_QL80_.jpg" alt="" width="300" height="300">
+        </div>
+        <div id="p-3">
+            <p>Redonnez de l'éclat à vos tapis grâce à notre service de <br>nettoyage haut de gamme. Nous utilisons des techniques <br>avancées pour éliminer en profondeur la saleté, les <br>allergènes et les taches, préservant la beauté d'origine de <br>vos tapis. Un traitement qui allie efficacité et respect de vos <br>précieux tapis.</p>
+            <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+        </div>
+        </section>
+
+    </section>
+    <section id="temoin">
+<section id="in-temoin">
+    <h6 >TEMOIGNAGES</h6>
+<h1 >Ce que disent nos clients</h1>
+<section id="temoignages">
+    <div>
+<p  id="kele" class="each">"J'ai sollicité GNET pour une désinsectisation <br>à la maison. Leur équipe a été rapide, professionnelle, et a <br>résolu notre problème de fourmis efficacement. <br>Service impeccable, je les recommande vivement!"</p>
+<div class="carre-bleu">
+<div id="tem-1" class="rangement">
+    <div id="image">
+    <img src="https://img.freepik.com/photos-gratuite/portrait-jeune-femme-maquillage-naturel_23-2149084942.jpg" alt="" width="90px" height="80px">
+</div>
+<div id="donne">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<h5 class="no-padding">Sophie KOUAME</h5>
+<h5>Résidence particulière</h5>
+</div>
+</div>
+</div>
+    </div>
+   
+    <div >
+<p id="fila"  class="each">"En tant que responsable d'une école, la désinsectisation <br>était cruciale pour maintenir un environnement sûr. GNET <br>a démontré une expertise exceptionnelle, assurant une <br>intervention discrète et efficace. Notre établissement est <br>désormais préservé des nuisibles, merci à l'équipe GNET!"</p>
+<div class="carre-bleu">
+<div id="tem-2" class="rangement">
+<div id="image-2">
+    <img src="https://img.freepik.com/photos-gratuite/portrait-beau-jeune-homme-barbu-seul-expression-serieuse-mur-gris-copie-espace_231208-7778.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697932800&semt=sph" alt="" width="90px" height="80px">
+</div>
+<div id="donne">
+
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <h5 class="no-padding">François KONE</h5>
+    <h5>Responsable d'Etablissement Scolaire</h5>
+</div>
+    </div>
+    </div>
+</div>
+</section>
+</section>
+    </section>
+    <section id="avantages">
+        <h6 class="h6-noir">NOS FORMIDABLES AVANTAGES</h6>
+        <h1 class="h1-noir">En fait, ce que vous obtiendrez...</h1>
+        <section id="rang1" class="ran">
+
+
+<div id="a-1" class="div-avantages">
+<img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+<h3 class="h3-noir">Expérience professionel</h3>
+<p >Nous excellons grâce à notre <br> expertise dans la désinsectisation,<br>dératisation et nettoyage.</p>
+</div>
+
+
+<div id="a-2"  >
+    <img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+<h3 class="h3-noir">Approche Personnalisée</h3>
+<p>Nous adoptons une approche<br> personnalisée pour répondre a vos<br>besoins spécifiques.</p>
+</div>
+
+
+<div id="a-3" >
+    <img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+<h3 class="h3-noir">Réactivité et Rapidité</h3>
+<p>Nous répondons vite <br>et agissons rapidement,<br> c'est notre force.</p>
+</div>
+
+
+        </section>
+
+        <section id="rang2" class="ran" >
+
+            <div id="a-a-1"  >
+                <img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+                <h3 class="h3-noir">Respect de L'environement</h3>
+                <p >Nos méthodes sont respectueuses de<br> l'environement pour une <br>désinfection sûre.</p>
+            </div>
+
+
+            <div id="b-b-2"  >
+                <img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+<h3 class="h3-noir">Confidentilité et Discretion</h3>
+<p>Vos affaires restent <br> confidentielles avec notre  <br>intervention discrète. </p>
+            </div>
+
+
+            <div id="c-c-3">
+                <img src="https://us.123rf.com/450wm/faysalfarhan/faysalfarhan1710/faysalfarhan171013701/88895525-ic%C3%B4ne-de-validation-isol%C3%A9-sur-l-illustration-abstraite-du-bouton-carr%C3%A9-bleu-sp%C3%A9cial.jpg" alt="" width="50px" height="50px">
+<h3 class="h3-noir">Satisfaction Client </h3>
+<p>Votre satisfaction est notre priorité,<br>comme en attestant nos retours <br>clients positifs.</p>
+            </div>
+
+
+        </section>
+        
+    </section>
+    <section id="formu">
+        <div id="prise">
+        <h6>PRISE DE CONTACT</h6>
+        <h1>"Prenez contact pour<br>partager vos préocupations <br>avec GNET+"</h1>
+        <p>Notre équipe attentive est prête à repondre à vos questions et à <br>résourdre vos problemes. Nous nous engageons à offrir un <br>service client exceptionnel et à garantir votre satisfaction.<br>N'hésitez pas à nous contacter pour toute assistance, nous <br> sommes là pour vous aider"</p>
+        <div id="contact">
+            <p>NOTRE MAIL : <br> gnet.plus@yahoo.com</p>
+            <p>APPELEZ-NOUS : <br> (+225) 01 03 11 01 40</p>
+        </div>
+    </div>
+    <div id="formulaire">
+        <form action="/" method="post">
+            <input class="input-normal" type="text" name="nom" id="nom" placeholder="Nom" ><br>
+            <input  class="input-normal" type="text" name="email" id="email" placeholder="Email"><br>
+            <input class="input-normal" type="number" name="telephone" id="telephone" placeholder="Télephone"><br>
+            <input class="input-normal" type="text" name="service-attendu" id="service-attendu" placeholder="Service attendu"><br>
+            <input class="input-com" type="text" name="commentaire" id="commentaire" placeholder="Commentaire" ><br>
+            <input class="env" type="submit" name="rendez-vous" id="rendez-vous" >
+    </form>
+
+    </div>
+    </section>
+    <section id="methode">
+        <h1 class="h1-noir">Notre methode de travail</h1>
+        <section id="methode-">
+<div id="methode-1" class="voir">
+<img src="https://espacestrategies.com/wp/wp-content/uploads/2022/04/DIO016_ICON_diagno-organisationnel.jpg" alt="" width="250px" height="250px">
+<h3>Diagnostic</h3>
+<p>G NET + commence par une <br>évaluation approfondie pour <br>comprendre vos besoins spécifiques.</p>
+</div>
+<div id="methode-2" class="voir">
+    <img src="https://www.allodemenageur.fr/wp-content/uploads/2017/09/devis-dem.jpg" alt="" width="250px" height="250px">
+<h3>Devis</h3>
+<p>Transparence totale avec des devis<br> clairs, sans frais cachés, pour établir<br> une confiance solide.</p>
+</div>
+<div id="methode-3" class="voir">
+    <img src="https://media.istockphoto.com/id/644248766/vector/action-plan-concept-with-icons.jpg?s=170667a&w=0&k=20&c=UJ-S8oEgcw7Pt4ph7eQYtdEozUXzmFD-JwFrV6eehyE=" alt="" width="250px" height="250px">
+<h3>Plan d'action</h3>
+<p>Un plan précis est élaboré pour <br>chaque service, garantissant une <br>exécution méthodique et efficace.</p>
+</div>
+<div id="methode-4" class="voir">
+    <img src="https://img.over-blog.com/300x177/5/59/76/77/cles-succes.jpg" alt="" width="250px" height="250px">
+<h3>Suivi</h3>
+<p>Notre engagement ne s'arrête pas à<br> l'intervention. Nous assurons un <br>suivi pour des résultats durables.</p>
+</div>
+        </section>
+
+    </section>
+    <button id="only" class="effet">CONTACTEZ-NOUS</button>
+    <section id="all-foot">
+
+   
+    <section id="avant-pied" class="foot">
+        <div id="logo-pied" class="espace">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
+        </div>
+     
+            <div id="facebook-pied" class="petit-epace" >
+                <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
+            </div>
+          
+                <div id="twitter-pied" class="petit-epace" >
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+               
+                    <div id="linkedin-pied" class="petit-epace" >
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                   
+                        <div id="instagram-pied" class="petit-epace" >
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+    </section>
+   <hr id="ligne">
+    <section id="pied" class="foot">
+       
+        <div id="explorer" >
+<h2>Explorer</h2>
+<h5 class="h1-noir"><a href="accueil.html">Accueil</a></h5>
+<h5 class="h1-noir"><a href="services.html">Services</a></h5>
+<h5 class="h1-noir"><a href="profil.html">Profil</a></h5>
+<h5 class="h1-noir"><a href="a-propos.html">A Propos</a></h5>
+<h5 class="h1-noir"><a href="contact.html">Contact</a></h5>
+        </div>
+        <div id="service" class="espace">
+            <h2>Services</h2>
+            <h5 class="h1-noir"><a href="services.html">Désinsectisation</a></h5>
+            <h5 class="h1-noir"><a href="services.html">Dératisation</a></h5>
+            <h5 class="h1-noir"><a href="services.html">Nettoyage</a></h5>
+        </div>
+        <div id="gnet" class="espace">
+            <h2>G NET+</h2>
+            <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
+            <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
+            <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
+        </div>
+        <div id="heures" class="espace">
+            <h2>Heures d'ouverture</h2>
+            <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
+            <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
+
+        </div>
+    </section>
+    <section id="noir">
+<h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
+    </section>
+</section>
+<script>
+    const button = document.querySelectorAll(".effet");
+
+
+button.forEach(btn => {
+    btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#A8D554";
+        btn.style.borderStyle = "double";
+        btn.style.borderColor = "#FFFFFF"
+        btn.style.borderWidth = "5px";
+
+    });
+
+    btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "";
+        btn.style.borderStyle = "";
+        btn.style.borderColor = ""
+        btn.style.borderWidth = "";
+    });
+});
+
+
+
+
+
+    const lien = document.querySelectorAll("a");
+    lien.forEach(lien =>{
+    lien.addEventListener("mouseover", () =>{
+        lien.style.backgroundColor = "#A8D554"
+        lien.style.borderStyle = "groove"
+        lien.style.borderColor = "#FFFFFF"
+        lien.style.borderWidth = "5px"
+        lien.style.width = "100px"
+    })
+    lien.addEventListener("mouseout", () =>{
+        lien.style.backgroundColor = ""
+        lien.style.borderStyle = ""
+        lien.style.borderColor = ""
+        lien.style.borderWidth = ""
+        lien.style.width = ""
+    })
+})
+
+const deroulante = document.querySelector("#reservatio");
+
+deroulante.addEventListener("mouseover", () => {
+    deroulant.style.visibility = "visible";
+});
+
+deroulante.addEventListener("mouseout", () => {
+    deroulant.style.visibility = "hidden";
+});
+console.log(deroulante)
+</script>
+</body>
+</html> 

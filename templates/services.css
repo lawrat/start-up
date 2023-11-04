@@ -1,0 +1,467 @@
+   /* toute la page  */
+   body{
+    padding: 0px;
+    text-align: center;
+}
+ /* section 1  */
+#tete{
+    margin-top: 30px;
+    display :flex;
+    flex-wrap: wrap;
+    
+}
+.haut{
+    margin-left: 50px;
+   
+}
+/* les lien  */
+a{
+    color: black;
+    text-decoration: none;
+}
+/*  button resservation de la section 1 */
+
+/* section 2  */
+#avant{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:40px ;
+}
+#avant-1{
+    padding-top: 20px;
+    background-color: #2C6DA8;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+/*  div 1 de section 2 */
+#face-1{
+    background-color: #A8D554;
+    width: 100%;
+    height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+/*  div 2 de section 2 */
+#face-2{
+    padding: none;
+    background-color: #2C6DA8;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+/*  les texte en taille 6 */
+
+/*  les textes en taille 1 */
+h1{
+    color: white;
+    margin-top: 0;
+}
+h2{
+    color: white;
+    margin-top: 0;
+}
+h3{
+    color: white;
+    margin-top: 0;
+}
+h4{
+    color: white;
+    margin-top: 0;
+}
+h5{
+    color: white;
+    margin-top: 0;
+}
+h6{
+    color: white;
+    margin-top: 0;
+}
+
+.h1-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+.h2-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+.h3-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+.h4-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+.h5-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+.h6-bleu{
+    color :#2C6DA8;
+    margin-top: 0;
+}
+
+/*  classe pour les textes en taille 1 */
+.h1-noir{
+    color: black;
+    margin-top: 0;
+}
+.h2-noir{
+    color: black;
+    margin-top: 0;
+}
+.h3-noir{
+    color: black;
+    margin-top: 0;
+}
+.h4-noir{
+    color: black;
+    margin-top: 0;
+}
+.h5-noir{
+    color: black;
+    margin-top: 0;
+}
+ /*  classe pour les textes en taille 6 */
+.h6-noir{
+    color: black;
+    margin-top: 0;
+}
+ /* button reservation dans la div 1 de la section 2 */
+#faire-reservation{ 
+    background-color: #2C6DA8;
+    font: optional;color: #fcfbfb;
+    padding: 10px;
+    border-color:  #2C6DA8;
+    align-items: center;
+}
+ /* carre dans la div 2 de la section 2*/
+#carre{
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    border-color: white;
+    border-width: 10px;
+    border-style:solid;
+    border-left:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+ /*  section 3*/
+#voir-plus{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+ /* classe pour les element de la section 3 */
+.voir{
+    margin-left: 100px;
+}
+ /* section 4 */
+#quatre{
+    margin-top: 50px;
+    display: contents;
+    flex-wrap: wrap;
+   justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+ /*  section 1 dans la section 4*/
+#interieur{
+    display :flex;
+    flex-wrap: wrap;
+}
+ /* */
+.car{
+    background-color: white;
+    margin-left: 10px;
+    padding: 30px;
+    
+}
+ /* */
+.dansQuatre{
+    padding: 20px;
+    margin-left: 80px
+    
+}
+ /* */
+#obtenir-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+ /* */
+#obtenir-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+ /* */
+#obtenir-3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+ /* */
+#p-1{
+    margin-left: 80px;
+    margin-top: 80px;
+}
+ /* */
+#img-2{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#p-2{
+    margin-left: 0%;
+    margin-top: 80px;
+}
+ /* */
+#p-3{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+#nos-services{
+    text-align: center;
+    margin-top: 80px;
+   margin-left: 0;
+    margin-right: 60px;
+}
+.carre-bleu{
+background-color: #2C6DA8;
+margin-left: 10px;
+}
+#temoin{ 
+display : flex;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+    background-color :#A8D554;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    
+}
+#temoignages{
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+.each{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+#kele{
+    margin-bottom: 0;
+     width: 500px;
+     height: 150px;
+background-color: white;
+}
+#fila{
+    margin-bottom: 0;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+}
+#avantages{
+  
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rang{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.espace{
+    margin-left: 150px;
+}
+#formu{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+     display: flex; 
+     flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+    background-color: #2C6DA8;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#coordonnes{
+    padding: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    justify-content: center; 
+}
+#reduction{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 5px;
+    background-color: black;
+    justify-content: center;
+}
+#formulaire{
+    /* background-color: white; */
+    margin-top: 20px;
+     margin-left: 50px; 
+    background-color: white;
+    padding: 15px;
+    
+}
+#prise{
+    text-align: left;
+    color: white;
+   
+}
+.input-normal{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-width: 5px;
+    border-color: #2C6DA8;
+    border-style: groove;
+}
+.input-com{
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    border-width: 5px;
+    border-color: #2C6DA8;
+    border-style: groove;
+}
+.env{
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: #A8D554;
+}
+#methode-{
+    margin-left: 20%;
+    margin-right: 20%px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#only{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 40px;
+    width: 200px;
+    border-width: 3px;
+    border-color: #2C6DA8;
+
+}
+.foot{
+    justify-content: center;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #A8D554;
+}
+#ligne{
+   align-items: center;
+   width: 50%;
+    background-color: #A8D554;
+    border: 1px solid black;
+    
+}
+#noir{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+#copyright{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#avant-pied{
+    margin-top: 50px;
+   padding-bottom: 10px;
+    text-align: center;
+}
+.rangement{
+display: flex;
+margin-left: 10px;
+align-items: center;
+text-align: left;
+justify-content: left;
+padding: 10px;
+
+}
+#donne{
+margin-left: 10px;
+
+}
+.no-padding{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.petit-epace{
+margin-top: 20px;
+margin-left: 20px;
+}
+#all-foot{
+background-color: #A8D554;
+}
+.no-pad{
+margin-left: 0;
+margin-right: 0;
+}
+.align{
+    margin-left: 130px;
+} 
+#deroulant{
+    padding-top: 15px;
+    display: block;
+    background-color: #A8D554;
+    width: 150px;
+    height: 100px;
+    visibility: hidden;
+   
+}
+.deroul{
+    padding : 20px;
+    margin-bottom : 20px;
+
+}
