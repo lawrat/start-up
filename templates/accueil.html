@@ -15,25 +15,35 @@
     }
      /* section 1  */
     #tete{
-        margin-top: 30px;
         display :flex;
         flex-wrap: wrap;
         
     }
-    .haut{
-        margin-left: 30px;
-       
-        
-    }
-    /* les lien  */
+
     a{
-        color: black;
+        font: optional;color: black;
         text-decoration: none;
     }
+    #logo{
+        margin-top: 1%;
+        position: absolute;
+    }
+    #page-lien{
+        position: absolute;
+        display :flex;
+        flex-wrap: wrap;
+        margin-left: 40%;
+        margin-top: 2.5%;
+    }
+    .haut{
+        margin: 0 15px; 
+    }
+    /* les lien  */
     /*  button resservation de la section 1 */
   
     /* section 2  */
     #avant{
+        margin-top: 100px;
         display: flex;
         flex-wrap: wrap;;
     }
@@ -252,10 +262,10 @@ margin-top: 5%;
     margin-top: 50px;
         /* background-color :#A8D554; */
         background: linear-gradient(to bottom , #2C6DA8, #A8D554);
-       #in-temoin{
+}
+#in-temoin{
         margin-top: 20px;
        } 
-}
 #temoignages{
     margin-bottom: 20px;
     display: flex;
@@ -275,6 +285,11 @@ margin-top: 5%;
          width: 500px;
          height: 150px;
 background-color: white;
+/* padding-left: ;
+padding-right: ;
+padding-top: ;
+padding-bottom: ; */
+
     }
     #fila{
         margin-bottom: 0;
@@ -356,6 +371,7 @@ background-color: white;
     .espace{
         margin-left: 150px;
     }
+
     #formu{
         padding: 20px;
         margin-top: 30px;
@@ -455,10 +471,13 @@ background-color: white;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    #avant-pied{
+    /* #avant-pied{
+        justify-content: center;
        padding-bottom: 10px;
-        text-align: center;
+        /* margin-left: 10%; */
+        /* margin-right: 10%;
     }
+     */
 .rangement{
     display: flex;
     margin-left: 10px;
@@ -476,10 +495,7 @@ background-color: white;
     margin-top: 0;
     margin-bottom: 0;
 }
-/* #logo-pied{
-    
-    margin-right: 50%;
-} */
+
 .petit-epace{
     margin-top: 20px;
     margin-left: 20px;
@@ -503,75 +519,79 @@ background-color: white;
     margin-left: 130px;
 } 
 #deroulant{
-    display: block;
+    padding-top: 20px;
+    display: grid;
     background-color: #A8D554;
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 100px;
     visibility: hidden;
+    position: absolute;
    
 }
-.deroul{
-    padding : 20px;
+/* .deroul{
+    padding-top: 10px;
 
-}
+} */
 .P-cadre{
     width: 200px;
 }
 </style>
 <body>
     <section id="tete">
-        <div id="logo" class="haut">
-<img src="" alt="" width="50" height="30">
-        </div>
-        <div id="numero" class="haut" class="align">
+        <section id="logo" class="haut">
+<img src="" alt="" width="200" height="50">
+        </section>
+        <section id="page-lien">
+        <div id="numero" class="haut" class="align" class="a">
 <div id="us">
     
     <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
 </div>
         </div>
-        <div id="accueil" class="haut" class="align">
+        <div id="accueil" class="haut" class="align" class="a">
 <a href="accueil.html">Accueil</a>
         </div>
-        <div id="services" class="haut" class="align">
+        <div id="services" class="haut" class="align" class="a">
 <a href="services.html">Services</a>
         </div>
-        <div id="reservatio" class="haut" class="align">
+        <div id="reservatio" class="haut" class="align" class="a">
             <a href="">Reservation</a>
             <div id="deroulant">
-                <a  href="entreprise.html">Entreprise</a><br>
-                <a  href="">Particulier</a><br>
-                <a href="services.html">Services</a>
+                <a  href="entreprise.html" class="deroul">Entreprise</a><br>
+                <a  href="" class="deroul">Particulier</a><br>
+                <a href="services.html" class="deroul">Services</a>
             </div>
         </div>
-        <div id="a-propros" class="haut" class="align">
+        <div id="a-propros" class="haut" class="align" class="a">
 <a href="a-propos.html">A Propos</a>
         </div>
-        <div id="contacte" class="haut" class="align">
+        <div id="contacte" class="haut" class="align" class="a">
 <a href="contact.html">Contact</a>
         </div>
-        <div id="facebook" class="haut" class="align">
+        <div id="facebook" class="haut" class="align" class="a">
             
             <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
         </div>
-        <div id="linkedin" class="haut" target="_blank" class="align">
+        <div id="linkedin" class="haut" target="_blank" class="align" class="a">
             
 <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
-        <div id="twitter" class="haut" class="align">
+        <div id="twitter" class="haut" class="align" class="a">
             
 <a href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <div id="reservation" class="haut" class="align"> 
+        <div id="reservation" class="haut" class="align" class="a"> 
             
             <a href="entreprise.html" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
         </div>
     </section>
+    </section>
     <section id="avant">
 <div id="face-1">
     <span id="face-1-1">
-<h6><i class="fas fa-info-circle"></i> BIENVENUE CHEZ G NET + !!!</h6>
-<h1>CLEAN D'UN <br> CLIN D'OEIL</h1>
-<p><h6>GNET+ offre des services de nettoyage professionnel <br> rapides et complets pour les entreprises et les particuliers,<br> avec une équipe dynamique disponible à tout moment.</h6></p>
+<h1><i class="fas fa-info-circle"></i> BIENVENUE CHEZ G NET + !!!</h1>
+<h2>CLEAN D'UN <br> CLIN D'OEIL</h2>
+<p><h5>GNET+ offre des services de nettoyage professionnel <br> rapides et complets pour les entreprises et les particuliers,<br> avec une équipe dynamique disponible à tout moment.</h5></p>
 <a href="entreprise.html" id="faire-reservation" class="effet">FAIRE UNE RESERVATION</a>
 </span>
 </div>
@@ -582,32 +602,34 @@ background-color: white;
 </div>
 
     </section>
+
+
     <section id="voir-plus">
         <div id="first" class="voir" >
 <img src="https://www.ins-bretagne.fr/wp-content/uploads/2020/02/desinsectisation-elimination-cafards-ins-bretagne.jpg" alt="desinsectisation" width="300" height="200">
 <h3>Désintestisation</h3>
 <p>Nous proposons des services de <br>désinsectisation, visant à éliminer les insectes <br>  nuisibles dans différents environnements.</p>
-<button class="effet">Voir plus</button>
+<button class="effet"><a href="services.html#obtenir-1">Voir plus</a></button>
         </div>
         <div id="second" class="voir" >
             <img src="https://www.deratiseur.com/wp-content/uploads/2022/09/duree-deratisation.jpg" alt="deratisation" width="300" height="200">
             <h3>Dératisation</h3>
 <p>Nous fournissons des services de <br>dératisation, visant à éliminer les rongeurs<br> nuisibles dans différents environnements.</p>
-            <button class="effet">Voir plus</button>
+            <button class="effet"> <a href="services.html#obtenir-2">Voir plus</a> </button>
         </div>
         <div id="thirde" class="voir" >
             <img src="https://st2.depositphotos.com/1049680/46253/i/450/depositphotos_462533556-stock-photo-african-american-woman-with-braided.jpg" alt="nettoyage" width="300" height="200">
             <h3>Nettoyage</h3>
             <p>Nous proposons des services de <br>nettoyage, assurant la propreté et<br> l'hygiène dans divers environnements.</p>
-            <button class="effet">Voir plus</button>
+            <button class="effet"><a href="services.html#obtenir-3">Voir plus</a></button>
         </div>
     </section>
 
     <section id="quatre">
         <div id="uno" class="dansQuatre">
-            <h6>A PROPOS DE NOUS</h6>
-            <h1>G NET+, Les pros <br>du nettoyage</h1>
-            <p><h6>GNET+ est une entreprise dynamique qui vous offre une<br> multitude de services dans le nettoyage professionel et ce,<br> dans les plus brefs délais. Son équipe est á votre entière<br> disposition que vous soyez professionnel ou particulier..</h6></p>
+            <h1>A PROPOS DE NOUS</h1>
+            <h2>G NET+, Les pros <br>du nettoyage</h2>
+            <p><h5>GNET+ est une entreprise dynamique qui vous offre une<br> multitude de services dans le nettoyage professionel et ce,<br> dans les plus brefs délais. Son équipe est á votre entière<br> disposition que vous soyez professionnel ou particulier..</h5></p>
             <section id="interieur">
                 <div id="un" class="car">
                     <i class="fas fa-user" ></i>
@@ -628,8 +650,8 @@ background-color: white;
         </div>
     </section>
     <section id="nos-services">
-        <h6 class="h6-noir">NOS SERVICES </h6>
-        <h1 class="h1-noir">"Nous sommes experts<br> en nettoyage, pour vous offrir un <br>service de qualité."</h1>
+        <h1 class="h6-noir">NOS SERVICES </h1>
+        <h2 class="h1-noir">"Nous sommes experts<br> en nettoyage, pour vous offrir un <br>service de qualité."</h2>
         <section id="obtenir-1">
             <div id="img-1">
             <img src="https://www.nettoyagecanape.com/images/nettoyage-canape/nettoyage-canape-a-domicile-10.jpg" alt="" width="300" height="300">
@@ -665,8 +687,8 @@ background-color: white;
     </section>
     <section id="temoin">
 <section id="in-temoin">
-    <h6 >TEMOIGNAGES</h6>
-<h1 >Ce que disent nos clients</h1>
+    <h1 >TEMOIGNAGES</h1>
+<h2 >Ce que disent nos clients</h2>
 <section id="temoignages">
     <div>
 <p  id="kele" class="each">"J'ai sollicité GNET pour une désinsectisation <br>à la maison. Leur équipe a été rapide, professionnelle, et a <br>résolu notre problème de fourmis efficacement. <br>Service impeccable, je les recommande vivement!"</p>
@@ -713,8 +735,8 @@ background-color: white;
 </section>
     </section>
     <section id="avantages">
-        <h6 class="h6-noir">NOS FORMIDABLES AVANTAGES</h6>
-        <h1 class="h1-noir">En fait, ce que vous obtiendrez...</h1>
+        <h1 class="h6-noir">NOS FORMIDABLES AVANTAGES</h1>
+        <h2 class="h1-noir">En fait, ce que vous obtiendrez...</h2>
         <section id="rang1" class="ran">
 
 
@@ -769,8 +791,8 @@ background-color: white;
     </section>
     <section id="formu">
         <div id="prise">
-        <h6>PRISE DE CONTACT</h6>
-        <h1>"Prenez contact pour<br>partager vos préocupations <br>avec GNET+"</h1>
+        <h1>PRISE DE CONTACT</h1>
+        <h2>"Prenez contact pour<br>partager vos préocupations <br>avec GNET+"</h2>
         <p>Notre équipe attentive est prête à repondre à vos questions et à <br>résourdre vos problemes. Nous nous engageons à offrir un <br>service client exceptionnel et à garantir votre satisfaction.<br>N'hésitez pas à nous contacter pour toute assistance, nous <br> sommes là pour vous aider"</p>
         <div id="contact">
             <p>NOTRE MAIL : <br> gnet.plus@yahoo.com</p>
@@ -790,7 +812,7 @@ background-color: white;
     </div>
     </section>
     <section id="methode">
-        <h1 class="h1-noir">Notre methode de travail</h1>
+        <h1 class="h1-noir">NOTRE METHODE DE TRAVAIL</h1>
         <section id="methode-">
 <div id="methode-1" class="voir">
 <img src="https://espacestrategies.com/wp/wp-content/uploads/2022/04/DIO016_ICON_diagno-organisationnel.jpg" alt="" width="250px" height="250px">
@@ -816,11 +838,14 @@ background-color: white;
 
     </section>
     <button id="only" class="effet">CONTACTEZ-NOUS</button>
+
+
+
     <section id="all-foot">
 
    
     <section id="avant-pied" class="foot">
-        <div id="logo-pied" class="espace">
+        <div id="logo-pied" >
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
         </div>
      
@@ -873,6 +898,8 @@ background-color: white;
     <section id="noir">
 <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
     </section>
+
+
 </section>
 <script>
     const button = document.querySelectorAll(".effet");
@@ -899,7 +926,7 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll("a");
+    const lien = document.querySelectorAll(".a");
     lien.forEach(lien =>{
     lien.addEventListener("mouseover", () =>{
         lien.style.backgroundColor = "#A8D554"
@@ -907,6 +934,8 @@ button.forEach(btn => {
         lien.style.borderColor = "#FFFFFF"
         lien.style.borderWidth = "5px"
         lien.style.width = "100px"
+        lien.style.padding = "10px"
+        
     })
     lien.addEventListener("mouseout", () =>{
         lien.style.backgroundColor = ""
@@ -914,6 +943,7 @@ button.forEach(btn => {
         lien.style.borderColor = ""
         lien.style.borderWidth = ""
         lien.style.width = ""
+        lien.style.padding = ""
     })
 })
 
