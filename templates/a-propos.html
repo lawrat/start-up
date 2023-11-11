@@ -7,72 +7,434 @@
     <link rel="stylesheet" href="a-propos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<style>
+     body{
+        padding: 0px;
+        text-align: center;
+    }
+     /* section 1  */
+    #tete{
+        display :flex;
+        flex-wrap: wrap;
+        
+    }
+
+    a{
+        font: optional;color: black;
+        text-decoration: none;
+    }
+    #logo{
+        margin-top: 1%;
+        position: absolute;
+    }
+    #page-lien{
+        position: absolute;
+        display :flex;
+        flex-wrap: wrap;
+        margin-left: 35%;
+        margin-top: 2.5%;
+    }
+    .haut{
+        margin: 0 15px; 
+    }
+    #deroulant{
+    padding-top: 20px;
+    display: grid;
+    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    width: 200px;
+    height: 150px;
+    visibility: hidden;
+    position: absolute;
+   
+}
+/* .deroul{
+    padding-top: 10px;
+
+} */
+.align{
+    margin-left: 100px;
+} 
+/* section 2  */
+#avant{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:100px ;
+}
+
+/*  div 1 de section 2 */
+#face-1{
+    background-color: #A8D554;
+    width: 100%;
+    height: 250px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+  
+h1{
+    color: white;
+    margin-top: 0;
+}
+h2{
+    color: white;
+    margin-top: 0;
+}
+h3{
+    color: white;
+    margin-top: 0;
+}
+h4{
+    color: white;
+    margin-top: 0;
+}
+h5{
+    color: white;
+    margin-top: 0;
+}
+h6{
+    color: white;
+    margin-top: 0;
+}
+/*  classe pour les textes en taille 1 */
+.h1-noir{
+    color: black;
+    margin-top: 0;
+}
+.h2-noir{
+    color: black;
+    margin-top: 0;
+}
+.h3-noir{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.h4-noir{
+    color: black;
+    margin-top: 0;
+}
+.h5-noir{
+    color: black;
+    margin-top: 0;
+}
+ /*  classe pour les textes en taille 6 */
+.h6-noir{
+    color: black;
+    margin-top: 0;
+}
+
+.h1-bleu{
+    color :#2C6DA8;
+    
+}
+.h2-bleu{
+    color :#2C6DA8;
+   
+    
+}
+.h3-bleu{
+    color :#2C6DA8;
+   
+    
+}
+.h4-bleu{
+    color :#2C6DA8;
+    
+    
+}
+.h5-bleu{
+    color :#2C6DA8;
+   
+}
+.h6-bleu{
+    color :#2C6DA8;
+    margin-top: 0px;
+    
+ 
+}
+
+ /* button reservation dans la div 1 de la section 2 */
+#faire-reservation{ 
+    background-color: #2C6DA8;
+    font: optional;color: #fcfbfb;
+    padding: 10px;
+    border-color:  #2C6DA8;
+    align-items: center;
+}
+ 
+ /* section 4 */
+#qua{
+    margin-top: 50px;
+    text-align: center;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    
+}
+
+ /* */
+.car{
+    background-color: #54a0e7;
+    height: 150px;
+    margin-top: 5px;
+    width: 150px;
+    font-size: 25px;
+    
+}
+
+#un{
+    
+}
+#deux{
+
+}
+#trois{
+   
+}
+.carre-bleu{
+    background-color: #2C6DA8;
+    margin-left: 10px;
+}
+#temoin{ 
+    height :auto; 
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+        /* background-color :#A8D554; */
+        background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+}
+#in-temoin{
+        margin-top: 20px;
+       } 
+#temoignages{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    
+    }
+    .each{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #kele{
+        margin-bottom: 0;
+         width: 500px;
+         height: 150px;
+background-color: white;
+    }
+    #fila{
+        margin-bottom: 0;
+        width: 500px;
+        height: 150px;
+        background-color: white;
+    }
+
+    .no-padding{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+.espace{
+    margin-left: 150px;
+}
+
+.input-normal{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-width: 5px;
+    border-color: #2C6DA8;
+    border-style: groove;
+}
+
+#methode-{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foot{
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #A8D554;
+    }
+#ligne{
+   align-items: center;
+   width: 50%;
+    background-color: #A8D554;
+    border: 1px solid black;
+    
+}
+#noir{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+#copyright{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#avant-pied{
+   padding-bottom: 10px;
+    text-align: center;
+}
+.rangement{
+display: flex;
+margin-left: 10px;
+align-items: center;
+text-align: left;
+justify-content: left;
+padding: 10px;
+
+}
+#donne{
+margin-left: 10px;
+
+}
+.met{
+margin: 0 30px;
+}
+
+.petit-epace{
+margin-top: 20px;
+margin-left: 20px;
+}
+#all-foot{
+    margin-top: 50px;
+background-color: #A8D554;
+}
+/* .no-pad{
+margin-left: 0;
+margin-right: 0;
+} */
+#histoire{
+    margin-top: 50px;
+}
+#groupe{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#recit{
+    font: optional;color: black;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#only{
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    border-width: 3px;
+    border-color: #2C6DA8;
+
+}
+#cinq{
+    background : linear-gradient(to bottom , #bdc7d14d, #050800);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top :100px;
+    padding-bottom: 100px;
+}
+
+
+#c-2{
+    background :  #A8D554;
+    height: auto;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top :20px;
+    padding-bottom: 20px;
+    border: 5px dotted #2C6DA8;
+}
+.ligne-mince{
+    width: 50%;
+}
+/* .align{
+    margin-left: 130px;
+}  */
+
+</style>
 <body>
     <section id="tete">
         <section id="logo" class="haut">
 <img src="" alt="" width="200" height="50">
         </section>
         <section id="page-lien">
-        <div id="numero" class="haut" class="align">
+        <div id="numero" class="haut" class="align" class="a">
 <div id="us">
     
     <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
 </div>
         </div>
-        <div id="accueil" class="haut" class="align">
+        <div id="accueil" class="haut" class="align" class="a">
 <a href="accueil.html">Accueil</a>
         </div>
-        <div id="services" class="haut" class="align">
+        <div id="services" class="haut" class="align" class="a">
 <a href="services.html">Services</a>
         </div>
-        <div id="reservatio" class="haut" class="align">
+        <div id="reservatio" class="haut" class="align" class="a">
             <a href="">Reservation</a>
             <div id="deroulant">
-                <a  href="entreprise.html">Entreprise</a><br>
-                <a  href="">Particulier</a><br>
-                <a href="services.html">Services</a>
+                <a  href="entreprise.html" class="deroul">Entreprise</a><br>
+                <a  href="" class="deroul">Particulier</a><br>
+                <a href="services.html" class="deroul">Services</a>
             </div>
         </div>
-        <div id="a-propros" class="haut" class="align">
+        <div id="a-propros" class="haut" class="align" class="a">
 <a href="a-propos.html">A Propos</a>
         </div>
-        <div id="contacte" class="haut" class="align">
+        <div id="contacte" class="haut" class="align" class="a">
 <a href="contact.html">Contact</a>
         </div>
-        <div id="facebook" class="haut" class="align">
+        <div id="facebook" class="haut" class="align" class="a">
             
             <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
         </div>
-        <div id="linkedin" class="haut" target="_blank" class="align">
+        <div id="linkedin" class="haut" target="_blank" class="align" class="a">
             
 <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
-        <div id="twitter" class="haut" class="align">
+        <div id="twitter" class="haut" class="align" class="a">
             
 <a href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <div id="reservation" class="haut" class="align"> 
+        <div id="reservation" class="haut" class="align" class="a"> 
             
             <a href="entreprise.html" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
         </div>
     </section>
     </section>
 
-
     <section id="avant">
         <div id="face-1">
             <span id="face-1-1">
-        <h6>PETITE HISTOIRE A PROPOS DE NOUS</h6>
-        <h1>La grande histoire  de nettoyage<br> derrière, notre entreprise<br> de nettoyage</h1>
+        <h1>PETITE HISTOIRE A PROPOS DE NOUS</h1>
+        <h2>La grande histoire  de nettoyage<br> derrière, notre entreprise<br> de nettoyage</h2>
         <a href="reservartion.html" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
         </span>
         </div>
     </section>
 
+   
+
 
  <section id="qua">
-            <h6 class="h6-bleu">NOS VALEURS</h6>
-            <h1 class="h1-noir">Les valeurs de travail pour lesquelles nous nous épanouissons</h1>
+            <h1 class="h6-bleu">NOS VALEURS</h1>
+            <h2 class="h1-noir">Les valeurs de travail pour lesquelles nous nous épanouissons</h2>
 
 
                 <div id="un" class="car">
@@ -85,10 +447,8 @@
                 <div id="deux" class="car">
                     <i class="fas fa-medal"></i>
                     <h3 class="h3-noir">Service de<br>qualite</h3> 
-                    
-                    <hr class="ligne-mince">
-
                 </div>
+                <hr class="ligne-mince">
                 <div id="trois" class="car">
                     <i class="fas fa-lock"></i>
                     <h3 class="h3-noir">100%<br>Authentique</h3>
@@ -197,7 +557,7 @@
 <h class="h5-bleu">NOTRE HISTOIRE</h5>
 <div id="groupe">
                 <div id="grand-logo">
-                    <img src="https://img.freepik.com/photos-gratuite/personne-combinaison-protection-chimique-blanche-faisant-desinfection-espaces-publics-pour-arreter-propagation-du-virus-corona-tres-contagieux_342744-915.jpg" alt="" width="600"  height="500">
+                    <img src="https://scontent.fabj7-1.fna.fbcdn.net/v/t39.30808-6/301962426_124461477003735_6148710736748400150_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WIjEeBQ8auIAX983P-J&_nc_ht=scontent.fabj7-1.fna&oh=00_AfBtj7sMD9g6efT_Xy1H2KnNJItnCeddvTnD7nj6qVirSg&oe=6553B052" alt="" width="600"  height="600">
                 </div>
 
                 <div id="recit">
@@ -213,7 +573,7 @@
             </section>
 
 
-            <button id="only">CONTACTEZ-NOUS</button>
+            <button id="only" class="effet">CONTACTEZ-NOUS</button>
             <section id="all-foot">
 
    
@@ -274,57 +634,63 @@
             </section>
             <script>
                 const button = document.querySelectorAll(".effet");
-            
-            
-            button.forEach(btn => {
-                btn.addEventListener("mouseover", () => {
-                    btn.style.backgroundColor = "#A8D554";
-                    btn.style.borderStyle = "double";
-                    btn.style.borderColor = "#FFFFFF"
-                    btn.style.borderWidth = "5px";
-            
-                });
-            
-                btn.addEventListener("mouseout", () => {
-                    btn.style.backgroundColor = "";
-                    btn.style.borderStyle = "";
-                    btn.style.borderColor = ""
-                    btn.style.borderWidth = "";
-                });
-            });
-            
-            
-            
-            
-            
-                const lien = document.querySelectorAll("a");
-                lien.forEach(lien =>{
-                lien.addEventListener("mouseover", () =>{
-                    lien.style.backgroundColor = "#A8D554"
-                    lien.style.borderStyle = "groove"
-                    lien.style.borderColor = "#FFFFFF"
-                    lien.style.borderWidth = "5px"
-                    lien.style.width = "100px"
-                })
-                lien.addEventListener("mouseout", () =>{
-                    lien.style.backgroundColor = ""
-                    lien.style.borderStyle = ""
-                    lien.style.borderColor = ""
-                    lien.style.borderWidth = ""
-                    lien.style.width = ""
-                })
-            })
-            
-            const deroulante = document.querySelector("#reservatio");
-            
-            deroulante.addEventListener("mouseover", () => {
-                deroulant.style.visibility = "visible";
-            });
-            
-            deroulante.addEventListener("mouseout", () => {
-                deroulant.style.visibility = "hidden";
-            });
-            console.log(deroulante)
+
+
+button.forEach(btn => {
+    btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#A8D554";
+        btn.style.borderStyle = "double";
+        btn.style.borderColor = "#FFFFFF"
+        btn.style.borderWidth = "5px";
+
+    });
+
+    btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "";
+        btn.style.borderStyle = "";
+        btn.style.borderColor = ""
+        btn.style.borderWidth = "";
+    });
+});
+
+
+
+
+
+    const lien = document.querySelectorAll("a");
+    lien.forEach(lien =>{
+    lien.addEventListener("mouseover", () =>{
+        lien.style.backgroundColor = "#A8D554"
+        lien.style.borderStyle = "groove"
+        lien.style.borderColor = "#FFFFFF"
+        lien.style.borderWidth = "5px"
+        lien.style.width = "100px"
+        lien.style.padding = "5px"
+        
+    })
+    lien.addEventListener("mouseout", () =>{
+        lien.style.backgroundColor = ""
+        lien.style.borderStyle = ""
+        lien.style.borderColor = ""
+        lien.style.borderWidth = ""
+        lien.style.width = ""
+        lien.style.padding = ""
+    })
+})
+
+const deroulante = document.querySelector("#reservatio");
+
+deroulante.addEventListener("mouseover", () => {
+    deroulant.style.visibility = "visible";
+});
+
+deroulante.addEventListener("mouseout", () => {
+    deroulant.style.visibility = "hidden";
+});
+console.log(deroulante)
+
+
+
             </script>
 </body>
 </html>

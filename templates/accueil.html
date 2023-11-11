@@ -32,15 +32,29 @@
         position: absolute;
         display :flex;
         flex-wrap: wrap;
-        margin-left: 40%;
+        margin-left: 35%;
         margin-top: 2.5%;
     }
     .haut{
         margin: 0 15px; 
     }
-    /* les lien  */
-    /*  button resservation de la section 1 */
-  
+    #deroulant{
+    padding-top: 20px;
+    display: grid;
+    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    width: 200px;
+    height: 150px;
+    visibility: hidden;
+    position: absolute;
+   
+}
+/* .deroul{
+    padding-top: 10px;
+
+} */
+.align{
+    margin-left: 100px;
+} 
     /* section 2  */
     #avant{
         margin-top: 100px;
@@ -515,23 +529,8 @@ padding-bottom: ; */
     margin-left: 100px;
     margin-right: 100px;
 }
- .align{
-    margin-left: 130px;
-} 
-#deroulant{
-    padding-top: 20px;
-    display: grid;
-    background-color: #A8D554;
-    width: 200px;
-    height: 100px;
-    visibility: hidden;
-    position: absolute;
-   
-}
-/* .deroul{
-    padding-top: 10px;
+ 
 
-} */
 .P-cadre{
     width: 200px;
 }
@@ -926,7 +925,7 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll(".a");
+    const lien = document.querySelectorAll("a");
     lien.forEach(lien =>{
     lien.addEventListener("mouseover", () =>{
         lien.style.backgroundColor = "#A8D554"
@@ -934,7 +933,7 @@ button.forEach(btn => {
         lien.style.borderColor = "#FFFFFF"
         lien.style.borderWidth = "5px"
         lien.style.width = "100px"
-        lien.style.padding = "10px"
+        lien.style.padding = "5px"
         
     })
     lien.addEventListener("mouseout", () =>{
