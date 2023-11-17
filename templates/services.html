@@ -36,7 +36,7 @@ a{
     margin-top: 2.5%;
 }
 .haut{
-    margin: 0 15px; 
+    margin: 8px 15px;
 }
 
     #deroulant{
@@ -127,11 +127,9 @@ h6{
 
 .h1-bleu{
     color :#2C6DA8;
-    margin-top: 0;
 }
 .h2-bleu{
     color :#2C6DA8;
-    margin-top: 0;
 }
 .h3-bleu{
     color :#2C6DA8;
@@ -153,7 +151,7 @@ h6{
 /*  classe pour les textes en taille 1 */
 .h1-noir{
     color: black;
-    margin-top: 0;
+   
 }
 .h2-noir{
     color: black;
@@ -239,51 +237,102 @@ h6{
     margin-left: 80px
     
 }
- /* */
+
 #obtenir-1{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+     #p-1{
+        margin-left: 5%;
+margin-bottom: 10px;
+margin-top: 5%;
+    }
+     
+    #img-2{
+        margin-left: 5%;
+      
+    }
+  
+    #p-2{
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+     /* */
+    #p-3{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    } */
+
+    #nos-services{
+        background-color: #A8D554;
+       margin-top: 50px;
+    }
+    #both{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .milieu{
+        margin-left: 25%;
+    }
+    .gauche{
+        margin-left: 0%;
+    }
+    #first-rang{
+        position: relative;
+        width: 50%;
+    }
+    #second-rang{
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        width: 30%;
+        padding: 10px;
+        left: 60%;
+        border : 10px double #A8D554;
+        background: linear-gradient(to left , #2C6DA8, #A8D554);
+    }
+#rendez-vous{
+    text-align: left;
 }
- /* */
-#obtenir-2{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 200px;
-    margin-top: 80px;
+.input-rendez-vous{
+    font-size: 15px;
+        width: 100%;
+        height: 25px;
+        border-width: 1px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+.centre{
+    text-align: center;
 }
- /* */
-#obtenir-3{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
+    .text{
+    font-size: 15px;
 }
- /* */
-#p-1{
-    margin-left: 80px;
-    margin-top: 80px;
-}
- /* */
-#img-2{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-#p-2{
-    margin-left: 0%;
-    margin-top: 80px;
-}
- /* */
-#p-3{
-    margin-left: 50px;
-    margin-top: 80px;
+.text-exterieur{
+    font: optional;color: #f0f0f1;
+    font-size: 20px;
 }
 
-#nos-services{
+#submit-rendez-vous{
     text-align: center;
-    margin-top: 50px;
-   margin-left: 5%;
-    margin-right: 5%;
 }
+
 .carre-bleu{
 background-color: #2C6DA8;
 margin-left: 10px;
@@ -555,24 +604,24 @@ margin-right: 0;
 </div>
         </div>
         <div id="accueil" class="haut" class="align" class="a">
-<a href="accueil.html">Accueil</a>
+<a href="http://localhost:8000">Accueil</a>
         </div>
         <div id="services" class="haut" class="align" class="a">
-<a href="services.html">Services</a>
+<a href="http://localhost:8000/services">Services</a>
         </div>
         <div id="reservatio" class="haut" class="align" class="a">
             <a href="">Reservation</a>
             <div id="deroulant">
-                <a  href="entreprise.html" class="deroul">Entreprise</a><br>
-                <a  href="domicile.html" class="deroul">Domicile</a><br>
-                <a href="services.html" class="deroul">Services</a>
+                <a  href="http://localhost:8000/entreprise" class="deroul">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul">Domicile</a><br>
+                <a href="http://localhost:8000/services" class="deroul">Services</a>
             </div>
         </div>
         <div id="a-propros" class="haut" class="align" class="a">
-<a href="a-propos.html">A Propos</a>
+<a href="http://localhost:8000/a-propos">A Propos</a>
         </div>
         <div id="contacte" class="haut" class="align" class="a">
-<a href="contact.html">Contact</a>
+<a href="http://localhost:8000/contact">Contact</a>
         </div>
         <div id="facebook" class="haut" class="align" class="a">
             
@@ -588,7 +637,7 @@ margin-right: 0;
         </div>
         <div id="reservation" class="haut" class="align" class="a"> 
             
-            <a href="entreprise.html" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
         </div>
     </section>
     </section>
@@ -597,7 +646,7 @@ margin-right: 0;
             <span id="face-1-1">
         <h1 class="h6"></i> NOS SERVICES</h1>
         <h2> L'Excellence de la Propreté,<br> la Qualité à Chaque<br>  Intervention </h2>
-        <a href="entreprise.html" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
+        <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
         </span>
         </div>
     </section>
@@ -605,17 +654,20 @@ margin-right: 0;
 
 
     <section id="nos-services">
-        <h1 class="h6-noir">NOS SERVICES </h1>
+        <h1 class="h1-noir" >NOS SERVICES </h1>
         <h2 class="h1-noir">Oubliez les Tracas, Retrouvez la <br>Fraîcheur, Notre Expertise<br> Redéfinit la Propreté </h2>
+        <section id="both">
+
+            <section id="first-rang" class="milieu">
         <section id="obtenir-1">
             <div id="img-1">
-            <img src="https://img.freepik.com/photos-premium/exterminateur-tenue-travail-pulverise-pesticides-pistolet-pulverisateur-lutte-contre-insectes-dans-appartements-maisons-desinsectisation-locaux_96336-2408.jpg" alt="" width="500" height="500">
+            <img src="https://img.freepik.com/photos-premium/exterminateur-tenue-travail-pulverise-pesticides-pistolet-pulverisateur-lutte-contre-insectes-dans-appartements-maisons-desinsectisation-locaux_96336-2408.jpg" alt="" width="300" height="300">
         </div>
         <div id="p-1">
             <h4 class="h4-noir">Désinsectisation</h4>
             <p>La desinsectisation chez G NET + va au-delà de <br>l'éradication des insectes. C'est une<br> intervention précise basée sur une expertise<br> approfondie des comportements insecticides.<br> Nous identifions les espèces présentes,<br> évaluons les risques, et appliquons des<br> méthodes modernes pour éliminer<br> efficacement ces intrus indésirables. Nos<br> solutions sont respectueuses de l'environnement,<br> visant à protéger non<br> seulement votre espace, mais aussi notre <br>écosystème.
             </p>
-            <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+            <button class="effet" id="obtient">OBTENIR UN RENDEZ-VOUS</button>
         </div>
         </section>
 
@@ -624,24 +676,138 @@ margin-right: 0;
         <div id="p-2">
             <h4 class="h4-noir">Dératisation</h4>
             <p>Dans notre service de dératisation, nous <br>adoptons une approche complète. De la<br> détection à l'élimination, chaque étape est<br> soigneusement planifiée. Notre équipe<br> expérimentée utilise des méthodes de<br> piégeage et d'appâtage, assurant une<br> élimination totale des rongeurs. Mais ce n'est<br> pas tout. Nous mettons également en œuvre<br> des mesures préventives pour éviter tout retour<br> futur, créant ainsi un environnement sûr et sans<br> risque.</p>
-            <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+            <button class="effet" id="obtient">OBTENIR UN RENDEZ-VOUS</button>
         </div>
         <div id="img-2">
-            <img src="https://toutouchien.com/img/rongeurs/rat.jpg" alt="" width="500" height="500">
+            <img src="https://toutouchien.com/img/rongeurs/rat.jpg" alt="" width="300" height="300">
         </div>
         </section>
 
         <section id="obtenir-3">
             <div id="img-3">
-            <img src="https://www.legalplace.fr/wp-content/uploads/2019/02/new-11.02-Content-Squad-Cr%C3%A9er-une-entreprise-de-nettoyage-1.jpg" alt="" width="500" height="500">
+            <img src="https://www.legalplace.fr/wp-content/uploads/2019/02/new-11.02-Content-Squad-Cr%C3%A9er-une-entreprise-de-nettoyage-1.jpg" alt="" width="300" height="300">
         </div>
         <div id="p-3">
             <h4 class="h4-noir">Nettoyage</h4>
             <p>Le service de nettoyage de G NET + transcende<br> les attentes traditionnelles. Nous ne nous<br> contentons pas de nettoyer les surfaces, nous<br> redéfinissons la propreté. Notre équipe formée<br> s'engage à fournir une qualité exceptionnelle.<br> Chaque recoin est traité avec soin, et nous<br> personnalisons nos services en fonction de vos<br> besoins spécifiques. Au-delà de la propreté,<br> nous offrons un environnement accueillant et<br> sain, car votre bien-être est notre priorité.</p>
-            <button class="effet">OBTENIR UN RENDEZ-VOUS</button>
+            <button class="effet" id="obtient">OBTENIR UN RENDEZ-VOUS</button>
         </div>
         </section>
 </section>
+<section id="second-rang"> 
+    <form action="/" method="post">
+        <section id="rendez-vous">
+        <h3 class="h3-noir" class="centre" > Programmer un Rendez-Vous</h3>
+    
+        <label for="firstname" class="text-exterieur">Nom</label>
+        <br>
+       <input class="input-rendez-vous" type="text" name="firstname" id="firstname">
+     <br>
+    
+     <br>
+       <label for="lastname" class="text-exterieur">Prenom</label>
+        <br>
+       <input class="input-rendez-vous" type="text" name="lastname" id="lastname">
+       <br>
+       
+       <br>
+       <label for="mail" class="text-exterieur">Email</label>
+        <br>
+       <input class="input-rendez-vous" type="text" name="mail" id="mail">
+       <br>
+    
+       <br>
+       <label for="phone" class="text-exterieur">Numero de Telephone</label>
+        <br>
+       <input class="input-rendez-vous" type="text" name="phone" id="phone">
+       <br>
+    <div class="bord">
+    <br>
+    <label for="canal" class="text-exterieur">Canal</label>
+    <br>
+       <label class="text">
+        <input  type="radio" name="canal" value="option1" > En ligne
+      </label>
+    
+      <label class="text">
+        <input type="radio" name="canal" value="option2"> Presentiel
+      </label>
+      <br>
+    <br>
+    </div>
+    
+    <div class="bord">
+    <label for="lieu" class="text-exterieur">Lieu de rendez-vous</label>
+    <br>
+       <label class="text">
+        <input type="radio" name="lieu" value="option1-1"> Chez GNET+
+      </label>
+    
+      <label class="text">
+        <input type="radio" name="lieu" value="option1-2"> Chez Moi
+      </label>
+      <br>
+    <br>
+    </div>
+    <div class="bord">
+    <label for="date" class="text-exterieur">Date</label>
+    <br>
+       <label class="text">
+        <input type="radio" name="date" value="option-2-1"> Lundi
+      </label>
+    <br>
+      <label class="text">
+        <input type="radio" name="date" value="option-2-2"> Mardi
+      </label>
+      <br>
+      <label class="text">
+        <input type="radio" name="date" value="option-2-3"> Mercredi
+      </label>
+    <br>
+      <label class="text">
+        <input type="radio" name="date" value="option-2-4"> Jeudi
+      </label>
+      <br>
+      <label class="text">
+        <input type="radio" name="date" value="option-2-5"> Vendredi
+      </label>
+    <br>
+      <label class="text">
+        <input type="radio" name="date" value="option-2-6"> Samedi
+      </label>
+      <br>
+    <br>
+    </div>
+    
+    <div class="bord">
+    
+    <label for="heure" class="text-exterieur">Heure</label>
+    <br>
+       <label class="text">
+        <input type="radio" name="heure" value="option-3-1"> 8h
+      </label>
+    <br>
+      <label class="text">
+        <input type="radio" name="heure" value="option-3-2"> 10h
+      </label>
+      <br>
+      <label class="text">
+        <input type="radio" name="heure" value="option-3-3"> 14h
+      </label>
+    <br>
+      <label class="text">
+        <input type="radio" name="heure" value="option-3-4"> 16h
+      </label>
+      <br>
+    </div>
+    <div id="submit-rendez-vous">
+    <input class="env" type="submit" value="Envoyer">
+    </div>
+    </section>
+    </form>
+    </section>
+    </section>
+        </section>
 
         <section id="avant-1">
             <div >
@@ -720,64 +886,66 @@ margin-right: 0;
             </section>
             </section>
 
-        <section id="all-foot">
+            <section id="all-foot">
 
    
-            <section id="avant-pied" class="foot">
-                <div id="logo-pied" >
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
-                </div>
-             
-                    <div id="facebook-pied" class="petit-epace" >
-                        <a href=""><i class="fab fa-facebook"></i></a>
+                <section id="avant-pied" class="foot">
+                    <div id="logo-pied" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
                     </div>
-                  
-                        <div id="twitter-pied" class="petit-epace" >
-                            <a href=""><i class="fab fa-twitter"></i></a>
+                 
+                        <div id="facebook-pied" class="petit-epace" >
+                            <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
                         </div>
-                       
-                            <div id="linkedin-pied" class="petit-epace" >
-                                <a href=""><i class="fab fa-linkedin"></i></a>
+                      
+                            <div id="twitter-pied" class="petit-epace" >
+                                <a href=""><i class="fab fa-twitter"></i></a>
                             </div>
                            
-                                <div id="instagram-pied" class="petit-epace" >
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                <div id="linkedin-pied" class="petit-epace" >
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
                                 </div>
+                               
+                                    <div id="instagram-pied" class="petit-epace" >
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                </section>
+               <hr id="ligne">
+                <section id="pied" class="foot">
+                   
+                    <div id="explorer" >
+            <h2>Explorer</h2>
+            <h5 class="h1-noir"><a href="http://localhost:8000/accueil">Accueil</a></h5>
+            <h5 class="h1-noir"><a href="http://localhost:8000/services">Services</a></h5>
+            <h5 class="h1-noir"><a href="http://localhost:8000/entreprise">Reservation</a></h5>
+            <h5 class="h1-noir"><a href="http://localhost:8000/a-propos">A Propos</a></h5>
+            <h5 class="h1-noir"><a href="http://localhost:8000/contact">Contact</a></h5>
+                    </div>
+                    <div id="service" class="espace">
+                        <h2>Services</h2>
+                        <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-1">Désinsectisation</a></h5>
+                        <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-2">Dératisation</a></h5>
+                        <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-3">Nettoyage</a></h5>
+                    </div>
+                    <div id="gnet" class="espace">
+                        <h2>G NET+</h2>
+                        <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
+                        <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
+                        <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
+                    </div>
+                    <div id="heures" class="espace">
+                        <h2>Heures d'ouverture</h2>
+                        <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
+                        <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
+            
+                    </div>
+                </section>
+                <section id="noir">
+            <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
+                </section>
+            
+            
             </section>
-           <hr id="ligne">
-            <section id="pied" class="foot">
-               
-                <div id="explorer" >
-        <h2>Explorer</h2>
-        <h5 class="h1-noir"><a href="accueil.html">Accueil</a></h5>
-        <h5 class="h1-noir"><a href="services.html">Services</a></h5>
-        <h5 class="h1-noir"><a href="entreprise.html">Reservation</a></h5>
-        <h5 class="h1-noir"><a href="a-propos.html">A Propos</a></h5>
-        <h5 class="h1-noir"><a href="contact.html">Contact</a></h5>
-                </div>
-                <div id="service" class="espace">
-                    <h2>Services</h2>
-                    <h5 class="h1-noir"><a href="services.html">Désinsectisation</a></h5>
-                    <h5 class="h1-noir"><a href="services.html">Dératisation</a></h5>
-                    <h5 class="h1-noir"><a href="services.html">Nettoyage</a></h5>
-                </div>
-                <div id="gnet" class="espace">
-                    <h2>G NET+</h2>
-                    <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
-                    <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
-                    <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
-                </div>
-                <div id="heures" class="espace">
-                    <h2>Heures d'ouverture</h2>
-                    <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
-                    <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
-        
-                </div>
-            </section>
-            <section id="noir">
-        <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
-            </section>
-        </section>
         <script>
              const button = document.querySelectorAll(".effet");
 
@@ -834,6 +1002,30 @@ deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
 });
 console.log(deroulante)
+
+
+const obtenir = document.querySelectorAll("#obtient");
+const first = document.querySelector("#first-rang")
+const second = document.querySelector("#second-rang")
+
+console.log(second)
+
+console.log(obtenir)
+obtenir.forEach(obt => {
+    obt.addEventListener("click", () => {
+        first.classList.add("gauche")
+        first.style.transition = "0.5s"
+        second.style.visibility ="visible";
+        second.style.transition = "3s"
+        second.style.opacity = "1"
+        
+
+    });
+
+ 
+});
+
+
         </script>
 </body>
 </html>

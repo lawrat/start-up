@@ -1,109 +1,3 @@
-// package main
-
-// import (
-// 	"encoding/json"
-// 	"fmt"
-// 	"html/template"
-// 	"io/ioutil"
-// 	"net/http"
-// 	"os"
-// )
-
-// const addr = "localhost"
-// const port = ":8000"
-// const jsonFileName = "contact.json"
-
-// type modeleStruct struct {
-// 	Nom         string `json:"nom"`
-// 	Email       string `json:"email"`
-// 	Telephone   string `json:"telephone"`
-// 	Service     string `json:"service"`
-// 	Commentaire string `json:"commentaire"`
-// }
-
-// func renderTemplate(w http.ResponseWriter, tmpl string) {
-// 	t, err := template.ParseFiles("./templates/" + tmpl + ".html")
-// 	if err != nil {
-// 		fmt.Fprint(w, "MODELE INTROUVABLE...")
-// 	}
-// 	t.Execute(w, nil)
-// }
-
-// func accueil(w http.ResponseWriter, r *http.Request) {
-// 	switch r.Method {
-// 	case "GET":
-// 		renderTemplate(w, "accueil")
-// 	case "POST":
-// 		client := modeleStruct{
-// 			Nom:         r.FormValue("nom"),
-// 			Email:       r.FormValue("email"),
-// 			Telephone:   r.FormValue("telephone"),
-// 			Service:     r.FormValue("serviceAttendu"),
-// 			Commentaire: r.FormValue("commentaire"),
-// 		}
-
-// 		// Vérifier si le fichier JSON existe
-// 		if _, err := os.Stat(jsonFileName); os.IsNotExist(err) {
-// 			// Le fichier n'existe pas, initialiser avec un tableau vide
-// 			err := ioutil.WriteFile(jsonFileName, []byte("[]"), 0644)
-// 			if err != nil {
-// 				http.Error(w, "Erreur lors de la création du fichier JSON", http.StatusInternalServerError)
-// 				return
-// 			}
-// 		}
-
-// 		// Lire le contenu actuel du fichier JSON
-// 		contactActuel, err := ioutil.ReadFile(jsonFileName)
-// 		if err != nil {
-// 			http.Error(w, "Erreur lors de la lecture du fichier JSON", http.StatusInternalServerError)
-// 			return
-// 		}
-
-// 		var clients []modeleStruct
-
-// 		// Si le fichier JSON existe déjà, décodez-le
-// 		err = json.Unmarshal(contactActuel, &clients)
-// 		if err != nil {
-// 			http.Error(w, "Erreur lors du decodage du fichier JSON", http.StatusInternalServerError)
-// 			return
-// 		}
-
-// 		// Ajouter le nouvel utilisateur à la liste existante
-// 		clients = append(clients, client)
-
-// 		// Encodez la liste mise à jour en JSON
-// 		clientJSON, err := json.Marshal(clients)
-// 		if err != nil {
-// 			http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
-// 			return
-// 		}
-
-// 		// Écrire la liste mise à jour dans le fichier JSON
-// 		err = ioutil.WriteFile(jsonFileName, clientJSON, 0644)
-// 		if err != nil {
-// 			http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
-// 			return
-// 		}
-
-// 		fmt.Println("Données du formulaire ajoutées avec succès à", jsonFileName)
-// 		http.Redirect(w, r, "/merci", http.StatusSeeOther)
-// 		return
-// 	default:
-// 		fmt.Fprint(w, "Méthode non prise en charge")
-// 	}
-// }
-// func merci(w http.ResponseWriter, r *http.Request) {
-// 	renderTemplate(w, "merci")
-// }
-
-// func main() {
-// 	http.HandleFunc("/", accueil)
-// 	http.HandleFunc("/merci", merci)
-
-// 	fmt.Printf("Serveur écoute sur http://%s%s\n", addr, port)
-// 	http.ListenAndServe(port, nil)
-// }
-
 package main
 
 import (
@@ -116,10 +10,11 @@ import (
 )
 
 const addr = "localhost"
-const port = ":6060"
-const fileJson = "data.json"
+const port = ":8000"
+const FileForContact = "contact.json"
+const FileForMeet = "meet.json"
 
-type modele struct {
+type modeleStruct struct {
 	Nom         string `json:"nom"`
 	Email       string `json:"email"`
 	Telephone   string `json:"telephone"`
@@ -127,10 +22,21 @@ type modele struct {
 	Commentaire string `json:"commentaire"`
 }
 
+type modeleRendezVous struct {
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
+	Mail      string `json:"mail"`
+	Phone     string `json:"phone"`
+	Canal     string `json:"canal"`
+	Lieu      string `json:"lieu"`
+	Date      string `json:"date"`
+	Heure     string `json:"heure"`
+}
+
 func renderTemplate(w http.ResponseWriter, tmpl string) {
 	t, err := template.ParseFiles("./templates/" + tmpl + ".html")
 	if err != nil {
-		http.Error(w, "MODELE INTROUVABLE...", http.StatusInternalServerError)
+		fmt.Fprint(w, "MODELE INTROUVABLE...")
 	}
 	t.Execute(w, nil)
 }
@@ -140,139 +46,221 @@ func accueil(w http.ResponseWriter, r *http.Request) {
 	case "GET":
 		renderTemplate(w, "accueil")
 	case "POST":
+		requestType := r.FormValue("request_type")
+		switch requestType {
+		case "prise-contact":
+			client := modeleStruct{
+				Nom:         r.FormValue("nom"),
+				Email:       r.FormValue("email"),
+				Telephone:   r.FormValue("telephone"),
+				Service:     r.FormValue("service-attendu"),
+				Commentaire: r.FormValue("commentaire"),
+			}
 
-		// assigner les données au modele de la structure
+			// Vérifier si le fichier JSON existe
+			if _, err := os.Stat(FileForContact); os.IsNotExist(err) {
+				// Le fichier n'existe pas, initialiser avec un tableau vide
+				err := ioutil.WriteFile(FileForContact, []byte("[]"), 0644)
+				if err != nil {
+					http.Error(w, "Erreur lors de la création du fichier JSON", http.StatusInternalServerError)
+					return
+				}
+			}
 
-		user := modele{
-			Nom:         r.FormValue("nom"),
-			Email:       r.FormValue("email"),
-			Telephone:   r.FormValue("telephone"),
-			Service:     r.FormValue("service"),
-			Commentaire: r.FormValue("Ccommentaire"),
-		}
-		// verifier si le fichier json existe
-		if _, err := os.Stat(fileJson); os.IsNotExist(err) {
-			// initialiser le fichier json avec un tableau vide
-			err = os.WriteFile(fileJson, []byte("[]"), 0644)
+			// Lire le contenu actuel du fichier JSON
+			contactActuel, err := ioutil.ReadFile(FileForContact)
 			if err != nil {
-				http.Error(w, "ERREUR LORS DE LA CREATION DU FICHIER JSON", http.StatusInternalServerError)
+				http.Error(w, "Erreur lors de la lecture du fichier JSON", http.StatusInternalServerError)
 				return
 			}
-		}
-		// lecture du fichier json
-		currentFile, err := ioutil.ReadFile(fileJson)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE LA LECTURE DU FICHIER JSON", http.StatusInternalServerError)
-		}
-		var users []modele
-		// decodez le fichier JSON
-		err = json.Unmarshal(currentFile, &users)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE DECODAGE DU FICHIER JSON", http.StatusInternalServerError)
-		}
-		// ajouter la nouvelle entre dans le fichier JSON
-		users = append(users, user)
 
-		// encodez la liste mis a jour
-		newsJson, err := json.Marshal(users)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE L'ENCODAGE FDE LA LISTE JSON A JOUR", http.StatusInternalServerError)
-		}
-		// ecrire la liste mis a jour
-		err = ioutil.WriteFile("fileJson", newsJson, 0644)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE L'ECRITURE DANS LE FICHIER JSON", http.StatusInternalServerError)
-		}
-		// imprimer une confirmation d'ecriture
-		fmt.Println("DONNEES MIS A JOUR DANS LE FICHIER JSON")
-		// rediriger l'utilisateur vers la page de remerciement
-		http.Redirect(w, r, "/merci", http.StatusSeeOther)
+			var clients []modeleStruct
 
+			// Si le fichier JSON existe déjà, décodez-le
+			err = json.Unmarshal(contactActuel, &clients)
+			if err != nil {
+				http.Error(w, "Erreur lors du decodage du fichier JSON", http.StatusInternalServerError)
+				return
+			}
+
+			// Ajouter le nouvel utilisateur à la liste existante
+			clients = append(clients, client)
+
+			// Encodez la liste mise à jour en JSON
+			clientJSON, err := json.Marshal(clients)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			// Écrire la liste mise à jour dans le fichier JSON
+			err = ioutil.WriteFile(FileForContact, clientJSON, 0644)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			fmt.Println("Données du formulaire ajoutées avec succès à", FileForContact)
+			http.Redirect(w, r, "/merci", http.StatusSeeOther)
+			return
+		case "rendez-vous":
+			meet := modeleRendezVous{
+				Firstname: r.FormValue("firstname"),
+				Lastname:  r.FormValue("lastname"),
+				Mail:      r.FormValue("mail"),
+				Phone:     r.FormValue("phone"),
+				Canal:     r.FormValue("canal"),
+				Lieu:      r.FormValue("lieu"),
+				Date:      r.FormValue("date"),
+				Heure:     r.FormValue("heure"),
+			}
+			// Vérifier si le fichier JSON existe
+			if _, err := os.Stat(FileForMeet); os.IsNotExist(err) {
+				// Le fichier n'existe pas, initialiser avec un tableau vide
+				err := ioutil.WriteFile(FileForMeet, []byte("[]"), 0644)
+				if err != nil {
+					http.Error(w, "Erreur lors de la création du fichier JSON", http.StatusInternalServerError)
+					return
+				}
+			}
+
+			// Lire le contenu actuel du fichier JSON
+			meetActuel, err := ioutil.ReadFile(FileForMeet)
+			if err != nil {
+				http.Error(w, "Erreur lors de la lecture du fichier JSON", http.StatusInternalServerError)
+				return
+			}
+
+			var meets []modeleRendezVous
+
+			// Si le fichier JSON existe déjà, décodez-le
+			err = json.Unmarshal(meetActuel, &meets)
+			if err != nil {
+				http.Error(w, "Erreur lors du decodage du fichier JSON", http.StatusInternalServerError)
+				return
+			}
+
+			// Ajouter le nouvel utilisateur à la liste existante
+			meets = append(meets, meet)
+
+			// Encodez la liste mise à jour en JSON
+			meetJSON, err := json.Marshal(meets)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			// Écrire la liste mise à jour dans le fichier JSON
+			err = ioutil.WriteFile(FileForMeet, meetJSON, 0644)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			fmt.Println("Données du formulaire ajoutées avec succès à", FileForMeet)
+			http.Redirect(w, r, "/merci", http.StatusSeeOther)
+			return
+		default:
+			fmt.Fprint(w, "requette non prise en charge")
+		}
 	default:
-		fmt.Fprint(w, "METHODE NON PRIS EN CHARGE")
+		fmt.Fprint(w, "Méthode non prise en charge")
 	}
 }
 func merci(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "merci")
 }
-
 func services(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "services")
-}
+	switch r.Method {
+	case "GET":
+		renderTemplate(w, "services")
+	case "POST":
+		requestType := r.FormValue("request_type")
+		switch requestType {
+		case "rendez-vous":
+			meet := modeleRendezVous{
+				Firstname: r.FormValue("firstname"),
+				Lastname:  r.FormValue("lastname"),
+				Mail:      r.FormValue("mail"),
+				Phone:     r.FormValue("phone"),
+				Canal:     r.FormValue("canal"),
+				Lieu:      r.FormValue("lieu"),
+				Date:      r.FormValue("date"),
+				Heure:     r.FormValue("heure"),
+			}
+			// Vérifier si le fichier JSON existe
+			if _, err := os.Stat(FileForMeet); os.IsNotExist(err) {
+				// Le fichier n'existe pas, initialiser avec un tableau vide
+				err := ioutil.WriteFile(FileForMeet, []byte("[]"), 0644)
+				if err != nil {
+					http.Error(w, "Erreur lors de la création du fichier JSON", http.StatusInternalServerError)
+					return
+				}
+			}
 
+			// Lire le contenu actuel du fichier JSON
+			meetActuel, err := ioutil.ReadFile(FileForMeet)
+			if err != nil {
+				http.Error(w, "Erreur lors de la lecture du fichier JSON", http.StatusInternalServerError)
+				return
+			}
+
+			var meets []modeleRendezVous
+
+			// Si le fichier JSON existe déjà, décodez-le
+			err = json.Unmarshal(meetActuel, &meets)
+			if err != nil {
+				http.Error(w, "Erreur lors du decodage du fichier JSON", http.StatusInternalServerError)
+				return
+			}
+
+			// Ajouter le nouvel utilisateur à la liste existante
+			meets = append(meets, meet)
+
+			// Encodez la liste mise à jour en JSON
+			meetJSON, err := json.Marshal(meets)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			// Écrire la liste mise à jour dans le fichier JSON
+			err = ioutil.WriteFile(FileForMeet, meetJSON, 0644)
+			if err != nil {
+				http.Error(w, "Erreur de conversion", http.StatusInternalServerError)
+				return
+			}
+
+			fmt.Println("Données du formulaire ajoutées avec succès à", FileForMeet)
+			http.Redirect(w, r, "/merci", http.StatusSeeOther)
+			return
+		default:
+			fmt.Fprint(w, "methode non prise en charge")
+		}
+
+	}
+}
 func apropos(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "a-propos")
 }
-
-func contact(w http.ResponseWriter, r *http.Request) {
-	switch r.Method {
-	case "GET":
-		renderTemplate(w, "contact")
-	case "POST":
-
-		// assigner les données au modele de la structure
-
-		user := modele{
-			Nom:         r.FormValue("nom"),
-			Email:       r.FormValue("email"),
-			Telephone:   r.FormValue("telephone"),
-			Service:     r.FormValue("service"),
-			Commentaire: r.FormValue("Ccommentaire"),
-		}
-		// verifier si le fichier json existe
-		if _, err := os.Stat(fileJson); os.IsNotExist(err) {
-			// initialiser le fichier json avec un tableau vide
-			err = os.WriteFile(fileJson, []byte("[]"), 0644)
-			if err != nil {
-				http.Error(w, "ERREUR LORS DE LA CREATION DU FICHIER JSON", http.StatusInternalServerError)
-				return
-			}
-		}
-		// lecture du fichier json
-		currentFile, err := ioutil.ReadFile(fileJson)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE LA LECTURE DU FICHIER JSON", http.StatusInternalServerError)
-		}
-		var users []modele
-		// decodez le fichier JSON
-		err = json.Unmarshal(currentFile, &users)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE DECODAGE DU FICHIER JSON", http.StatusInternalServerError)
-		}
-		// ajouter la nouvelle entre dans le fichier JSON
-		users = append(users, user)
-
-		// encodez la liste mis a jour
-		newsJson, err := json.Marshal(users)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE L'ENCODAGE FDE LA LISTE JSON A JOUR", http.StatusInternalServerError)
-		}
-		// ecrire la liste mis a jour
-		err = ioutil.WriteFile("fileJson", newsJson, 0644)
-		if err != nil {
-			http.Error(w, "ERREUR LORS DE L'ECRITURE DANS LE FICHIER JSON", http.StatusInternalServerError)
-		}
-		// imprimer une confirmation d'ecriture
-		fmt.Println("DONNEES MIS A JOUR DANS LE FICHIER JSON")
-		// rediriger l'utilisateur vers la page de remerciement
-		http.Redirect(w, r, "/merci", http.StatusSeeOther)
-
-	default:
-		fmt.Fprint(w, "METHODE NON PRIS EN CHARGE")
-	}
-}
-
 func entreprise(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "entreprise")
+}
+func domicile(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "domicile")
+}
+func contact(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "contact")
 }
 func main() {
 	http.HandleFunc("/", accueil)
 	http.HandleFunc("/merci", merci)
 	http.HandleFunc("/services", services)
 	http.HandleFunc("/a-propos", apropos)
-	http.HandleFunc("/contact", contact)
 	http.HandleFunc("/entreprise", entreprise)
+	http.HandleFunc("/domicile", domicile)
+	http.HandleFunc("/contact", contact)
 
-	fmt.Printf("serveur en cours d'execution sur http://%s%s\n", addr, port)
+	fmt.Printf("Serveur écoute sur http://%s%s\n", addr, port)
 	http.ListenAndServe(port, nil)
 }

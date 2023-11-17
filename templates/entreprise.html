@@ -35,7 +35,7 @@
         margin-top: 2.5%;
     }
     .haut{
-        margin: 0 15px; 
+        margin: 8px 15px;
     }
     #deroulant{
     padding-top: 20px;
@@ -454,24 +454,24 @@ margin-right: 0;
 </div>
         </div>
         <div id="accueil" class="haut" class="align" class="a">
-<a href="accueil.html">Accueil</a>
+<a href="http://localhost:8000">Accueil</a>
         </div>
         <div id="services" class="haut" class="align" class="a">
-<a href="services.html">Services</a>
+<a href="http://localhost:8000/services">Services</a>
         </div>
         <div id="reservatio" class="haut" class="align" class="a">
             <a href="">Reservation</a>
             <div id="deroulant">
-                <a  href="entreprise.html" class="deroul">Entreprise</a><br>
-                <a  href="domicile.html" class="deroul">Domicile</a><br>
-                <a href="services.html" class="deroul">Services</a>
+                <a  href="http://localhost:8000/entreprise" class="deroul">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul">Domicile</a><br>
+                <a href="http://localhost:8000/services" class="deroul">Services</a>
             </div>
         </div>
         <div id="a-propros" class="haut" class="align" class="a">
-<a href="a-propos.html">A Propos</a>
+<a href="http://localhost:8000/a-propos">A Propos</a>
         </div>
         <div id="contacte" class="haut" class="align" class="a">
-<a href="contact.html">Contact</a>
+<a href="http://localhost:8000/contact">Contact</a>
         </div>
         <div id="facebook" class="haut" class="align" class="a">
             
@@ -487,7 +487,7 @@ margin-right: 0;
         </div>
         <div id="reservation" class="haut" class="align" class="a"> 
             
-            <a href="entreprise.html" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
         </div>
     </section>
     </section>
@@ -554,7 +554,7 @@ margin-right: 0;
                     <input type="radio" name="choix-1" value="option1" id="option1">
                     <label class="text"for="option1">Abidjan</label><br><br>
                 
-                    <input type="radio" name="choix-2" value="option2" id="option2">
+                    <input type="radio" name="choix-1" value="option2" id="option2">
                     <label class="text"for="option2">Autres ville</label>
                     <input class="input-normal"type="text" placeholder="ville">
                     <br>
@@ -636,62 +636,64 @@ margin-right: 0;
     <section id="all-foot">
 
    
-    <section id="avant-pied" class="foot">
-        <div id="logo-pied" class="espace">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
-        </div>
-     
-            <div id="facebook-pied" class="petit-epace" >
-                <a href=""><i class="fab fa-facebook"></i></a>
+        <section id="avant-pied" class="foot">
+            <div id="logo-pied" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhQxSKV_tSFdGMZZ0E1Zc4Z2ZneEoi9YuCE4W4iCjmsGA50rhwMNer64Se3YJLGy--LE&usqp=CAU" alt="" width="100" height="50">
             </div>
-          
-                <div id="twitter-pied" class="petit-epace" >
-                    <a href=""><i class="fab fa-twitter"></i></a>
+         
+                <div id="facebook-pied" class="petit-epace" >
+                    <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
                 </div>
-               
-                    <div id="linkedin-pied" class="petit-epace" >
-                        <a href=""><i class="fab fa-linkedin"></i></a>
+              
+                    <div id="twitter-pied" class="petit-epace" >
+                        <a href=""><i class="fab fa-twitter"></i></a>
                     </div>
                    
-                        <div id="instagram-pied" class="petit-epace" >
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                        <div id="linkedin-pied" class="petit-epace" >
+                            <a href=""><i class="fab fa-linkedin"></i></a>
                         </div>
+                       
+                            <div id="instagram-pied" class="petit-epace" >
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+        </section>
+       <hr id="ligne">
+        <section id="pied" class="foot">
+           
+            <div id="explorer" >
+    <h2>Explorer</h2>
+    <h5 class="h1-noir"><a href="http://localhost:8000/accueil">Accueil</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/services">Services</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/entreprise">Reservation</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/a-propos">A Propos</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/contact">Contact</a></h5>
+            </div>
+            <div id="service" class="espace">
+                <h2>Services</h2>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-1">Désinsectisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-2">Dératisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-3">Nettoyage</a></h5>
+            </div>
+            <div id="gnet" class="espace">
+                <h2>G NET+</h2>
+                <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
+                <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
+                <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
+            </div>
+            <div id="heures" class="espace">
+                <h2>Heures d'ouverture</h2>
+                <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
+                <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
+    
+            </div>
+        </section>
+        <section id="noir">
+    <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
+        </section>
+    
+    
     </section>
-   <hr id="ligne">
-    <section id="pied" class="foot">
-       
-        <div id="explorer" >
-<h2>Explorer</h2>
-<h5 class="h1-noir"><a href="accueil.html">Accueil</a></h5>
-<h5 class="h1-noir"><a href="services.html">Services</a></h5>
-<h5 class="h1-noir"><a href="profil.html">Profil</a></h5>
-<h5 class="h1-noir"><a href="a-propos.html">A Propos</a></h5>
-<h5 class="h1-noir"><a href="contact.html">Contact</a></h5>
-        </div>
-        <div id="service" class="espace">
-            <h2>Services</h2>
-            <h5 class="h1-noir"><a href="services.html">Désinsectisation</a></h5>
-            <h5 class="h1-noir"><a href="services.html">Dératisation</a></h5>
-            <h5 class="h1-noir"><a href="services.html">Nettoyage</a></h5>
-        </div>
-        <div id="gnet" class="espace">
-            <h2>G NET+</h2>
-            <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
-            <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
-            <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
-        </div>
-        <div id="heures" class="espace">
-            <h2>Heures d'ouverture</h2>
-            <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
-            <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
-
-        </div>
-    </section>
-    <section id="noir">
-<h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
-    </section>
-</section>
-<script>
+    <script>
     const button = document.querySelectorAll(".effet");
 
 
