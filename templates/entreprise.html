@@ -47,10 +47,8 @@
     position: absolute;
    
 }
-/* .deroul{
-    padding-top: 10px;
 
-} */
+
 .align{
     margin-left: 100px;
 } 
@@ -431,6 +429,7 @@ margin-right: 0;
  }
  #s-5{
     display: flex;
+    flex-wrap: wrap;
  }
  form{
     margin-left: 200px ;
@@ -504,23 +503,25 @@ margin-right: 0;
 
 
     <section id="inform">
-        <form action="/" method="post">
+        <form action="/entreprise" method="post">
+            <input type="hidden" name="request_type" value="build">  
             <section id="s-1" >
-<input class="input-normal" type="text" placeholder="Nom" required  class="espace" >
-<input class="input-normal"type="text" placeholder="Penom" required class="espace">
-<input class="input-normal"type="text" placeholder="Email" required class="espace">
+                          
+<input class="input-normal" type="text" name="noom" placeholder="Nom" required  class="espace" >
+<input class="input-normal"type="text" name="preenom" placeholder="Penom" required class="espace">
+<input class="input-normal"type="text" name="maail" placeholder="Email" required class="espace">
             </section>
             <br><br>
             <section id="s-2">
                 <h2 class="h3-noir">Service de lutte antiparasitaire</h2>
-<input  type="checkbox" name="checkbox-1">
-<label class="text" for="checkbox-1">Désinsectisation</label><br><br>
+<input  type="checkbox" name="services[]" id="service1" value="desinsectisation">
+<label class="text" for="desinsectisation">Désinsectisation</label><br><br>
 
-<input type="checkbox" name="checkbox-2">
-<label  class="text" for="checkbox-2">Dératisation</label><br><br>
+<input type="checkbox" name="services[]" id="service2" value="deratisation">
+<label  class="text" for="deratisation">Dératisation</label><br><br>
 
-<input type="checkbox" name="checkbox-3">
-<label  class="text" for="checkbox-3">Phytosanitaire</label><br><br>
+<input type="checkbox" name="services[]" id="service3" value="phytosanitaire">
+<label  class="text" for="phytosanitaire">Phytosanitaire</label><br><br>
             </section>
 
             <section id="s-3">
@@ -528,20 +529,20 @@ margin-right: 0;
                 <section id="s-3-1">
                 <div id="d-1">
                    
-<input type="checkbox" name="checkbox-1" >
+<input type="checkbox" name="options[]" id="option1" value="Rongeurs (souris-rats-etc)">
 <label class="text"for="checkbox-1">Rongeurs (souris-rats-etc)</label><br><br>
 
-<input type="checkbox" name="checkbox-2">
+<input type="checkbox" name="options[]"  id="option2" value="Acariens (punaises de lit - puces - tiques)">
 <label class="text"for="checkbox-2">Acariens (punaises de lit - puces - tiques)</label><br><br>
 
-<input type="checkbox" name="checkbox-3">
+<input type="checkbox" name="options[]" id="option3" value="Insectes volants (mouches - moustiques - etc)">
 <label class="text"for="checkbox-3">Insectes volants (mouches - moustiques - etc)</label><br><br>
                 </div>
                 <div id="d-2" class="espace">
-                    <input type="checkbox" name="checkbox-1">
+                    <input type="checkbox" name="options[]"  id="option4" value="Reptiles ( serpents - vipères )">
 <label class="text"for="checkbox-1">Reptiles ( serpents - vipères )</label><br><br>
 
-<input type="checkbox" name="checkbox-2">
+<input type="checkbox" name="options[]" id="option1" value="Insectes rampants (cafards - fourmis - salamandre - etc)">
 <label class="text"for="checkbox-2">Insectes rampants (cafards - fourmis - salamandre - etc)</label><br><br><br><br>
                 </div>
             </section>
@@ -551,10 +552,10 @@ margin-right: 0;
                 <div id="d-3">
                     <h2 class="h3-noir">Localisation</h2>
 
-                    <input type="radio" name="choix-1" value="option1" id="option1">
+                    <input type="radio" name="localisation" value="abidjan" id="option1">
                     <label class="text"for="option1">Abidjan</label><br><br>
                 
-                    <input type="radio" name="choix-1" value="option2" id="option2">
+                    <input type="radio" name="localisation" value="autre" id="option2">
                     <label class="text"for="option2">Autres ville</label>
                     <input class="input-normal"type="text" placeholder="ville">
                     <br>
@@ -572,25 +573,25 @@ margin-right: 0;
                 <div id="ranger-1">
                 <h2 class="h3-noir" >Types d'Entreprise</h2>
 
-                <input type="checkbox" name="restaurant" id="restaurant">
+                <input type="radio" name="type-entreprise" id="restaurant" value="resaurant">
 <label class="text" for="restaurant">Restaurant</label><br><br>
 
-<input type="checkbox" name="depot" id="depot">
+<input type="radio" name="type-entreprise" id="depot" value="depot">
 <label class="text"for="depot">Dépot</label><br><br>
 
-<input type="checkbox" name="centre" id="centre">
+<input type="radio" name="type-entreprise" id="centre" value="centre-hospitalier">
 <label class="text"for="centre">Centre Hospitalier</label><br><br>
 
-<input type="checkbox" name="administrative" id="administrative">
+<input type="radio" name="type-entreprise" id="administrative" value="administration">
 <label class="text"for="administrative">Administration</label><br><br>
 
-<input type="checkbox" name="industrie" id="industrie">
+<input type="radio" name="type-entreprise" id="industrie" value="industrie">
 <label class="text"for="industrie">industrie</label><br><br>
 
-<input type="checkbox" name="agro-industrie" id="agro-industrie">
+<input type="radio" name="type-entreprise" id="agro-industrie" value="agro-industrie">
 <label class="text"for="agro-industrie">Agro-Industrie</label><br><br>
 
-<input type="checkbox" name="hotel" id="hotel">
+<input type="radio" name="type-entreprise" id="hotel" value="hotel">
 <label class="text"for="hotel">Hotels</label><br><br>
             </div>
             <hr id="ligne-6">
@@ -599,11 +600,11 @@ margin-right: 0;
 
                 <label class="text"for="nbre-salle">Nombre de salles</label>
                 <br>
-                <input class="input-normal" type="text" name="nbre-salle"><br><br>
+                <input class="input-normal" type="number" name="nbre-salle" placeholder="..."><br><br>
             
                 <label class="text"for="nbre-salle">Nombre de Bureau</label>
                 <br>
-                <input class="input-normal" type="text" name="nbre-bureau"><br><br><br><br>
+                <input class="input-normal" type="number" name="nbre-bureau" placeholder="..."><br><br><br><br>
             </div>
             <hr id="ligne-6">
             <div id="ranger-3" class="espace">
@@ -611,20 +612,20 @@ margin-right: 0;
 
                 <label class="text"for="jardin">Jardin</label>
                 <br>
-    <input class="input-normal" type="text" name="jardin"><br><br>
+    <input class="input-normal" type="number" name="jardin" placeholder="..."><br><br>
 
 
     <label class="text"for="cuisines">Cuisines</label>
     <br>
-    <input class="input-normal" type="text" name="cuisines"><br><br>
+    <input class="input-normal" type="number" name="cuisine" placeholder="..."><br><br>
 
     <label class="text"for="piscine">Piscine</label>
     <br>
-    <input class="input-normal" type="text" name="piscine"><br><br>
+    <input class="input-normal" type="number" name="piscine" placeholder="..."><br><br>
 
     <label class="text"for="entrepot">Entrepôt</label>
     <br>
-    <input class="input-normal" type="text" name="entrepot"><br><br>
+    <input class="input-normal" type="number" name="entrepot" placeholder="..."><br><br>
             </div>
             </section>
 <section id="submit">
@@ -694,7 +695,7 @@ margin-right: 0;
     
     </section>
     <script>
-    const button = document.querySelectorAll(".effet");
+      const button = document.querySelectorAll(".effet");
 
 
 button.forEach(btn => {
@@ -748,19 +749,7 @@ deroulante.addEventListener("mouseover", () => {
 deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
 });
-console.log(deroulante)
 
-//
-
-const sub = document.querySelector("#su");
-
-sub.addEventListener("mouseover", () => {
-    sub.style.backgroundColor = "white";
-});
-
-sub.addEventListener("mouseout", () => {
-    sub.style.backgroundColor = "";
-});
 </script>
 </body>
 </html> 

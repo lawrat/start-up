@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation - Domicile</title>
+    <title>GNETplus - Remerciement</title>
+    <link rel="stylesheet" href="merci.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <style>
-   /* toute la page  */
-   body{
+       /* toute la page  */
+       body{
        margin: 0;
+        text-align: center;
     }
      /* section 1  */
-    #tete{
+     #tete{
+        position: relative;
         display :flex;
         flex-wrap: wrap;
         
@@ -23,11 +26,12 @@
         text-decoration: none;
     }
     #logo{
-        margin-top: 1%;
         position: absolute;
+        margin-top: 1%;
+        
     }
     #page-lien{
-        position: absolute;
+     position: absolute;
         display :flex;
         flex-wrap: wrap;
         margin-left: 35%;
@@ -46,75 +50,99 @@
     position: absolute;
    
 }
-/* .deroul{
-    padding-top: 10px;
 
-} */
-.align{
-    margin-left: 100px;
-} 
+/*  button resservation de la section 1 */
+
 /* section 2  */
-#avant{
-   text-align: center;
+/* #avant{
     margin-top: 100px;
-    background: linear-gradient(to bottom , black, white);
-    height: auto;
-   padding-top: 10px;
-   padding-bottom: 10px;
-}
+    height: 200px;
+    background: linear-gradient(to bottom , #2C6DA8,  black,white);
+    display: flex;
+    flex-wrap: wrap;
+} */
 /*  div 1 de section 2 */
-
-
-h1{
-    color: white;
-    margin-top: 0;
+#face-1{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+  h1{
+    color: white;
+  }
+
 h2{
     color: white;
-    margin-top: 0;
+   
 }
 h3{
     color: white;
-    margin-top: 0;
+  
 }
 h4{
     color: white;
-    margin-top: 0;
+   
 }
 h5{
     color: white;
-    margin-top: 0;
+   
 }
 h6{
     color: white;
-    margin-top: 0;
+   
 }
 /*  classe pour les textes en taille 1 */
 .h1-noir{
     color: black;
-    margin-top: 0;
+   
 }
 .h2-noir{
     color: black;
-    margin-top: 0;
+    
 }
 .h3-noir{
     color: black;
-    margin-top: 0;
+   
 }
 .h4-noir{
     color: black;
-    margin-top: 0;
+ 
 }
 .h5-noir{
     color: black;
-    margin-top: 0;
+    
 }
  /*  classe pour les textes en taille 6 */
 .h6-noir{
     color: black;
-    margin-top: 0;
+    
 }
+
+.h1-bleu{
+    color :#2C6DA8;
+}
+.h2-bleu{
+    color :#2C6DA8;
+    
+}
+.h3-bleu{
+    color :#2C6DA8;
+    
+}
+.h4-bleu{
+    color :#2C6DA8;
+    
+}
+.h5-bleu{
+    color :#2C6DA8;
+   
+}
+.h6-bleu{
+    color :#2C6DA8;
+ 
+}
+
  /* button reservation dans la div 1 de la section 2 */
 #faire-reservation{ 
     background-color: #2C6DA8;
@@ -123,49 +151,18 @@ h6{
     border-color:  #2C6DA8;
     align-items: center;
 }
- /* carre dans la div 2 de la section 2*/
-#carre{
-    background-color: transparent;
-    width: 350px;
-    height: 350px;
-    border-color: white;
-    border-width: 10px;
-    border-style:solid;
-    border-left:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}
- /*  section 3*/
-#voir-plus{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-}
- /* classe pour les element de la section 3 */
-.voir{
-    margin-left: 50px;
-}
+ 
  /* section 4 */
 #quatre{
     margin-top: 50px;
-    display: flex;
+    display: contents;
     flex-wrap: wrap;
-    text-align: center;
-    background-color: #2C6DA8;
+   justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
     
 }
- /*  section 1 dans la section 4*/
-#interieur{
-    display :flex;
-    flex-wrap: wrap;
-}
+
  /* */
 .car{
     background-color: white;
@@ -173,59 +170,14 @@ h6{
     padding: 30px;
     
 }
- /* */
-.dansQuatre{
-    padding: 20px;
-    margin-left: 80px
-    
-}
- /* */
-#obtenir-1{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-}
- /* */
-#obtenir-2{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 350px;
-    margin-top: 80px;
-}
- /* */
-#obtenir-3{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-}
- /* */
-#p-1{
-    margin-left: 80px;
-    margin-top: 20px;
-}
- /* */
-#p-2{
-    margin-left: 50px;
-    margin-top: 20px;
-}
- /* */
-#p-3{
-    margin-left: 50px;
-    margin-top: 20px;
-}
 
-#nos-services{
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
+
+
 .carre-bleu{
 background-color: #2C6DA8;
 margin-left: 10px;
 }
 #temoin{ 
-height: 600px; 
 display : flex;
 align-items: center;
 justify-content: center;
@@ -233,6 +185,7 @@ margin-top: 50px;
     background-color :#A8D554;
     margin-left: 200px;
     margin-right: 200px;
+    height: 500px;
     
 }
 #temoignages{
@@ -261,91 +214,30 @@ background-color: white;
     height: 150px;
     background-color: white;
 }
-#avantages{
-  
-    margin-top: 50px;
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.rang{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-}
+
+
 .espace{
     margin-left: 150px;
 }
-#formu{
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-     display: flex; 
-     flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-    background-color: #2C6DA8;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-#contact{
-    background-color: white; 
-     padding: 5px; 
-    color: black;
-   
-}
-#formulaire{
-    /* background-color: white; */
-    margin-top: 20px;
-     margin-left: 50px; 
-    background-color: white;
-    padding: 15px;
-    
-}
-#prise{
-    text-align: left;
-    color: white;
-   
-}
+
 .input-normal{
-    margin: 0 15px;
     width: 300px;
-    height: 20px;
+    height: 40px;
     margin-top: 20px;
-    border-width: 2px;
+    border-width: 5px;
     border-color: #2C6DA8;
     border-style: groove;
-    font-size: 20px;
 }
-.text{
-    font-size: 20px;
-}
-.env{
-    margin-top: 20px;
-    width: 250px;
-    height: 50px;
-    background-color: #A8D554;
-}
+
 #methode-{
-    margin-left: 20%;
-    margin-right: 20%px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:#2C6DA8;
-  width: 60%;
 }
-#only{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 40px;
-    width: 200px;
-    border-width: 3px;
-    border-color: #2C6DA8;
 
-}
+
 .foot{
     justify-content: center;
     padding-top: 10px;
@@ -357,7 +249,7 @@ background-color: white;
    align-items: center;
    width: 50%;
     background-color: #A8D554;
-    
+    border: 1px solid black;
     
 }
 #noir{
@@ -366,7 +258,6 @@ background-color: white;
     width: 100%;
 }
 #copyright{
-    text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -397,48 +288,96 @@ margin-top: 20px;
 margin-left: 20px;
 }
 #all-foot{
-    margin-top: 50px;
 background-color: #A8D554;
 }
 .no-pad{
 margin-left: 0;
 margin-right: 0;
 }
-
-#inform{
+#histoire{
     margin-top: 50px;
 }
+#groupe{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#recit{
+    font: optional;color: black;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#only{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 40px;
+    width: 200px;
+    border-width: 3px;
+    border-color: #2C6DA8;
 
-#s-1{
+}
+#cinq{
+    background-color: #2C6DA8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 600px;
 }
- #s-2{
-   flex-wrap: wrap;
-   align-items: left;
-   justify-content: left;
+#c-2{
+    background-color:#A8D554;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.ligne-mince{
+    width: 50%;
+}
+.align{
+    margin-left: 130px;
 } 
- #s-3-1{
+
+/* .deroul{
+    padding-top: 10px;
+
+} */
+#aider{
+    margin-top: 150px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
- } 
- #d-5{
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+#droite{
     display: flex;
- }
- #ligne-6{
-    height: 300px;
- }
- #s-5{
-    display: flex;
- }
- form{
-    margin-left: 200px ;
-    margin-right:200px ;
- }
- #submit{
-    margin-top: 20px;
-    text-align: center;
- }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom , #2C6DA8, #fdfcfc);
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 150px;
+    margin-left: 100px;
+    height: 200px;
+    border: 10px groove #A8D554;
+}
+.image {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    margin-left: 150px;
+}
 </style>
 <body>
     <section id="tete">
@@ -453,7 +392,7 @@ margin-right: 0;
 </div>
         </div>
         <div id="accueil" class="haut" class="align" class="a">
-<a href="http://localhost:8000">Accueil</a>
+<a href="accueil.html">Accueil</a>
         </div>
         <div id="services" class="haut" class="align" class="a">
 <a href="http://localhost:8000/services">Services</a>
@@ -491,125 +430,30 @@ margin-right: 0;
     </section>
     </section>
 
-    <section id="avant">
+
+
+
+    <!-- <section id="avant">
         <div id="face-1">
             <span id="face-1-1">
-        <h1>RESERVATION</h1>
-        <h2>Chez G NET +, nous protégeons votre famille en éliminant les<br> nuisibles. Dératisation, désinsectisation, nettoyage phytosanitaire, nous intervenons<br> partout, de la porte d'entrée à votre jardin.</h2>
-        <a href="entreprise.html" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
+        <h1 class="h1">"Merci pour votre <br>interêt : G NET +<br> s'occupe de tout !"</h1>
         </span>
         </div>
+    </section> -->
+
+
+    <section id="aider">
+        <div id="gauche">
+            <div class="image-container">
+                <img class="overlay-image" src="https://img.freepik.com/photos-gratuite/briques-jouet-table-mot-success_144627-41213.jpg" width="500" height="500">
+                <img class="image" src="https://as2.ftcdn.net/v2/jpg/03/52/82/59/1000_F_352825917_gRr6U1p2TzEt75F4pCAAtN0Vkdy2VYf1.jpg" alt="" width="500" height="500">
+            </div>
+        </div>
+        <div id="droite">
+            <p>"Nous vous remercions chaleureusement<br> pour votre reservation, nous examinons minitieusement <br> votre demande et nous vous reviendrons dans 24h.<br> Merci de choisir <br> G NET +, votre satisfaction est notre priorité !"</p>
+                </div>
+        
     </section>
-
-
-    <section id="inform">
-        <form action="/domicile" method="post">
-            <input type="hidden" name="request_type" value="home">  
-            <section id="s-1" >
-                          
-<input class="input-normal" type="text" name="noom" placeholder="Nom" required  class="espace" >
-<input class="input-normal"type="text" name="preenom" placeholder="Penom" required class="espace">
-<input class="input-normal"type="text" name="maail" placeholder="Email" required class="espace">
-            </section>
-            <br><br>
-            <section id="s-2">
-                <h2 class="h3-noir">Service de lutte antiparasitaire</h2>
-<input  type="checkbox" name="services[]" id="service1" value="desinsectisation">
-<label class="text" for="desinsectisation">Désinsectisation</label><br><br>
-
-<input type="checkbox" name="services[]" id="service2" value="deratisation">
-<label  class="text" for="deratisation">Dératisation</label><br><br>
-
-<input type="checkbox" name="services[]" id="service3" value="phytosanitaire">
-<label  class="text" for="phytosanitaire">Phytosanitaire</label><br><br>
-            </section>
-
-            <section id="s-3">
-                <h2 class="h3-noir">Types nuisibles</h2>
-                <section id="s-3-1">
-                <div id="d-1">
-                   
-<input type="checkbox" name="options[]" id="option1" value="Rongeurs (souris-rats-etc)">
-<label class="text"for="checkbox-1">Rongeurs (souris-rats-etc)</label><br><br>
-
-<input type="checkbox" name="options[]"  id="option2" value="Acariens (punaises de lit - puces - tiques)">
-<label class="text"for="checkbox-2">Acariens (punaises de lit - puces - tiques)</label><br><br>
-
-<input type="checkbox" name="options[]" id="option3" value="Insectes volants (mouches - moustiques - etc)">
-<label class="text"for="checkbox-3">Insectes volants (mouches - moustiques - etc)</label><br><br>
-                </div>
-                <div id="d-2" class="espace">
-                    <input type="checkbox" name="options[]"  id="option4" value="Reptiles ( serpents - vipères )">
-<label class="text"for="checkbox-1">Reptiles ( serpents - vipères )</label><br><br>
-
-<input type="checkbox" name="options[]" id="option1" value="Insectes rampants (cafards - fourmis - salamandre - etc)">
-<label class="text"for="checkbox-2">Insectes rampants (cafards - fourmis - salamandre - etc)</label><br><br><br><br>
-                </div>
-            </section>
-            </section>
-
-            <section id="s-4">
-                <div id="d-3">
-                    <h2 class="h3-noir">Localisation</h2>
-
-                    <input type="radio" name="localisation" value="abidjan" id="option1">
-                    <label class="text"for="option1">Abidjan</label><br><br>
-                
-                    <input type="radio" name="localisation" value="autre" id="option2">
-                    <label class="text"for="option2">Autres ville</label>
-                    <input class="input-normal"type="text" placeholder="ville">
-                    <br>
-                    <br>
-
-                </div>
-                <div id="d-4">
-                    
-                    <input class="input-normal" type="text" placeholder="Quartier"><br><br><br><br>
-                   
-                </div>
-            </section>
-
-            <section id="s-5">
-                
-                <div id="ranger-2" class="espace">
-                    <h2 class="h3-noir" class="espace">Caractéristiques</h2>
-    
-                    <label class="text"for="nbre-salle">Nombre de salles</label>
-                    <br>
-                    <input class="input-normal" type="number" name="salle" placeholder="..."><br><br>
-                
-                    <label class="text"for="nbre-salle">Nombre de Chambre</label>
-                    <br>
-                    <input class="input-normal" type="number" name="chambre" placeholder="..."><br><br><br><br>
-                </div>
-                <hr id="ligne-6">
-                <div id="ranger-3" class="espace">
-                    <h2 class="h3-noir" class="espace">Autres</h2>
-    
-                    <label class="text"for="jardin">Jardin</label>
-                    <br>
-        <input class="input-normal" type="number" name="jardin" placeholder="..."><br><br>
-    
-    
-        <label class="text"for="cuisines">Cuisines</label>
-        <br>
-        <input class="input-normal" type="number" name="cuisine" placeholder="..."><br><br>
-    
-        <label class="text"for="piscine">Piscine</label>
-        <br>
-        <input class="input-normal" type="number" name="piscine" placeholder="..."><br><br>
-    
-        <label class="text"for="entrepot">Entrepôt</label>
-        <br>
-        <input class="input-normal" type="number" name="entrepot" placeholder="..."><br><br>
-                </div>
-                </section>
-<section id="submit">
-   <input id="su" type="submit" class="env">
-</section>
-        </form>
-    </section>
-
     <section id="all-foot">
 
    
@@ -670,8 +514,8 @@ margin-right: 0;
     
     
     </section>
-<script>
-     const button = document.querySelectorAll(".effet");
+    <script>
+      const button = document.querySelectorAll(".effet");
 
 
 button.forEach(btn => {
@@ -725,7 +569,9 @@ deroulante.addEventListener("mouseover", () => {
 deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
 });
+console.log(deroulante)
 
-</script>
+
+    </script>
 </body>
-</html> 
+</html>

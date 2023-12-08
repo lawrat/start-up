@@ -14,7 +14,8 @@
         text-align: center;
     }
      /* section 1  */
-    #tete{
+     #tete{
+        position: relative;
         display :flex;
         flex-wrap: wrap;
         
@@ -25,19 +26,31 @@
         text-decoration: none;
     }
     #logo{
-        margin-top: 1%;
         position: absolute;
+        margin-top: 1%;
+        
     }
     #page-lien{
-        position: absolute;
+     position: absolute;
         display :flex;
         flex-wrap: wrap;
         margin-left: 35%;
         margin-top: 2.5%;
     }
     .haut{
-        margin: 8px 15px;
+        margin: 8px 15px; 
     }
+    #deroulant{
+    padding-top: 20px;
+    display: grid;
+    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    width: 200px;
+    height: 150px;
+    visibility: hidden;
+    position: absolute;
+   
+}
+
 /*  button resservation de la section 1 */
 
 /* section 2  */
@@ -325,22 +338,12 @@ margin-right: 0;
 .align{
     margin-left: 130px;
 } 
-#deroulant{
-    padding-top: 20px;
-    display: grid;
-    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
-    width: 200px;
-    height: 150px;
-    visibility: hidden;
-    position: absolute;
-   
-}
+
 /* .deroul{
     padding-top: 10px;
 
 } */
 #aider{
-    position: relative;
     margin-top: 100px;
     justify-content: center;
     margin-left: 50px;
@@ -355,7 +358,7 @@ margin-right: 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     padding-right: 50px;
     padding-left: 50px;
     margin-top: 80px;
@@ -389,7 +392,7 @@ margin-right: 0;
 </div>
         </div>
         <div id="accueil" class="haut" class="align" class="a">
-<a href="http://localhost:8000">Accueil</a>
+<a href="accueil.html">Accueil</a>
         </div>
         <div id="services" class="haut" class="align" class="a">
 <a href="http://localhost:8000/services">Services</a>
@@ -512,7 +515,7 @@ margin-right: 0;
     
     </section>
     <script>
-       const button = document.querySelectorAll(".effet");
+      const button = document.querySelectorAll(".effet");
 
 
 button.forEach(btn => {
@@ -567,6 +570,8 @@ deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
 });
 console.log(deroulante)
+
+
     </script>
 </body>
 </html>
