@@ -23,41 +23,57 @@
         text-decoration: none;
     }
     #logo{
-        margin-top: 1%;
         position: absolute;
+        margin-top: 2%;
+        display: flex;
+        
     }
     #page-lien{
-        position: absolute;
+        font-size: 140%;
+     position: absolute;
         display :flex;
-        flex-wrap: wrap;
-        margin-left: 35%;
+        flex-wrap :wrap;
+        margin-left: 15%;
         margin-top: 2.5%;
+        margin-right: 5%;
+       
+        /* margin-top: 10%; */
     }
+    @media (max-width: 1300px) {
+  /* Styles spécifiques lorsque la taille de l'écran est réduite */
+  #page-lien {
+    display: grid;
+    margin-left: 70%;
+    /* Autres styles pour la version réduite de la barre de menu */
+  }
+}
     .haut{
         margin: 8px 15px; 
     }
     #deroulant{
     padding-top: 20px;
     display: grid;
-    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    background: white;
     width: 200px;
-    height: 150px;
+    height: 100px;
     visibility: hidden;
     position: absolute;
+    border: 1px black solid;
+    text-align: center;
    
 }
 /* .deroul{
     padding-top: 10px;
 
 } */
-.align{
+/* .align{
     margin-left: 100px;
-} 
+}  */
 /* section 2  */
 #avant{
    text-align: center;
-    margin-top: 100px;
-    background: linear-gradient(to bottom , black, white);
+    margin-top: 150px;
+    background-color: #2C6DA8;
     height: auto;
    padding-top: 10px;
    padding-bottom: 10px;
@@ -407,12 +423,16 @@ margin-right: 0;
 
 #inform{
     margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+    background: radial-gradient( #2C6DA8, white);
+    padding: 3%;
 }
 
 #s-1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
  #s-2{
    flex-wrap: wrap;
@@ -425,16 +445,20 @@ margin-right: 0;
  #d-5{
     display: flex;
  }
- #ligne-6{
+ /* #ligne-6{
     height: 300px;
- }
+ } */
  #s-5{
     display: flex;
+    flex-wrap: wrap;
  }
- form{
+ .between{
+margin: 0 3%;
+ }
+ /* form{
     margin-left: 200px ;
     margin-right:200px ;
- }
+ } */
  #submit{
     margin-top: 20px;
     text-align: center;
@@ -443,50 +467,53 @@ margin-right: 0;
 <body>
     <section id="tete">
         <section id="logo" class="haut">
+         
 <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="200" height="50">
+
+
         </section>
+        
         <section id="page-lien">
-        <div id="numero" class="haut" class="align" class="a">
+        <div id="numero" class="haut" class="align" class="a" >
 <div id="us">
     
-    <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
+    <a href="mailto:gnet.plus@yahoo.com" class="align ai" ><i class="fas fa-phone"></i>Contactez-nous</a>
 </div>
         </div>
-        <div id="accueil" class="haut" class="align" class="a">
-<a href="http://localhost:8000">Accueil</a>
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
         </div>
-        <div id="services" class="haut" class="align" class="a">
-<a href="http://localhost:8000/services">Services</a>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
         </div>
-        <div id="reservatio" class="haut" class="align" class="a">
-            <a href="">Reservation</a>
+        <div id="reservatio" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
             <div id="deroulant">
-                <a  href="http://localhost:8000/entreprise" class="deroul">Entreprise</a><br>
-                <a  href="http://localhost:8000/domicile" class="deroul">Domicile</a><br>
-                <a href="http://localhost:8000/services" class="deroul">Services</a>
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
             </div>
         </div>
-        <div id="a-propros" class="haut" class="align" class="a">
-<a href="http://localhost:8000/a-propos">A Propos</a>
+        <div id="a-propros" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/a-propos">A Propos</a>
         </div>
-        <div id="contacte" class="haut" class="align" class="a">
-<a href="http://localhost:8000/contact">Contact</a>
+        <div id="contacte" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/contact">Contact</a>
         </div>
-        <div id="facebook" class="haut" class="align" class="a">
+        <div id="facebook" class="haut"  class="a">
             
-            <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
+            <a  class="align ai" href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
         </div>
-        <div id="linkedin" class="haut" target="_blank" class="align" class="a">
+        <div id="linkedin" class="haut" target="_blank"  class="a">
             
-<a href=""><i class="fab fa-linkedin"></i></a>
+<a  class="align ai" href=""><i class="fab fa-linkedin"></i></a>
         </div>
-        <div id="twitter" class="haut" class="align" class="a">
+        <div id="twitter" class="haut"  class="a">
             
-<a href=""><i class="fab fa-twitter"></i></a>
+<a  class="align ai" href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <div id="reservation" class="haut" class="align" class="a"> 
+        <div id="reservation"  class="haut" class="a"> 
             
-            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
         </div>
     </section>
     </section>
@@ -494,9 +521,8 @@ margin-right: 0;
     <section id="avant">
         <div id="face-1">
             <span id="face-1-1">
-        <h1>RESERVATION</h1>
+        <h1>DEMANDE D'INTERVENTION A DOMICILE</h1>
         <h2>Chez G NET +, nous protégeons votre famille en éliminant les<br> nuisibles. Dératisation, désinsectisation, nettoyage phytosanitaire, nous intervenons<br> partout, de la porte d'entrée à votre jardin.</h2>
-        <a href="entreprise.html" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
         </span>
         </div>
     </section>
@@ -571,8 +597,8 @@ margin-right: 0;
 
             <section id="s-5">
                 
-                <div id="ranger-2" class="espace">
-                    <h2 class="h3-noir" class="espace">Caractéristiques</h2>
+                <div id="ranger-2" class="between">
+                    <h2 class="h3-noir" >Caractéristiques</h2>
     
                     <label class="text"for="nbre-salle">Nombre de salles</label>
                     <br>
@@ -582,9 +608,9 @@ margin-right: 0;
                     <br>
                     <input class="input-normal" type="number" name="chambre" placeholder="..."><br><br><br><br>
                 </div>
-                <hr id="ligne-6">
-                <div id="ranger-3" class="espace">
-                    <h2 class="h3-noir" class="espace">Autres</h2>
+                
+                <div id="ranger-3" class="between">
+                    <h2 class="h3-noir" >Autres</h2>
     
                     <label class="text"for="jardin">Jardin</label>
                     <br>
@@ -604,8 +630,8 @@ margin-right: 0;
         <input class="input-normal" type="number" name="entrepot" placeholder="..."><br><br>
                 </div>
                 </section>
-<section id="submit">
-   <input id="su" type="submit" class="env">
+<section id="submit" >
+   <input id="su" type="submit" class="env effet">
 </section>
         </form>
     </section>
@@ -671,7 +697,7 @@ margin-right: 0;
     
     </section>
 <script>
-     const button = document.querySelectorAll(".effet");
+    const button = document.querySelectorAll(".effet");
 
 
 button.forEach(btn => {
@@ -695,24 +721,14 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll("a");
-    lien.forEach(lien =>{
-    lien.addEventListener("mouseover", () =>{
-        lien.style.backgroundColor = "#A8D554"
-        lien.style.borderStyle = "groove"
-        lien.style.borderColor = "#FFFFFF"
-        lien.style.borderWidth = "5px"
-        lien.style.width = "100px"
-        lien.style.padding = "5px"
+  const lien = document.querySelectorAll(".ai");
+    lien.forEach(li =>{
+    li.addEventListener("mouseover", () =>{ 
+        li.style.color= "red";
         
     })
-    lien.addEventListener("mouseout", () =>{
-        lien.style.backgroundColor = ""
-        lien.style.borderStyle = ""
-        lien.style.borderColor = ""
-        lien.style.borderWidth = ""
-        lien.style.width = ""
-        lien.style.padding = ""
+    li.addEventListener("mouseout", () =>{
+        li.style.color= "";
     })
 })
 

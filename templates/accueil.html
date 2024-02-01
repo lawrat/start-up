@@ -18,22 +18,24 @@
     height: 700px;
     transition: opacity 1s ease-in-out;
 }
-
+#container{
+    position: relative;
+}
 .box1 {
   position: absolute;
-    background-image: url("https://svad.ma/wp-content/uploads/2022/06/tst-slide-gard-5-1024x593-1.jpg.webp");
+    background-image: url("https://www.exterminationdenuisibles.be/wp-content/uploads/2023/05/Rodent-Pest-Control-Services-6-min-scaled-1-1024x684.webp");
     
 }
 
 .box2 {
    position: absolute;
-    background-image: url("https://clean-land.sn/images/2.jpg");
+    background-image: url("https://www.actisud-languedocroussillon.fr/wp-content/uploads/sites/474/2022/06/rat-4.jpeg");
    
 }
 
 .box3 {
     position: absolute;
-    background-image: url("https://www.hamelin.info/wp-content/uploads/piege-multi-capture-Mimetic-Mhouse-scaled.jpeg");
+    background-image: url("https://media.istockphoto.com/id/1066978818/fr/photo/exterminateur-de-travail.jpg?s=612x612&w=0&k=20&c=pMTwMk8ZVXKWXB11JEgyXrbZvmbNCCKB3L9Qcj_TtnY=");
   
 }
 
@@ -51,36 +53,70 @@
     }
     #logo{
         position: absolute;
-        margin-top: 1%;
+        margin-top: 2%;
+        display: flex;
         
     }
     #page-lien{
+        font-size: 140%;
      position: absolute;
         display :flex;
-        flex-wrap: wrap;
-        margin-left: 35%;
+        flex-wrap :wrap;
+        margin-left: 15%;
         margin-top: 2.5%;
+        margin-right: 5%;
+       
+        /* margin-top: 10%; */
     }
+    @media (max-width: 1300px) {
+  /* Styles spécifiques lorsque la taille de l'écran est réduite */
+  #page-lien {
+    display: grid;
+    margin-left: 70%;
+    /* Autres styles pour la version réduite de la barre de menu */
+  }
+}
+
     .haut{
         margin: 8px 15px; 
     }
     #deroulant{
     padding-top: 20px;
     display: grid;
-    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    background:white;
     width: 200px;
-    height: 150px;
+    height: 100px;
     visibility: hidden;
     position: absolute;
+    border: 1px black solid;
    
 }
+#devis{
+    margin-top:700px;
+    background-color: red;
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+/* #text{
+    margin-top: 5px;
+} */
+.bothw{
+    margin: 1% 10%;
 
-.align{
+}
+/* #biton{
+    margin-top : 1%;
+} */
+#bitn{
+    padding-top: 10%
+}
+/* .align{
     margin-left: 100px;
-} 
+}  */
     /* section 2  */
     #avant{
-        margin-top:750px;
+        margin-top: 50px;
         display: flex;
         flex-wrap: wrap;;
     }
@@ -244,7 +280,7 @@
     #obtenir-2{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         margin-top: 30px;
     }
      /* */
@@ -607,6 +643,7 @@ padding-bottom: ; */
 .P-cadre{
     width: 200px;
 }
+
 </style>
 <body>
   
@@ -618,54 +655,65 @@ padding-bottom: ; */
   
     <section id="tete">
         <section id="logo" class="haut">
+         
 <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="200" height="50">
+
+
         </section>
+        
         <section id="page-lien">
-        <div id="numero" class="haut" class="align" class="a">
+        <div id="numero" class="haut" class="align" class="a" >
 <div id="us">
     
-    <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
+    <a href="mailto:gnet.plus@yahoo.com" class="align ai" ><i class="fas fa-phone"></i>Contactez-nous</a>
 </div>
         </div>
-        <div id="accueil" class="haut" class="align" class="a">
-<a href="accueil.html">Accueil</a>
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
         </div>
-        <div id="services" class="haut" class="align" class="a">
-<a href="http://localhost:8000/services">Services</a>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
         </div>
-        <div id="reservatio" class="haut" class="align" class="a">
-            <a href="">Reservation</a>
+        <div id="reservatio" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
             <div id="deroulant">
-                <a  href="http://localhost:8000/entreprise" class="deroul">Entreprise</a><br>
-                <a  href="http://localhost:8000/domicile" class="deroul">Domicile</a><br>
-                <a href="http://localhost:8000/services" class="deroul">Services</a>
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
             </div>
         </div>
-        <div id="a-propros" class="haut" class="align" class="a">
-<a href="http://localhost:8000/a-propos">A Propos</a>
+        <div id="a-propros" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/a-propos">A Propos</a>
         </div>
-        <div id="contacte" class="haut" class="align" class="a">
-<a href="http://localhost:8000/contact">Contact</a>
+        <div id="contacte" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/contact">Contact</a>
         </div>
-        <div id="facebook" class="haut" class="align" class="a">
+        <div id="facebook" class="haut"  class="a">
             
-            <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
+            <a  class="align ai" href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
         </div>
-        <div id="linkedin" class="haut" target="_blank" class="align" class="a">
+        <div id="linkedin" class="haut" target="_blank"  class="a">
             
-<a href=""><i class="fab fa-linkedin"></i></a>
+<a  class="align ai" href=""><i class="fab fa-linkedin"></i></a>
         </div>
-        <div id="twitter" class="haut" class="align" class="a">
+        <div id="twitter" class="haut"  class="a">
             
-<a href=""><i class="fab fa-twitter"></i></a>
+<a  class="align ai" href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <div id="reservation" class="haut" class="align" class="a"> 
+        <div id="reservation"  class="haut" class="a"> 
             
-            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
         </div>
     </section>
     </section>
 
+    <section id="devis">
+        <div id="text" class="bothw">
+            <h1>CONTACTEZ NOUS POUR UN DEVIS GRATUIT <br> UNE URGENCE ? APPELEZ-NOUS (+225) 01 03 11 01 40 <h1>
+        </div>
+        <div id="biton" class="bothw">
+          <button  class="effet" id="faire-reservation"> <a href="http://localhost:8000/devis"  ><h1>JE DEMANDE UN DEVIS <i class="fas fa-arrow-right"></i></h1></a></button>
+        </div>
+    </section>
 
 
     <section id="avant">
@@ -674,7 +722,7 @@ padding-bottom: ; */
 <h1><i class="fas fa-info-circle"></i> BIENVENUE CHEZ G NET + !!!</h1>
 <h2>CLEAN D'UN <br> CLIN D'OEIL</h2>
 <p><h5>GNET+ offre des services de nettoyage professionnel <br> rapides et complets pour les entreprises et les particuliers,<br> avec une équipe dynamique disponible à tout moment.</h5></p>
-<a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet">FAIRE UNE RESERVATION</a>
+<a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet">DEMANDER UNE INTERVENTION</a>
 </span>
 </div>
 <div id="face-2">
@@ -1132,24 +1180,14 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll("a");
-    lien.forEach(lien =>{
-    lien.addEventListener("mouseover", () =>{
-        lien.style.backgroundColor = "#A8D554"
-        lien.style.borderStyle = "groove"
-        lien.style.borderColor = "#FFFFFF"
-        lien.style.borderWidth = "5px"
-        lien.style.width = "100px"
-        lien.style.padding = "5px"
+  const lien = document.querySelectorAll(".ai");
+    lien.forEach(li =>{
+    li.addEventListener("mouseover", () =>{ 
+        li.style.color= "red";
         
     })
-    lien.addEventListener("mouseout", () =>{
-        lien.style.backgroundColor = ""
-        lien.style.borderStyle = ""
-        lien.style.borderColor = ""
-        lien.style.borderWidth = ""
-        lien.style.width = ""
-        lien.style.padding = ""
+    li.addEventListener("mouseout", () =>{
+        li.style.color= "";
     })
 })
 

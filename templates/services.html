@@ -25,37 +25,54 @@ a{
     text-decoration: none;
 }
 #logo{
-    margin-top: 1%;
-    position: absolute;
-}
-#page-lien{
-    position: absolute;
-    display :flex;
-    flex-wrap: wrap;
-    margin-left: 35%;
-    margin-top: 2.5%;
+        position: absolute;
+        margin-top: 2%;
+        display: flex;
+        
+    }
+    #page-lien{
+        font-size: 140%;
+     position: relative;
+        display :flex;
+        flex-wrap :wrap;
+        margin-left: 15%;
+        margin-top: 2.5%;
+        margin-right: 5%;
+        margin-bottom: 50px;
+       
+        /* margin-top: 10%; */
+    }
+    @media (max-width: 1300px) {
+  /* Styles spécifiques lorsque la taille de l'écran est réduite */
+  #page-lien {
+    display: grid;
+    margin-left: 70%;
+    /* Autres styles pour la version réduite de la barre de menu */
+  }
 }
 .haut{
-    margin: 8px 15px;
-}
+        margin: 8px 15px; 
+    }
 
     #deroulant{
     padding-top: 20px;
     display: grid;
-    background: linear-gradient(to bottom , #2C6DA8, #A8D554);
+    background: white;
     width: 200px;
-    height: 150px;
+    height: 100px;
     visibility: hidden;
     position: absolute;
+    border: 1px black solid;
+    text-align: center;
    
 }
 /* .deroul{
     padding-top: 10px;
 
 } */
-.align{
+/* .align{
     margin-left: 100px;
-} 
+}  */
 /* section 2  */
 #avant{
     display: flex;
@@ -281,7 +298,6 @@ margin-top: 5%;
 
     #nos-services{
         background-color: #A8D554;
-       margin-top: 50px;
     }
     #both{
       display: flex;
@@ -594,68 +610,62 @@ margin-right: 0;
 <body>
     <section id="tete">
         <section id="logo" class="haut">
+         
 <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="200" height="50">
+
+
         </section>
+        
         <section id="page-lien">
-        <div id="numero" class="haut" class="align" class="a">
+        <div id="numero" class="haut" class="align" class="a" >
 <div id="us">
     
-    <a href="mailto:gnet.plus@yahoo.com" class="align" ><i class="fas fa-phone"></i>Contactez-nous</a>
+    <a href="mailto:gnet.plus@yahoo.com" class="align ai" ><i class="fas fa-phone"></i>Contactez-nous</a>
 </div>
         </div>
-        <div id="accueil" class="haut" class="align" class="a">
-<a href="http://localhost:8000">Accueil</a>
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
         </div>
-        <div id="services" class="haut" class="align" class="a">
-<a href="http://localhost:8000/services">Services</a>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
         </div>
-        <div id="reservatio" class="haut" class="align" class="a">
-            <a href="">Reservation</a>
+        <div id="reservatio" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
             <div id="deroulant">
-                <a  href="http://localhost:8000/entreprise" class="deroul">Entreprise</a><br>
-                <a  href="http://localhost:8000/domicile" class="deroul">Domicile</a><br>
-                <a href="http://localhost:8000/services" class="deroul">Services</a>
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
             </div>
         </div>
-        <div id="a-propros" class="haut" class="align" class="a">
-<a href="http://localhost:8000/a-propos">A Propos</a>
+        <div id="a-propros" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/a-propos">A Propos</a>
         </div>
-        <div id="contacte" class="haut" class="align" class="a">
-<a href="http://localhost:8000/contact">Contact</a>
+        <div id="contacte" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/contact">Contact</a>
         </div>
-        <div id="facebook" class="haut" class="align" class="a">
+        <div id="facebook" class="haut"  class="a">
             
-            <a href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
+            <a  class="align ai" href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
         </div>
-        <div id="linkedin" class="haut" target="_blank" class="align" class="a">
+        <div id="linkedin" class="haut" target="_blank"  class="a">
             
-<a href=""><i class="fab fa-linkedin"></i></a>
+<a  class="align ai" href=""><i class="fab fa-linkedin"></i></a>
         </div>
-        <div id="twitter" class="haut" class="align" class="a">
+        <div id="twitter" class="haut"  class="a">
             
-<a href=""><i class="fab fa-twitter"></i></a>
+<a  class="align ai" href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <div id="reservation" class="haut" class="align" class="a"> 
+        <div id="reservation"  class="haut" class="a"> 
             
-            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> <i class="fas fa-calendar"></i> RESERVATION</a>
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
         </div>
     </section>
-    </section>
-    <section id="avant">
-        <div id="face-1">
-            <span id="face-1-1">
-        <h1 class="h6"></i> NOS SERVICES</h1>
-        <h2> L'Excellence de la Propreté,<br> la Qualité à Chaque<br>  Intervention </h2>
-        <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet">FAIRE UNE RESSERVATION</a>
-        </span>
-        </div>
     </section>
     
 
 
     <section id="nos-services">
         <h1 class="h1-noir" >NOS SERVICES </h1>
-        <h2 class="h1-noir">Oubliez les Tracas, Retrouvez la <br>Fraîcheur, Notre Expertise<br> Redéfinit la Propreté </h2>
+        <h2 class="h1-noir">Oubliez les Tracas, Retrouvez la Fraîcheur,<br> Notre Expertise Redéfinit la Propreté </h2>
         <section id="both">
 
             <section id="first-rang" class="milieu">
@@ -972,26 +982,18 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll("a");
-    lien.forEach(lien =>{
-    lien.addEventListener("mouseover", () =>{
-        lien.style.backgroundColor = "#A8D554"
-        lien.style.borderStyle = "groove"
-        lien.style.borderColor = "#FFFFFF"
-        lien.style.borderWidth = "5px"
-        lien.style.width = "100px"
-        lien.style.padding = "5px"
+const lien = document.querySelectorAll(".ai");
+    lien.forEach(li =>{
+    li.addEventListener("mouseover", () =>{ 
+        li.style.color= "red";
         
     })
-    lien.addEventListener("mouseout", () =>{
-        lien.style.backgroundColor = ""
-        lien.style.borderStyle = ""
-        lien.style.borderColor = ""
-        lien.style.borderWidth = ""
-        lien.style.width = ""
-        lien.style.padding = ""
+    li.addEventListener("mouseout", () =>{
+        li.style.color= "";
     })
 })
+
+
 
 const deroulante = document.querySelector("#reservatio");
 
