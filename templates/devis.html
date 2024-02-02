@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNETplus - Devis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body{
+        
+       margin: 0;
+       
+    }
+     /* section 1  */
+    #tete{
+        display :flex;
+        flex-wrap: wrap;
+        
+    }
+
+    a{
+        font: optional;color: black;
+        text-decoration: none;
+    }
+    #logo{
+        margin-top: 2%;
+        display: flex;
+        
+    }
+    #page-lien{
+        font-size: 140%;
+     position: absolute;
+        display :flex;
+        flex-wrap :wrap;
+        margin-left: 35%;
+        margin-top: 2.5%;
+        visibility: visible;
+        /* margin-top: 10%; */
+    }
+    #page-lien-2{
+        font-size: 140%;
+     position: absolute;
+        display :flex;
+        flex-wrap :wrap;
+        margin-left: 50%;
+        margin-top: 2.5%;
+    visibility: hidden;
+}
+    @media (max-width: 1300px) {
+  /* Styles spécifiques lorsque la taille de l'écran est réduite */
+  #page-lien {
+    /* display: grid;
+    margin-left: 70%;
+    margin-bottom: 50px; */
+    visibility: hidden;
+    /* Autres styles pour la version réduite de la barre de menu */
+  }
+  #page-lien-2{
+    visibility: visible;
+  }
+}
+#deroulan{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 300px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+}
+    .haut{
+        margin: 8px 15px; 
+    }
+    #deroulant{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 200px;
+    height: 110px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+   
+   
+}
+#deroulantin{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 110px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+   
+   
+}
+#devis{
+    margin-top:700px;
+    background-color: red;
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+/* #text{
+    margin-top: 5px;
+} */
+.bothw{
+    margin: 1% 10%;
+
+}
+/* #biton{
+    margin-top : 1%;
+} */
+#bitn{
+    padding-top: 10%
+}
+/* .align{
+    margin-left: 100px;
+}  */
+    /* section 2  */
+    #avant{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;;
+    }
+    /*  div 1 de section 2 */
+    #face-1{
+        background-color: #A8D554;
+        width: 50%;
+        height: 300px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       
+    }
+    /*  div 2 de section 2 */
+    #face-2{
+        padding: none;
+        background-color: #2C6DA8;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+    }
+   
+    /*  les texte en taille 6 */
+   
+    /*  les textes en taille 1 */
+    h1{
+        color: white;
+        margin-top: 0;
+    }
+    h2{
+        color: white;
+        margin-top: 0;
+    }
+    h3{
+        color: white;
+        margin-top: 0;
+    }
+    h4{
+        color: white;
+        margin-top: 0;
+    }
+    h5{
+        color: white;
+        margin-top: 0;
+    }
+    h6{
+        color: white;
+        margin-top: 0;
+    }
+    /*  classe pour les textes en taille 1 */
+    .h1-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h2-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h3-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h4-noir{
+        color: black;
+        margin-top: 0;
+    }
+    .h5-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /*  classe pour les textes en taille 6 */
+    .h6-noir{
+        color: black;
+        margin-top: 0;
+    }
+     /* button reservation dans la div 1 de la section 2 */
+    #faire-reservation{ 
+        background-color: #2C6DA8;
+        font: optional;color: #fcfbfb;
+        padding: 10px;
+        border-color:  #2C6DA8;
+        align-items: center;
+    }
+     /* carre dans la div 2 de la section 2*/
+    #carre{
+        background-color: transparent;
+        width: 250px;
+        height: 250px;
+        border-color: white;
+        border-width: 10px;
+        border-style:solid;
+        border-left:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+     /*  section 3*/
+    #voir-plus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+     /* classe pour les element de la section 3 */
+    .voir{
+        margin: 0 15px; 
+    text-align: center; 
+    }
+    /* .top{
+        margin-top: 10px;
+    } */
+     /* section 4 */
+    #quatre{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       align-items: center;
+        background-color: #2C6DA8;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+     /*  section 1 dans la section 4*/
+    #interieur{
+        display :flex;
+        flex-wrap: wrap;
+    }
+     /* */
+    .car{
+        background-color: white;
+        margin-left: 10px;
+        padding: 30px;
+        
+    }
+     /* */
+    .dansQuatre{
+        padding: 20px;
+    }
+
+
+
+
+     /* */
+    #obtenir-1{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-2{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: 5%; */
+        margin-top: 30px;
+    }
+     /* */
+    #obtenir-3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+     /* */
+     #p-1{
+        margin-left: 5%;
+margin-bottom: 10px;
+margin-top: 5%;
+    }
+     
+    #img-2{
+        margin-left: 5%;
+        border: 10px double #A8D554;
+    }
+    #img-1{
+        border: 10px double #2C6DA8;
+    }
+    #img-3{
+        border: 10px double #2C6DA8;
+    }
+    #p-2{
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+     /* */
+    #p-3{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    } */
+
+    #nos-services{
+        margin-top: 50px;
+    
+    }
+    #both{
+        margin-left: 5%;
+        margin-right: 5%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .milieu{
+        margin-left: 25%;
+    }
+    .gauche{
+        margin-left: 0%;
+    }
+    #first-rang{
+        position: relative;
+        width: 50%;
+    }
+    #second-rang{
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        width: 30%;
+        padding: 10px;
+        left: 60%;
+        border : 10px double #A8D554;
+        background: linear-gradient(to left , #2C6DA8, #A8D554);
+    }
+#rendez-vous{
+    text-align: left;
+}
+.input-rendez-vous{
+    font-size: 15px;
+        width: 100%;
+        height: 25px;
+        border-width: 1px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+.centre{
+    text-align: center;
+}
+    .text{
+    font-size: 15px;
+}
+.text-exterieur{
+    font: optional;color: #f0f0f1;
+    font-size: 20px;
+}
+
+#submit-rendez-vous{
+    text-align: center;
+}
+
+
+
+.carre-bleu{
+    background-color: #2C6DA8;
+    margin-left: 10px;
+}
+#temoin{ 
+    height :auto; 
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+        /* background-color :#A8D554; */
+        background: linear-gradient(to bottom , #060606, #A8D554);
+}
+#in-temoin{
+        margin-top: 20px;
+       } 
+#temoignages{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    
+    }
+    .each{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #kele{
+        margin-bottom: 0;
+         width: 500px;
+         height: 150px;
+background-color: white;
+/* padding-left: ;
+padding-right: ;
+padding-top: ;
+padding-bottom: ; */
+
+    }
+    #fila{
+        margin-bottom: 0;
+        width: 500px;
+        height: 150px;
+        background-color: white;
+    }
+    #avantages{
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%; 
+        justify-content: center;
+        align-items: center;
+    }
+    .ran{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #a-a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+       
+        margin: 0 15px; 
+    }
+
+    #b-b-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #c-c-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+  
+    .espace{
+        margin-left: 150px;
+    }
+
+    #formu{
+        padding: 20px;
+        margin-top: 30px;
+         display: flex; 
+         flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+        background-color: #2C6DA8;
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    #contact{
+        background-color: white; 
+         padding: 5px; 
+        color: black;
+        margin-bottom: 20px;
+        margin: 0 15px; 
+       
+    }
+    #formulaire{
+        /* background-color: white; */
+         /* margin-left: 50px;  */
+        background-color: white;
+        padding: 15px;
+        margin: 0 15px; 
+        margin-top: 20px;
+        
+    }
+    #prise{
+        text-align: left;
+        color: white;
+       
+    }
+    .input-normal{
+        font-size: 15px;
+        width: 300px;
+        height: 30px;
+        margin-top: 20px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .input-com{
+        font-size: 15px;
+        width: 60%;
+        height:300px;
+        margin-top: 20px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+    .env{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #A8D554;
+    }
+    #methode{
+      
+        margin-top: 50px;
+    }
+    #methode-{
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:#2C6DA8;
+        font: optional;color: white;
+    }
+    #only{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 40px;
+        width: 200px;
+        border-width: 3px;
+        border-color: #2C6DA8;
+
+    }
+    .foot{
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #A8D554;
+    }
+    #ligne{
+       align-items: center;
+       width: 50%;
+        background-color: #A8D554;
+        
+        
+    }
+    #noir{
+        background-color: black;
+        height: 50px;
+        width: 100%;
+    }
+    #copyright{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    /* #avant-pied{
+        justify-content: center;
+       padding-bottom: 10px;
+        /* margin-left: 10%; */
+        /* margin-right: 10%;
+    }
+     */
+.rangement{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    padding: 10px;
+   
+}
+#donne{
+    margin-left: 10px;
+    
+}
+.no-padding{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.petit-epace{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#all-foot{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #A8D554;
+}
+.no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+.margin-leger{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.margin-moyens{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ 
+
+.P-cadre{
+    width: 200px;
+}
+.ter{
+    margin-bottom: 5px;
+}
+#take-devis{
+    text-align: center;
+    background: linear-gradient(to left , #e63926, #fcfcfb);
+    padding: 5%;
+    margin-top: 50px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+}
+label{
+    font-size: 20px;
+}
+</style>
+<body>
+    <section id="tete">
+        <section id="logo" class="haut">
+         
+<img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="200" height="50">
+
+
+        </section>
+        
+        <section id="page-lien-2">
+       
+    
+   
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
+        </div>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
+        </div>
+        <div id="reservatioon" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
+            <div id="deroulantin">
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
+            </div>
+        </div>
+       
+        <div id="plus" class="haut"  class="a">
+            <a  class="align ai" href="">Plus  <i class="fas fa-chevron-down"></i></a>
+<div id="deroulan">
+<a   href="http://localhost:8000/a-propos" class="deroul ai">A Propos</a>
+<a  href="http://localhost:8000/contact" class="deroul ai">Contact</a>  
+<a href="mailto:gnet.plus@yahoo.com" class="deroul ai">Contactez-nous</a>          
+<a  href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" class="deroul ai">Facebook</a>
+<a  href=""class="deroul ai">Linkedin</a>
+<a   href=""class="deroul ai">Twitter</a>       
+</div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="page-lien">
+        <div id="numero" class="haut" class="align" class="a" >
+<div id="us">
+    
+    <a href="mailto:gnet.plus@yahoo.com" class="align ai" ><i class="fas fa-phone"></i>Contactez-nous</a>
+</div>
+        </div>
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
+        </div>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
+        </div>
+        <div id="reservatio" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
+            <div id="deroulant">
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
+            </div>
+        </div>
+        <div id="a-propros" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/a-propos">A Propos</a>
+        </div>
+        <div id="contacte" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/contact">Contact</a>
+        </div>
+        <div id="facebook" class="haut"  class="a">
+            
+            <a  class="align ai" href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" ><i class="fab fa-facebook"></i></a>
+        </div>
+        <div id="linkedin" class="haut" target="_blank"  class="a">
+            
+<a  class="align ai" href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div id="twitter" class="haut"  class="a">
+            
+<a  class="align ai" href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="reservation"  class="haut" class="a"> 
+            
+            <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
+        </div>
+    </section>
+
+    </section>
+<section id="take-devis">
+    <form action="/devis" method="post">
+        <input type="hidden" name="request_type" value="devis">  
+        <label for="noom">Nom</label>
+         <br>
+        <input class="input-normal" type="text" name="noom" required  class="espace" >
+        <br>
+        <br>
+        <label for="preenom">Prenom</label>
+        <br>
+<input class="input-normal"type="text" name="preenom"  class="espace">
+<br>
+<br>
+<label for="maail">Email</label>
+<br>
+<input class="input-normal"type="text" name="maail" placeholder="facultatif..." class="espace">
+<br>
+<br>
+<label for="numero">Contact</label>
+<br>
+<input class="input-normal"type="text" name="numero" required class="espace">
+<br>
+<br>
+<label for="message">Votre message</label>
+<br>
+
+<input class="input-com" type="text" name="message"  required class="espace">
+<section id="submit" >
+    <input id="su" type="submit" class="env effet">
+ </section>
+    </section>
+    </form>
+   
+    <section id="all-foot">
+
+   
+        <section id="avant-pied" class="foot">
+            <div id="logo-pied" >
+                <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="100" height="50">
+            </div>
+         
+                <div id="facebook-pied" class="petit-epace" >
+                    <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
+                </div>
+              
+                    <div id="twitter-pied" class="petit-epace" >
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                   
+                        <div id="linkedin-pied" class="petit-epace" >
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                       
+                            <div id="instagram-pied" class="petit-epace" >
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+        </section>
+       <hr id="ligne">
+        <section id="pied" class="foot">
+           
+            <div id="explorer" >
+    <h2>Explorer</h2>
+    <h5 class="h1-noir"><a href="http://localhost:8000/accueil">Accueil</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/services">Services</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/entreprise">Reservation</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/a-propos">A Propos</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/contact">Contact</a></h5>
+            </div>
+            <div id="service" class="espace">
+                <h2>Services</h2>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-1">Désinsectisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-2">Dératisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-3">Nettoyage</a></h5>
+            </div>
+            <div id="gnet" class="espace">
+                <h2>G NET+</h2>
+                <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
+                <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
+                <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
+            </div>
+            <div id="heures" class="espace">
+                <h2>Heures d'ouverture</h2>
+                <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
+                <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
+    
+            </div>
+        </section>
+        <section id="noir">
+    <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
+        </section>
+    
+    
+    </section>
+    <script>
+        const button = document.querySelectorAll(".effet");
+    
+    
+    button.forEach(btn => {
+        btn.addEventListener("mouseover", () => {
+            btn.style.backgroundColor = "#A8D554";
+            btn.style.borderStyle = "double";
+            btn.style.borderColor = "#FFFFFF"
+            btn.style.borderWidth = "5px";
+    
+        });
+    
+        btn.addEventListener("mouseout", () => {
+            btn.style.backgroundColor = "";
+            btn.style.borderStyle = "";
+            btn.style.borderColor = ""
+            btn.style.borderWidth = "";
+        });
+    });
+    
+    
+    
+    
+    
+      const lien = document.querySelectorAll(".ai");
+        lien.forEach(li =>{
+        li.addEventListener("mouseover", () =>{ 
+            li.style.color= "red";
+            
+        })
+        li.addEventListener("mouseout", () =>{
+            li.style.color= "";
+        })
+    })
+    
+    const deroulante = document.querySelector("#reservatio");
+    
+    deroulante.addEventListener("mouseover", () => {
+        deroulant.style.visibility = "visible";
+    });
+    
+    deroulante.addEventListener("mouseout", () => {
+        deroulant.style.visibility = "hidden";
+    });
+    
+    
+    const deroulanti = document.querySelector("#reservatioon");
+    
+    
+    deroulanti.addEventListener("mouseover", () => {
+        deroulantin.style.visibility = "visible";
+    });
+    
+    deroulanti.addEventListener("mouseout", () => {
+        deroulantin.style.visibility = "hidden";
+    });
+    
+    const deroulane = document.querySelector("#plus");
+    
+    
+    deroulane.addEventListener("mouseover", () => {
+        deroulan.style.visibility = "visible";
+    });
+    
+    deroulane.addEventListener("mouseout", () => {
+        deroulan.style.visibility = "hidden";
+    });
+    
+    </script>
+</body>
+</html>

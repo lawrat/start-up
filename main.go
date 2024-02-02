@@ -438,6 +438,10 @@ func domicile(w http.ResponseWriter, r *http.Request) {
 func contact(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "contact")
 }
+
+func devis(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "devis")
+}
 func main() {
 	http.HandleFunc("/", accueil)
 	http.HandleFunc("/merci", merci)
@@ -448,6 +452,7 @@ func main() {
 	http.HandleFunc("/entreprise", entreprise)
 	http.HandleFunc("/domicile", domicile)
 	http.HandleFunc("/contact", contact)
+	http.HandleFunc("/devis", devis)
 
 	fmt.Printf("Serveur écoute sur http://%s%s\n", addr, port)
 	http.ListenAndServe(port, nil)

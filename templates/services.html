@@ -14,56 +14,92 @@
     text-align: center;
 }
  /* section 1  */
-#tete{
-    display :flex;
-    flex-wrap: wrap;
-    
-}
+ #tete{
+        display :flex;
+        flex-wrap: wrap;
+        
+    }
 
-a{
-    font: optional;color: black;
-    text-decoration: none;
-}
-#logo{
-        position: absolute;
+    a{
+        font: optional;color: black;
+        text-decoration: none;
+    }
+    #logo{
         margin-top: 2%;
         display: flex;
         
     }
     #page-lien{
         font-size: 140%;
-     position: relative;
+     position: absolute;
         display :flex;
         flex-wrap :wrap;
-        margin-left: 15%;
+        margin-left: 35%;
         margin-top: 2.5%;
-        margin-right: 5%;
-        margin-bottom: 50px;
-       
-        /* margin-top: 10%; */
+        visibility: visible;
+          
     }
+    #page-lien-2{
+        font-size: 140%;
+     position: absolute;
+        display :flex;
+        flex-wrap :wrap;
+        margin-left: 50%;
+        margin-top: 2.5%;
+    visibility: hidden;
+    
+}
     @media (max-width: 1300px) {
   /* Styles spécifiques lorsque la taille de l'écran est réduite */
   #page-lien {
-    display: grid;
+    /* display: grid;
     margin-left: 70%;
+    margin-bottom: 50px; */
+    visibility: hidden;
     /* Autres styles pour la version réduite de la barre de menu */
   }
+  #page-lien-2{
+    visibility: visible;
+  }
 }
-.haut{
+#deroulan{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 300px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+}
+    .haut{
         margin: 8px 15px; 
     }
-
     #deroulant{
     padding-top: 20px;
     display: grid;
     background: white;
     width: 200px;
-    height: 100px;
+    height: 110px;
     visibility: hidden;
     position: absolute;
     border: 1px black solid;
     text-align: center;
+   
+   
+}
+#deroulantin{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 110px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+   
    
 }
 /* .deroul{
@@ -74,11 +110,12 @@ a{
     margin-left: 100px;
 }  */
 /* section 2  */
-#avant{
+/* #avant{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin-top:100px ;
-}
+    
+} */
 
 #avant-1{
     padding-top:10px;
@@ -168,7 +205,6 @@ h6{
 /*  classe pour les textes en taille 1 */
 .h1-noir{
     color: black;
-   
 }
 .h2-noir{
     color: black;
@@ -298,8 +334,12 @@ margin-top: 5%;
 
     #nos-services{
         background-color: #A8D554;
+        margin-top:50px ;
     }
     #both{
+        margin-top: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
       display: flex;
       flex-wrap: wrap;
     }
@@ -616,7 +656,40 @@ margin-right: 0;
 
         </section>
         
-        <section id="page-lien">
+        <section id="page-lien-2">
+       
+    
+   
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
+        </div>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
+        </div>
+        <div id="reservatioon" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
+            <div id="deroulantin">
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
+            </div>
+        </div>
+       
+        <div id="plus" class="haut"  class="a">
+            <a  class="align ai" href="">Plus  <i class="fas fa-chevron-down"></i></a>
+<div id="deroulan">
+<a   href="http://localhost:8000/a-propos" class="deroul ai">A Propos</a>
+<a  href="http://localhost:8000/contact" class="deroul ai">Contact</a>  
+<a href="mailto:gnet.plus@yahoo.com" class="deroul ai">Contactez-nous</a>          
+<a  href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" class="deroul ai">Facebook</a>
+<a  href=""class="deroul ai">Linkedin</a>
+<a   href=""class="deroul ai">Twitter</a>       
+</div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="page-lien">
         <div id="numero" class="haut" class="align" class="a" >
 <div id="us">
     
@@ -659,13 +732,15 @@ margin-right: 0;
             <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
         </div>
     </section>
+
     </section>
-    
 
 
     <section id="nos-services">
         <h1 class="h1-noir" >NOS SERVICES </h1>
         <h2 class="h1-noir">Oubliez les Tracas, Retrouvez la Fraîcheur,<br> Notre Expertise Redéfinit la Propreté </h2>
+    </section>
+
         <section id="both">
 
             <section id="first-rang" class="milieu">
@@ -982,7 +1057,7 @@ button.forEach(btn => {
 
 
 
-const lien = document.querySelectorAll(".ai");
+  const lien = document.querySelectorAll(".ai");
     lien.forEach(li =>{
     li.addEventListener("mouseover", () =>{ 
         li.style.color= "red";
@@ -993,8 +1068,6 @@ const lien = document.querySelectorAll(".ai");
     })
 })
 
-
-
 const deroulante = document.querySelector("#reservatio");
 
 deroulante.addEventListener("mouseover", () => {
@@ -1004,6 +1077,30 @@ deroulante.addEventListener("mouseover", () => {
 deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
 });
+
+
+const deroulanti = document.querySelector("#reservatioon");
+
+
+deroulanti.addEventListener("mouseover", () => {
+    deroulantin.style.visibility = "visible";
+});
+
+deroulanti.addEventListener("mouseout", () => {
+    deroulantin.style.visibility = "hidden";
+});
+
+const deroulane = document.querySelector("#plus");
+
+
+deroulane.addEventListener("mouseover", () => {
+    deroulan.style.visibility = "visible";
+});
+
+deroulane.addEventListener("mouseout", () => {
+    deroulan.style.visibility = "hidden";
+});
+
 console.log(deroulante)
 
 

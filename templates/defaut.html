@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNETplus - Contact</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>GNETplus - Devis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <style>
-       /* toute la page  */
     body{
        margin: 0;
-        text-align: center;
+       text-align: center;
     }
      /* section 1  */
-     #tete{
+    #tete{
         display :flex;
         flex-wrap: wrap;
         
@@ -101,31 +100,63 @@
    
    
 }
-/* .deroul{
-    padding-top: 10px;
-
+#devis{
+    margin-top:700px;
+    background-color: red;
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+/* #text{
+    margin-top: 5px;
 } */
+.bothw{
+    margin: 1% 10%;
+
+}
+/* #biton{
+    margin-top : 1%;
+} */
+#bitn{
+    padding-top: 10%
+}
 /* .align{
     margin-left: 100px;
 }  */
     /* section 2  */
     #avant{
         margin-top: 50px;
-    background-color :black;
-    flex-wrap: wrap;
-    height: 150px;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-    
+        display: flex;
+        flex-wrap: wrap;;
+    }
     /*  div 1 de section 2 */
-    
+    #face-1{
+        background-color: #A8D554;
+        width: 50%;
+        height: 300px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       
+    }
+    /*  div 2 de section 2 */
+    #face-2{
+        padding: none;
+        background-color: #2C6DA8;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+    }
+   
     /*  les texte en taille 6 */
    
     /*  les textes en taille 1 */
     h1{
         color: white;
-        
+        margin-top: 0;
     }
     h2{
         color: white;
@@ -184,8 +215,8 @@
      /* carre dans la div 2 de la section 2*/
     #carre{
         background-color: transparent;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
         border-color: white;
         border-width: 10px;
         border-style:solid;
@@ -203,20 +234,29 @@
         align-items: center;
         text-align: center;
         margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        
     }
      /* classe pour les element de la section 3 */
     .voir{
-        margin-left: 50px;
+        margin: 0 15px; 
+    text-align: center; 
     }
+    /* .top{
+        margin-top: 10px;
+    } */
      /* section 4 */
     #quatre{
+        margin-bottom: 50px;
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
+        justify-content: center;
+       align-items: center;
         background-color: #2C6DA8;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
         
     }
      /*  section 1 dans la section 4*/
@@ -234,67 +274,133 @@
      /* */
     .dansQuatre{
         padding: 20px;
-        margin-left: 80px
-        
     }
+
+
+
+
      /* */
     #obtenir-1{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 30px;
     }
      /* */
     #obtenir-2{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 350px;
-        margin-top: 80px;
+        /* margin-left: 5%; */
+        margin-top: 30px;
     }
      /* */
     #obtenir-3{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 30px;
     }
      /* */
-    #p-1{
-        margin-left: 80px;
-        margin-top: 20px;
+     #p-1{
+        margin-left: 5%;
+margin-bottom: 10px;
+margin-top: 5%;
     }
-     /* */
+     
+    #img-2{
+        margin-left: 5%;
+        border: 10px double #A8D554;
+    }
+    #img-1{
+        border: 10px double #2C6DA8;
+    }
+    #img-3{
+        border: 10px double #2C6DA8;
+    }
     #p-2{
-        margin-left: 50px;
-        margin-top: 20px;
+        margin-top: 5%;
+        margin-bottom: 10px;
     }
      /* */
     #p-3{
-        margin-left: 50px;
-        margin-top: 20px;
-    }
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    } */
 
     #nos-services{
-        text-align: center;
-        margin-top: 80px;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-top: 50px;
+    
     }
+    #both{margin-left: 1%;
+        margin-right: 1%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .milieu{
+        margin-left: 25%;
+    }
+    .gauche{
+        margin-left: 0%;
+    }
+    #first-rang{
+        position: relative;
+        width: 50%;
+    }
+    #second-rang{
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        width: 30%;
+        padding: 10px;
+        left: 60%;
+        border : 10px double #A8D554;
+        background: linear-gradient(to left , #2C6DA8, #A8D554);
+    }
+#rendez-vous{
+    text-align: left;
+}
+.input-rendez-vous{
+    font-size: 15px;
+        width: 100%;
+        height: 25px;
+        border-width: 1px;
+        border-color: #2C6DA8;
+        border-style: groove;
+    }
+.centre{
+    text-align: center;
+}
+    .text{
+    font-size: 15px;
+}
+.text-exterieur{
+    font: optional;color: #f0f0f1;
+    font-size: 20px;
+}
+
+#submit-rendez-vous{
+    text-align: center;
+}
+
+
+
 .carre-bleu{
     background-color: #2C6DA8;
     margin-left: 10px;
 }
 #temoin{ 
-    height: 600px; 
+    height :auto; 
     display : flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-        background-color :#A8D554;
-        margin-left: 200px;
-        margin-right: 200px;
-        
+        /* background-color :#A8D554; */
+        background: linear-gradient(to bottom , #060606, #A8D554);
 }
+#in-temoin{
+        margin-top: 20px;
+       } 
 #temoignages{
-    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
   justify-content: center;
@@ -312,6 +418,11 @@
          width: 500px;
          height: 150px;
 background-color: white;
+/* padding-left: ;
+padding-right: ;
+padding-top: ;
+padding-bottom: ; */
+
     }
     #fila{
         margin-bottom: 0;
@@ -320,49 +431,110 @@ background-color: white;
         background-color: white;
     }
     #avantages{
-      
         margin-top: 50px;
-        text-align: center;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 5%;
+        margin-right: 5%; 
+        justify-content: center;
+        align-items: center;
     }
-    .rang{
-        margin-left: 15%;
-        margin-right: 15%;
+    .ran{
         display: flex;
         flex-wrap: wrap;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
     }
+    #a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+       
+       
+        margin: 0 15px; 
+    }
+    #a-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #a-a-1{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+       
+        margin: 0 15px; 
+    }
+
+    #b-b-2{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+
+    #c-c-3{
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+      
+      
+        margin: 0 15px; 
+    }
+  
     .espace{
         margin-left: 150px;
     }
+
     #formu{
-         margin-top: 50px;
         padding: 20px;
-         display: block; 
+        margin-top: 30px;
+         display: flex; 
          flex-wrap: wrap;
        align-items: center;
        justify-content: center;
-       background: linear-gradient(to bottom , #A8D554, #2C6DA8);
-        margin-left:10% ;
-        margin-right: 10%;
-        
+        background-color: #2C6DA8;
+        margin-left: 10%;
+        margin-right:10%;
     }
-    /* #contact{
+    #contact{
         background-color: white; 
          padding: 5px; 
         color: black;
-        */
-    
-    /* #formulaire{
+        margin-bottom: 20px;
+        margin: 0 15px; 
+       
+    }
+    #formulaire{
+        /* background-color: white; */
+         /* margin-left: 50px;  */
         background-color: white;
-        width: auto;  
-          
-    } */
-    #form-contact{
-        padding: 15px; 
+        padding: 15px;
+        margin: 0 15px; 
+        margin-top: 20px;
+        
     }
     #prise{
+        text-align: left;
         color: white;
        
     }
@@ -370,7 +542,7 @@ background-color: white;
         width: 300px;
         height: 40px;
         margin-top: 20px;
-        border-width: 3px;
+        border-width: 1px;
         border-color: #2C6DA8;
         border-style: groove;
     }
@@ -378,7 +550,7 @@ background-color: white;
         width: 300px;
         height: 80px;
         margin-top: 20px;
-        border-width: 5px;
+        border-width: 1px;
         border-color: #2C6DA8;
         border-style: groove;
     }
@@ -388,18 +560,21 @@ background-color: white;
         height: 50px;
         background-color: #A8D554;
     }
+    #methode{
+      
+        margin-top: 50px;
+    }
     #methode-{
-        margin-left: 20%;
-        margin-right: 20%px;
+        padding-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background-color:#2C6DA8;
-      width: 60%;
+        font: optional;color: white;
     }
     #only{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         height: 40px;
         width: 200px;
         border-width: 3px;
@@ -417,7 +592,7 @@ background-color: white;
        align-items: center;
        width: 50%;
         background-color: #A8D554;
-        border: 1px solid black;
+        
         
     }
     #noir{
@@ -429,10 +604,13 @@ background-color: white;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    #avant-pied{
+    /* #avant-pied{
+        justify-content: center;
        padding-bottom: 10px;
-        text-align: center;
+        /* margin-left: 10%; */
+        /* margin-right: 10%;
     }
+     */
 .rangement{
     display: flex;
     margin-left: 10px;
@@ -446,95 +624,37 @@ background-color: white;
     margin-left: 10px;
     
 }
-
+.no-padding{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .petit-epace{
     margin-top: 20px;
     margin-left: 20px;
 }
 #all-foot{
-   margin-top: 50px;
     background-color: #A8D554;
 }
-.no-pad{
+.no-margin{
     margin-left: 0;
     margin-right: 0;
 }
-#aider{
-    position: relative;
-    margin-top: 50px;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+.margin-leger{
+    margin-left: 30px;
+    margin-right: 30px;
 }
-
-#droite{
-    margin-top: 50px;
+.margin-moyens{
     margin-left: 100px;
+    margin-right: 100px;
 }
-#bas{
-    display: block;
-    flex-wrap: wrap;
-}
-#icone{
-    display: flex;
-    flex-wrap: wrap;
-}
-#icone-1{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-#info-1{
-    margin-top: 5px;
-    margin-left: 50px;
-   
-}
-.petit-carre{
-background-color: transparent;
-border : 3px solid black;
-width: 50px;
-height: 50px;
-padding-top: 25px;
-}
-.no-padding{
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.image {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    
-}
+ 
 
-.overlay-image {
-    position: absolute;
-    top: 30px;
-    left: 15%;
+.P-cadre{
+    width: 200px;
 }
-#devis{
-    margin-top:50px;
-    background-color: red;
-    display: flex;
-    position: relative;
-    padding: 10px;
-}
-/* #text{
-    margin-top: 5px;
-} */
-.bothw{
-    margin: 1% 10%;
-
-}
-/* #biton{
-    margin-top : 1%;
-} */
-#bitn{
-    padding-top: 10%
+.ter{
+    margin-bottom: 5px;
 }
 </style>
 <body>
@@ -625,222 +745,136 @@ padding-top: 25px;
 
     </section>
 
-    <section id="avant">
-        <h1>CONTACTEZ G NET+</h1>
-        <h2>Des experts dédiés à transformer<br> votre environnement, pour une vie <br>plus saine et plus sereine !"</h2>
-    </section>
-
-<section id="aider">
-    <div id="gauche">
-        <div class="image-container">
-            <img class="overlay-image" src="https://www.designetsolutions.fr/img/produits/photo-produit-711.jpg" alt="Image 2" width="500" height="500">
-            <img class="image" src="https://crennjulie.files.wordpress.com/2014/06/fond-gris-degrade-642552.jpg" alt="" width="500" height="500">
-        </div>
-    </div>
-    <div id="droite">
-        <h1 class="h1-noir">Nous sommes là<br>pour vous aider...</h1>
-        <p>Besoin de nos services ? Contactez-nous facilement pour une<br> intervention rapide ! Notre équipe est prête à répondre à vos besoins<br> d'hygiène et de propreté.</p>
-        <div id="bas">
-
-        <div id="icone-1">
-            <div id="ic-1" class="petit-carre">
-            <i class="fas fa-home"></i>
-        </div>
-            <div id="info-1">
-            <p class="no-padding" class="h5-noir">Rendez nous visite</p>
-            <p class="no-padding" class="h6-noir">ABIDJAN,CÔTE D'IVOIRE</p>
-        </div>
-    </div>
-
-        <div id="icone-1">
-            <div id="ic-2" class="petit-carre">
-            <i class="fas fa-envelope"></i>
-        </div>
-        <div id="info-1" class="no-padding" >
-            <p class="no-padding"class="h5-noir">Mail</p>
-                <p class="no-padding"  class="h6-noir">gnet.plus@yahoo.com</p>
-        </div>
-        </div>
-        <div id="icone-1" >
-            <div id="ic-3" class="petit-carre">
-                <i class="fas fa-phone"></i>
-            </div>
-            <div id="info-1">
-                <p class="no-padding" class="h5-noir">Télephone</p>
-                    <p class="no-padding" class="h6-noir">(+225) 01 03 11 01 40</p>
-            </div>
-            </div>
-
-       
-           
-       
-        <div id="don">
-            
-        </div>
-    </div>
-    </div>
-</section>
-
-
-<section id="formu">
-    <div id="prise">
-    <h1>PRISE DE CONTACT</h1>
-    <h2>"Prenez contact pour<br>partager vos préocupations <br>avec GNET+"</h2>
-    <p>Notre équipe attentive est prête à repondre à vos questions </p>
-    
-</div>
-<div id="formulaire">
-    <form action="/contact" method="post" id="form-contact">
-        <input class="input-normal" type="text" name="nom" id="nom" placeholder="Nom" ><br>
-        <input  class="input-normal" type="text" name="email" id="email" placeholder="Email"><br>
-        <input class="input-normal" type="number" name="telephone" id="telephone" placeholder="Télephone"><br>
-        <input class="input-normal" type="text" name="service-attendu" id="service-attendu" placeholder="Service attendu"><br>
-        <input class="input-com" type="text" name="commentaire" id="commentaire" placeholder="Commentaire" ><br>
-        <input class="env" type="submit" name="rendez-vous" id="rendez-vous" >
-</form>
-
-</div>
-</section>
-<section id="devis">
-    <div id="text" class="bothw">
-        <h1>CONTACTEZ NOUS POUR UN DEVIS GRATUIT <br> UNE URGENCE ? APPELEZ-NOUS (+225) 01 03 11 01 40 <h1>
-    </div>
-    <div id="biton" class="bothw">
-      <button  class="effet" id="faire-reservation"> <a href="http://localhost:8000/devis"  ><h1>JE DEMANDE UN DEVIS <i class="fas fa-arrow-right"></i></h1></a></button>
-    </div>
-</section>
-
-<section id="all-foot">
+   
+    <section id="all-foot">
 
    
-    <section id="avant-pied" class="foot">
-        <div id="logo-pied" >
-            <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="100" height="50">
-        </div>
-     
-            <div id="facebook-pied" class="petit-epace" >
-                <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
+        <section id="avant-pied" class="foot">
+            <div id="logo-pied" >
+                <img src="https://github.com/lawrat/start-up/blob/main/templates/LOGO.png?raw=true" alt="" width="100" height="50">
             </div>
-          
-                <div id="twitter-pied" class="petit-epace" >
-                    <a href=""><i class="fab fa-twitter"></i></a>
+         
+                <div id="facebook-pied" class="petit-epace" >
+                    <a href="https://www.facebook.com/profile.php?id=100012647559749"><i class="fab fa-facebook"></i></a>
                 </div>
-               
-                    <div id="linkedin-pied" class="petit-epace" >
-                        <a href=""><i class="fab fa-linkedin"></i></a>
+              
+                    <div id="twitter-pied" class="petit-epace" >
+                        <a href=""><i class="fab fa-twitter"></i></a>
                     </div>
                    
-                        <div id="instagram-pied" class="petit-epace" >
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                        <div id="linkedin-pied" class="petit-epace" >
+                            <a href=""><i class="fab fa-linkedin"></i></a>
                         </div>
+                       
+                            <div id="instagram-pied" class="petit-epace" >
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+        </section>
+       <hr id="ligne">
+        <section id="pied" class="foot">
+           
+            <div id="explorer" >
+    <h2>Explorer</h2>
+    <h5 class="h1-noir"><a href="http://localhost:8000/accueil">Accueil</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/services">Services</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/entreprise">Reservation</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/a-propos">A Propos</a></h5>
+    <h5 class="h1-noir"><a href="http://localhost:8000/contact">Contact</a></h5>
+            </div>
+            <div id="service" class="espace">
+                <h2>Services</h2>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-1">Désinsectisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-2">Dératisation</a></h5>
+                <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-3">Nettoyage</a></h5>
+            </div>
+            <div id="gnet" class="espace">
+                <h2>G NET+</h2>
+                <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
+                <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
+                <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
+            </div>
+            <div id="heures" class="espace">
+                <h2>Heures d'ouverture</h2>
+                <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
+                <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
+    
+            </div>
+        </section>
+        <section id="noir">
+    <h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
+        </section>
+    
+    
     </section>
-   <hr id="ligne">
-    <section id="pied" class="foot">
-       
-        <div id="explorer" >
-<h2>Explorer</h2>
-<h5 class="h1-noir"><a href="http://localhost:8000/accueil">Accueil</a></h5>
-<h5 class="h1-noir"><a href="http://localhost:8000/services">Services</a></h5>
-<h5 class="h1-noir"><a href="http://localhost:8000/entreprise">Reservation</a></h5>
-<h5 class="h1-noir"><a href="http://localhost:8000/a-propos">A Propos</a></h5>
-<h5 class="h1-noir"><a href="http://localhost:8000/contact">Contact</a></h5>
-        </div>
-        <div id="service" class="espace">
-            <h2>Services</h2>
-            <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-1">Désinsectisation</a></h5>
-            <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-2">Dératisation</a></h5>
-            <h5 class="h1-noir"><a href="http://localhost:8000/services#obtenir-3">Nettoyage</a></h5>
-        </div>
-        <div id="gnet" class="espace">
-            <h2>G NET+</h2>
-            <h5 class="h1-noir"><strong>Adresse :   </strong>Abidjan,cocody</h5>
-            <h5 class="h1-noir"><strong>Mail :   </strong>support@doctors.com</h5>
-            <h5 class="h1-noir"><strong>Numéro :   </strong>(+225) 01 03 11 01 40</h5>
-        </div>
-        <div id="heures" class="espace">
-            <h2>Heures d'ouverture</h2>
-            <h5 class="h1-noir">Lundi au vendredi  : 08 h  - 18h</h5>
-            <h5 class="h1-noir">Samedi: 09 - 7pm</h5>
-
-        </div>
-    </section>
-    <section id="noir">
-<h4 id="copyright"><i class="fas fa-copyright"></i> Droits d'auteur 2023. Rédigé par project 15</h4>
-    </section>
-
-
-</section>
     <script>
-         const button = document.querySelectorAll(".effet");
-
-
-button.forEach(btn => {
-    btn.addEventListener("mouseover", () => {
-        btn.style.backgroundColor = "#A8D554";
-        btn.style.borderStyle = "double";
-        btn.style.borderColor = "#FFFFFF"
-        btn.style.borderWidth = "5px";
-
+        const button = document.querySelectorAll(".effet");
+    
+    
+    button.forEach(btn => {
+        btn.addEventListener("mouseover", () => {
+            btn.style.backgroundColor = "#A8D554";
+            btn.style.borderStyle = "double";
+            btn.style.borderColor = "#FFFFFF"
+            btn.style.borderWidth = "5px";
+    
+        });
+    
+        btn.addEventListener("mouseout", () => {
+            btn.style.backgroundColor = "";
+            btn.style.borderStyle = "";
+            btn.style.borderColor = ""
+            btn.style.borderWidth = "";
+        });
     });
-
-    btn.addEventListener("mouseout", () => {
-        btn.style.backgroundColor = "";
-        btn.style.borderStyle = "";
-        btn.style.borderColor = ""
-        btn.style.borderWidth = "";
+    
+    
+    
+    
+    
+      const lien = document.querySelectorAll(".ai");
+        lien.forEach(li =>{
+        li.addEventListener("mouseover", () =>{ 
+            li.style.color= "red";
+            
+        })
+        li.addEventListener("mouseout", () =>{
+            li.style.color= "";
+        })
+    })
+    
+    const deroulante = document.querySelector("#reservatio");
+    
+    deroulante.addEventListener("mouseover", () => {
+        deroulant.style.visibility = "visible";
     });
-});
-
-
-
-
-
-  const lien = document.querySelectorAll(".ai");
-    lien.forEach(li =>{
-    li.addEventListener("mouseover", () =>{ 
-        li.style.color= "red";
-        
-    })
-    li.addEventListener("mouseout", () =>{
-        li.style.color= "";
-    })
-})
-
-const deroulante = document.querySelector("#reservatio");
-
-deroulante.addEventListener("mouseover", () => {
-    deroulant.style.visibility = "visible";
-});
-
-deroulante.addEventListener("mouseout", () => {
-    deroulant.style.visibility = "hidden";
-});
-
-
-const deroulanti = document.querySelector("#reservatioon");
-
-
-deroulanti.addEventListener("mouseover", () => {
-    deroulantin.style.visibility = "visible";
-});
-
-deroulanti.addEventListener("mouseout", () => {
-    deroulantin.style.visibility = "hidden";
-});
-
-const deroulane = document.querySelector("#plus");
-
-
-deroulane.addEventListener("mouseover", () => {
-    deroulan.style.visibility = "visible";
-});
-
-deroulane.addEventListener("mouseout", () => {
-    deroulan.style.visibility = "hidden";
-});
-
-console.log(deroulante)
+    
+    deroulante.addEventListener("mouseout", () => {
+        deroulant.style.visibility = "hidden";
+    });
+    
+    
+    const deroulanti = document.querySelector("#reservatioon");
+    
+    
+    deroulanti.addEventListener("mouseover", () => {
+        deroulantin.style.visibility = "visible";
+    });
+    
+    deroulanti.addEventListener("mouseout", () => {
+        deroulantin.style.visibility = "hidden";
+    });
+    
+    const deroulane = document.querySelector("#plus");
+    
+    
+    deroulane.addEventListener("mouseover", () => {
+        deroulan.style.visibility = "visible";
+    });
+    
+    deroulane.addEventListener("mouseout", () => {
+        deroulan.style.visibility = "hidden";
+    });
+    
     </script>
 </body>
 </html>
-

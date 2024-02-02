@@ -15,7 +15,6 @@
     }
      /* section 1  */
      #tete{
-        position: relative;
         display :flex;
         flex-wrap: wrap;
         
@@ -26,7 +25,6 @@
         text-decoration: none;
     }
     #logo{
-        position: absolute;
         margin-top: 2%;
         display: flex;
         
@@ -36,21 +34,44 @@
      position: absolute;
         display :flex;
         flex-wrap :wrap;
-        margin-left: 15%;
+        margin-left: 35%;
         margin-top: 2.5%;
-        margin-right: 5%;
-       
+        visibility: visible;
         /* margin-top: 10%; */
     }
+    #page-lien-2{
+        font-size: 140%;
+     position: absolute;
+        display :flex;
+        flex-wrap :wrap;
+        margin-left: 50%;
+        margin-top: 2.5%;
+    visibility: hidden;
+}
     @media (max-width: 1300px) {
   /* Styles spécifiques lorsque la taille de l'écran est réduite */
   #page-lien {
-    display: grid;
+    /* display: grid;
     margin-left: 70%;
+    margin-bottom: 50px; */
+    visibility: hidden;
     /* Autres styles pour la version réduite de la barre de menu */
   }
+  #page-lien-2{
+    visibility: visible;
+  }
 }
-
+#deroulan{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 300px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+}
     .haut{
         margin: 8px 15px; 
     }
@@ -59,11 +80,25 @@
     display: grid;
     background: white;
     width: 200px;
-    height: 100px;
+    height: 110px;
     visibility: hidden;
     position: absolute;
     border: 1px black solid;
     text-align: center;
+   
+   
+}
+#deroulantin{
+    padding-top: 20px;
+    display: grid;
+    background: white;
+    width: 150px;
+    height: 110px;
+    visibility: hidden;
+    position: absolute;
+    border: 1px black solid;
+    text-align: center;
+   
    
 }
 /*  button resservation de la section 1 */
@@ -403,7 +438,40 @@ margin-right: 0;
 
         </section>
         
-        <section id="page-lien">
+        <section id="page-lien-2">
+       
+    
+   
+        <div id="accueil" class="haut"  class="a">
+<a  class="align ai" href="accueil.html">Accueil</a>
+        </div>
+        <div id="services" class="haut"  class="a">
+<a  class="align ai" href="http://localhost:8000/services">Services</a>
+        </div>
+        <div id="reservatioon" class="haut"  class="a">
+            <a  class="align ai" href="">Reservation</a>
+            <div id="deroulantin">
+                <a  href="http://localhost:8000/entreprise" class="deroul ai">Entreprise</a><br>
+                <a  href="http://localhost:8000/domicile" class="deroul ai">Domicile</a><br>
+            </div>
+        </div>
+       
+        <div id="plus" class="haut"  class="a">
+            <a  class="align ai" href="">Plus  <i class="fas fa-chevron-down"></i></a>
+<div id="deroulan">
+<a   href="http://localhost:8000/a-propos" class="deroul ai">A Propos</a>
+<a  href="http://localhost:8000/contact" class="deroul ai">Contact</a>  
+<a href="mailto:gnet.plus@yahoo.com" class="deroul ai">Contactez-nous</a>          
+<a  href="https://www.facebook.com/profile.php?id=100012647559749" target="_blank" class="deroul ai">Facebook</a>
+<a  href=""class="deroul ai">Linkedin</a>
+<a   href=""class="deroul ai">Twitter</a>       
+</div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="page-lien">
         <div id="numero" class="haut" class="align" class="a" >
 <div id="us">
     
@@ -446,6 +514,7 @@ margin-right: 0;
             <a href="http://localhost:8000/entreprise" id="faire-reservation" class="effet"> INTERVENTION</a>
         </div>
     </section>
+
     </section>
 
 
@@ -555,24 +624,14 @@ button.forEach(btn => {
 
 
 
-    const lien = document.querySelectorAll("a");
-    lien.forEach(lien =>{
-    lien.addEventListener("mouseover", () =>{
-        lien.style.backgroundColor = "#A8D554"
-        lien.style.borderStyle = "groove"
-        lien.style.borderColor = "#FFFFFF"
-        lien.style.borderWidth = "5px"
-        lien.style.width = "100px"
-        lien.style.padding = "5px"
+  const lien = document.querySelectorAll(".ai");
+    lien.forEach(li =>{
+    li.addEventListener("mouseover", () =>{ 
+        li.style.color= "red";
         
     })
-    lien.addEventListener("mouseout", () =>{
-        lien.style.backgroundColor = ""
-        lien.style.borderStyle = ""
-        lien.style.borderColor = ""
-        lien.style.borderWidth = ""
-        lien.style.width = ""
-        lien.style.padding = ""
+    li.addEventListener("mouseout", () =>{
+        li.style.color= "";
     })
 })
 
@@ -584,6 +643,29 @@ deroulante.addEventListener("mouseover", () => {
 
 deroulante.addEventListener("mouseout", () => {
     deroulant.style.visibility = "hidden";
+});
+
+
+const deroulanti = document.querySelector("#reservatioon");
+
+
+deroulanti.addEventListener("mouseover", () => {
+    deroulantin.style.visibility = "visible";
+});
+
+deroulanti.addEventListener("mouseout", () => {
+    deroulantin.style.visibility = "hidden";
+});
+
+const deroulane = document.querySelector("#plus");
+
+
+deroulane.addEventListener("mouseover", () => {
+    deroulan.style.visibility = "visible";
+});
+
+deroulane.addEventListener("mouseout", () => {
+    deroulan.style.visibility = "hidden";
 });
 console.log(deroulante)
 
