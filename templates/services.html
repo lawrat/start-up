@@ -644,7 +644,11 @@ margin-left: 20px;
 margin-left: 0;
 margin-right: 0;
 }
-
+#croix{
+    color: red;
+    margin-left: 95%;
+    font-size: 40px;
+}
 
 </style>
 <body>
@@ -783,6 +787,7 @@ margin-right: 0;
     <form action="/services" method="post">
         <input type="hidden" name="request_type" value="rendez-vous">
         <section id="rendez-vous">
+            <section id="rendez-vous"><i id="croix" class="fas fa-times close-icon"></i>
         <h3 class="h3-noir" class="centre" > Programmer un Rendez-Vous</h3>
     
         <label for="firstname" class="text-exterieur">Nom</label>
@@ -1116,7 +1121,7 @@ obtenir.forEach(obt => {
         first.classList.add("gauche")
         first.style.transition = "0.5s"
         second.style.visibility ="visible";
-        second.style.transition = "3s"
+        second.style.transition = "0.5s"
         second.style.opacity = "1"
         
 
@@ -1124,7 +1129,14 @@ obtenir.forEach(obt => {
 
  
 });
-
+const croix = document.querySelector("#croix")
+croix.addEventListener("click", () =>{
+    first.classList.remove("gauche")
+        first.style.transition = "0.5s"
+        second.style.visibility ="hidden";
+        second.style.transition = "0.5s"
+        second.style.opacity = "0"
+    })
 
         </script>
 </body>

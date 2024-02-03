@@ -370,6 +370,7 @@ margin-top: 5%;
     .gauche{
         margin-left: 0%;
     }
+    
     #first-rang{
         position: relative;
         width: 50%;
@@ -385,7 +386,7 @@ margin-top: 5%;
         background: linear-gradient(to left , #2C6DA8, #A8D554);
     }
 #rendez-vous{
-    text-align: left;
+    text-align: center;
 }
 .input-rendez-vous{
     font-size: 15px;
@@ -584,6 +585,7 @@ padding-bottom: ; */
         border-style: groove;
     }
     .env{
+        
         margin-top: 20px;
         width: 250px;
         height: 50px;
@@ -684,6 +686,29 @@ padding-bottom: ; */
 }
 .ter{
     margin-bottom: 5px;
+}
+#croix{
+    color: red;
+    margin-left: 95%;
+    font-size: 40px;
+}
+#commenter{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#comment{
+    margin-top: 25px;
+    height: 30px;
+    width: 10%;
+    margin-left: 15%;
+    background-color: #A8D554;
+}
+
+.input-comment{
+    margin-top: 30px;
+    width: 40%;
+    height: 150px;
 }
 </style>
 <body>
@@ -902,8 +927,8 @@ padding-bottom: ; */
 <section id="second-rang"> 
     <form action="/services" method="post">
         <input type="hidden" name="request_type" value="rendez-vous">
-        <section id="rendez-vous">
-        <h3 class="h3-noir" class="centre" > Programmer un Rendez-Vous</h3>
+        <section id="rendez-vous"><i id="croix" class="fas fa-times close-icon"></i>
+        <h3 class="h3-noir" class="centre" > Programmer un Rendez-Vous</h3>  
     
         <label for="firstname" class="text-exterieur">Nom</label>
         <br>
@@ -1012,8 +1037,11 @@ padding-bottom: ; */
     </section>
     </form>
     </section>
+   
+       
+    
     </section>
-        </section>
+        
     <section id="temoin">
 <section id="in-temoin">
     <h1 >TEMOIGNAGES</h1>
@@ -1062,6 +1090,25 @@ padding-bottom: ; */
 </div>
 </section>
 </section>
+    </section>
+    <section id="commenter">
+        <div id="deja-commenter">
+            {{range .Comments}}
+            <div class="comment">
+                <p><strong>{{.Username}} <br></strong> {{.Commentaire}}</p>
+            </div>
+            {{end}}
+        </div>
+        <div>
+            <form action="/" method="post">
+                <input type="hidden" name="request_type" value="commentaire">
+                <!-- <input class="input-normal" type="text" id="username" name="user" placeholder="nom complet..." required><br> -->
+                <input class="input-comment" type="text" name="commenter" id="new-commentaire" placeholder="Laisser un commentaire">
+                <div>
+                    <input class="effet" id="comment" type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
     </section>
     <section id="avantages">
         <h1 class="h6-noir">NOS FORMIDABLES AVANTAGES</h1>
@@ -1128,8 +1175,9 @@ padding-bottom: ; */
             <p>APPELEZ-NOUS : <br> (+225) 01 03 11 01 40</p>
         </div>
     </div>
+    <form action="/" method="post">
     <div id="formulaire">
-        <form action="/" method="post">
+       
             <input type="hidden" name="request_type" value="prise-contact">
             <input class="input-normal" type="text" name="nom" id="nom" placeholder="Nom" ><br>
             <input  class="input-normal" type="text" name="email" id="email" placeholder="Email"><br>
@@ -1137,9 +1185,10 @@ padding-bottom: ; */
             <input class="input-normal" type="text" name="service-attendu" id="service-attendu" placeholder="Service attendu"><br>
             <input class="input-com" type="text" name="commentaire" id="commentaire" placeholder="Commentaire" ><br>
             <input class="env" type="submit" name="rendez-vous" id="rendez-vous" >
-    </form>
+   
 
     </div>
+</form>
     </section>
     <section id="methode">
         <h1 class="h1-noir">NOTRE METHODE DE TRAVAIL</h1>
@@ -1304,27 +1353,33 @@ deroulane.addEventListener("mouseout", () => {
     deroulan.style.visibility = "hidden";
 });
 
+
 const obtenir = document.querySelectorAll("#obtient");
 const first = document.querySelector("#first-rang")
 const second = document.querySelector("#second-rang")
 
-console.log(second)
-
-console.log(obtenir)
 obtenir.forEach(obt => {
     obt.addEventListener("click", () => {
         first.classList.add("gauche")
-        first.style.transition = "0.5s"
         second.style.visibility ="visible";
-        second.style.transition = "3s"
+         first.style.transition = "0.5s"
+        second.style.transition = "0.5s"
         second.style.opacity = "1"
         
 
     });
-
  
 });
+const croix = document.querySelector("#croix")
+croix.addEventListener("click", () =>{
+    first.classList.remove("gauche")
+        first.style.transition = "0.5s"
+        second.style.visibility ="hidden";
+        second.style.transition = "0.5s"
+        second.style.opacity = "0"
+    })
 
+ 
 
 document.addEventListener('DOMContentLoaded', function () {
     const boxes = document.querySelectorAll('.box');
