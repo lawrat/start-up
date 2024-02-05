@@ -91,35 +91,40 @@ func renderTemplate(w http.ResponseWriter, tmpl string, data interface{}) {
 
 	// Vérifier si le fichier JSON existe
 	if _, err := os.Stat(commentFile); os.IsNotExist(err) {
-		// Si le fichier n'existe pas, afficher la page d'accueil sans les commentaires
+		// Si le fichier n'existe pas,creer le fichier vide
+		err := ioutil.WriteFile(commentFile, []byte("[]"), 0644)
+		if err != nil {
+			fmt.Println("Erreur lors de la création du fichier JSON de commentaires :", err)
+			http.Error(w, "Erreur lors de la création du fichier JSON de commentaires", http.StatusInternalServerError)
+			t.Execute(w, data)
+		}
+	} else {
+		// Charger les commentaires depuis le fichier JSON
+		commentActuel, err := ioutil.ReadFile(commentFile)
+		if err != nil {
+			fmt.Println("Erreur lors de la lecture du fichier JSON de commentaires :", err)
+			http.Error(w, "Erreur lors de la lecture du fichier JSON de commentaires", http.StatusInternalServerError)
+			return
+		}
+
+		var comments []modelecommentaire
+
+		// Si le fichier JSON existe déjà, décodez-le
+		err = json.Unmarshal(commentActuel, &comments)
+		if err != nil {
+			fmt.Println("Erreur lors du décodage du fichier JSON de commentaires :", err)
+			http.Error(w, "Erreur lors du décodage du fichier JSON de commentaires", http.StatusInternalServerError)
+			return
+		}
+
+		// Ajouter les commentaires au contexte de rendu
+		data = map[string]interface{}{
+			"Comments": comments,
+		}
+
 		t.Execute(w, data)
-		return
+
 	}
-
-	// Charger les commentaires depuis le fichier JSON
-	commentActuel, err := ioutil.ReadFile(commentFile)
-	if err != nil {
-		fmt.Println("Erreur lors de la lecture du fichier JSON de commentaires :", err)
-		http.Error(w, "Erreur lors de la lecture du fichier JSON de commentaires", http.StatusInternalServerError)
-		return
-	}
-
-	var comments []modelecommentaire
-
-	// Si le fichier JSON existe déjà, décodez-le
-	err = json.Unmarshal(commentActuel, &comments)
-	if err != nil {
-		fmt.Println("Erreur lors du décodage du fichier JSON de commentaires :", err)
-		http.Error(w, "Erreur lors du décodage du fichier JSON de commentaires", http.StatusInternalServerError)
-		return
-	}
-
-	// Ajouter les commentaires au contexte de rendu
-	data = map[string]interface{}{
-		"Comments": comments,
-	}
-
-	t.Execute(w, data)
 }
 
 func accueil(w http.ResponseWriter, r *http.Request) {

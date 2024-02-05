@@ -25,13 +25,14 @@
         text-decoration: none;
     }
     #logo{
+        position: relative;
         margin-top: 2%;
         display: flex;
         
     }
     #page-lien{
         font-size: 140%;
-     position: absolute;
+     position :absolute;
         display :flex;
         flex-wrap :wrap;
         margin-left: 35%;
@@ -385,9 +386,9 @@ margin-right: 0;
 .ligne-mince{
     width: 50%;
 }
-.align{
+/* .align{
     margin-left: 130px;
-} 
+}  */
 
 /* .deroul{
     padding-top: 10px;
@@ -516,7 +517,6 @@ margin-right: 0;
     </section>
 
     </section>
-
 
     <!-- <section id="avant">
         <div id="face-1">
@@ -667,6 +667,34 @@ deroulane.addEventListener("mouseover", () => {
 deroulane.addEventListener("mouseout", () => {
     deroulan.style.visibility = "hidden";
 });
+
+
+const obtenir = document.querySelectorAll("#obtient");
+const first = document.querySelector("#first-rang")
+const second = document.querySelector("#second-rang")
+
+obtenir.forEach(obt => {
+    obt.addEventListener("click", () => {
+        first.classList.add("gauche")
+        second.style.visibility ="visible";
+         first.style.transition = "0.5s"
+        second.style.transition = "0.5s"
+        second.style.opacity = "1"
+        
+
+    });
+ 
+});
+const croix = document.querySelector("#croix")
+croix.addEventListener("click", () =>{
+    first.classList.remove("gauche")
+        first.style.transition = "0.5s"
+        second.style.visibility ="hidden";
+        second.style.transition = "0.5s"
+        second.style.opacity = "0"
+    })
+
+ 
 console.log(deroulante)
 
 
